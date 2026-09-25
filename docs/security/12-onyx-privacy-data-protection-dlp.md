@@ -196,3 +196,21 @@ The remaining scope limitations include provider retention, production backups,
 all derived/indexed copies and universal DLP coverage.
 
 **Action 12.12 status: COMPLETE.**
+
+## Action 12.13 — Bounded synthetic privacy runtime
+
+Action 12.13 executed the consolidated Phase 12 regression set inside the
+source-matched Docker test runtime with Docker networking disabled.
+
+Ten suites containing 46 tests covered ownership, minimization, prompt/RAG
+privacy, observability, external egress, retention/deletion, DLP/redaction,
+cross-user access, tenant isolation and post-retrieval RAG authorization.
+
+All 46 tests passed within the bounded runtime. No real credentials, personal
+data, provider calls, MCP endpoints or external network services were used.
+
+The runtime evidence remains local/unit-level evidence and does not establish
+production backup deletion, external-provider retention compliance,
+production-scale observability behavior or universal DLP coverage.
+
+**Action 12.13 status: COMPLETE.**
