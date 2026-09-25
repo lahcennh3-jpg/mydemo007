@@ -1,0 +1,54 @@
+Phase 12 Action 12.12 — source trace
+=====================================
+
+Matrix source evidence:
+
+12.2
+phase12-action-12.2-sensitive-data-flow-inventory.md
+phase12-action-12.2-sensitive-data-flow-source-trace.txt
+
+12.3
+phase12-action-12.3-data-classification-ownership-boundaries.md
+phase12-action-12.3-ownership-results.txt
+phase12-action-12.3-ownership-source-trace.txt
+
+12.4
+phase12-action-12.4-collection-minimization-purpose.md
+phase12-action-12.4-minimization-results.txt
+phase12-action-12.4-minimization-source-trace.txt
+
+12.5
+phase12-action-12.5-sensitive-storage-secrets-pii-inventory.md
+phase12-action-12.5-sensitive-storage-source-trace.txt
+
+12.6
+phase12-action-12.6-prompt-context-rag-privacy.md
+phase12-action-12.6-results.txt
+phase12-action-12.6-source-trace.txt
+
+12.7
+phase12-action-12.7-observability-privacy.md
+phase12-action-12.7-results.txt
+phase12-action-12.7-source-trace.txt
+
+12.8
+phase12-action-12.8-external-egress.md
+phase12-action-12.8-results.txt
+phase12-action-12.8-source-trace.txt
+
+12.9
+phase12-action-12.9-retention-deletion.md
+phase12-action-12.9-results.txt
+phase12-action-12.9-source-trace.txt
+
+12.10
+phase12-action-12.10-dlp-redaction-export.md
+phase12-action-12.10-results.txt
+phase12-action-12.10-source-trace.txt
+
+12.11
+phase12-action-12.11-runtime-negative-tests.txt
+phase12-action-12.11-source-trace.txt
+
+The Action 12.12 matrix is a consolidation of existing Phase 12 evidence.
+It does not introduce new runtime claims.

@@ -179,3 +179,20 @@ provider-side privacy guarantees, backup deletion guarantees, or complete
 isolation of every derived representation.
 
 **Action 12.11 status: COMPLETE.**
+
+## Action 12.12 — Consolidated privacy and DLP attack matrix
+
+Action 12.12 consolidated the Phase 12 privacy assessment into a 16-case
+attack/control matrix spanning cross-user access, tenant isolation, RAG
+authorization, personalization/provider egress, observability, external tools,
+retention/deletion, redaction and administrative export.
+
+The matrix separates demonstrated controls from intentional privacy-sensitive
+flows and residual areas where the local assessment does not support a complete
+production guarantee.
+
+No new privacy authorization bypass was confirmed by the consolidation action.
+The remaining scope limitations include provider retention, production backups,
+all derived/indexed copies and universal DLP coverage.
+
+**Action 12.12 status: COMPLETE.**
