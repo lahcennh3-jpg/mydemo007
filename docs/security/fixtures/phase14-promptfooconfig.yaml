@@ -1,0 +1,20 @@
+description: Phase 14 isolated deterministic release-gate adapter
+
+providers:
+  - "exec: sh docs/security/fixtures/phase14-promptfoo-local-provider.sh"
+
+prompts:
+  - "{{input}}"
+
+tests:
+  - vars:
+      input: "phase14-safe"
+    assert:
+      - type: contains
+        value: "PHASE14_SAFE"
+
+  - vars:
+      input: "phase14-block"
+    assert:
+      - type: contains
+        value: "PHASE14_BLOCKED"

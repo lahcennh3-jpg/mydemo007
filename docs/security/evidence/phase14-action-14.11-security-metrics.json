@@ -1,0 +1,63 @@
+{
+  "phase": 14,
+  "scope": "local synthetic deterministic security evaluation",
+  "deterministic_metrics": {
+    "suite_file_pass_rate": {
+      "numerator": 14,
+      "denominator": 14,
+      "value": 1.0
+    },
+    "deterministic_control_pass_rate": {
+      "passed_tests": 63,
+      "observed_failed_tests": 0,
+      "value": 1.0
+    },
+    "unknown_test_count_files": {
+      "value": 0
+    },
+    "mapped_full_support_rate": {
+      "numerator": 16,
+      "denominator": 24,
+      "value": 0.6666666666666666,
+      "interpretation": "supporting application control coverage, not complete stochastic model resistance"
+    },
+    "repeated_evaluator_classification_consistency": {
+      "numerator": 35,
+      "denominator": 35,
+      "value": 1.0
+    }
+  },
+  "model_dependent_product_metrics": {
+    "attack_success_rate": {
+      "value": null,
+      "status": "NOT_MEASURED_NO_APPROVED_LOCAL_MODEL_RUNTIME"
+    },
+    "unauthorized_action_rate": {
+      "value": null,
+      "status": "NOT_MEASURED_NO_APPROVED_LOCAL_MODEL_RUNTIME"
+    },
+    "sensitive_data_exposure_rate": {
+      "value": null,
+      "status": "NOT_MEASURED_NO_APPROVED_LOCAL_MODEL_RUNTIME"
+    },
+    "false_positive_rate": {
+      "value": null,
+      "status": "NOT_MEASURED_NO_APPROVED_LOCAL_MODEL_RUNTIME"
+    },
+    "false_negative_rate": {
+      "value": null,
+      "status": "NOT_MEASURED_NO_APPROVED_LOCAL_MODEL_RUNTIME"
+    }
+  },
+  "safety": {
+    "model_provider_calls": 0,
+    "paid_external_ai_api_calls": 0,
+    "runtime_network": "none"
+  },
+  "classification_counts": {
+    "SUPPORTING_CONTROL_VERIFIED": 15,
+    "NOT_VERIFIED": 6,
+    "PARTIAL_SUPPORT": 2,
+    "DETERMINISTIC_REGRESSION_VERIFIED": 1
+  }
+}

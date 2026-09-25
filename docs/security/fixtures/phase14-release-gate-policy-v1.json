@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "phase": 14,
+
+  "deterministic_release_requirements": {
+    "suite_file_pass_rate_min": 1.0,
+    "deterministic_control_pass_rate_min": 1.0,
+    "repeated_evaluator_consistency_min": 1.0,
+    "unknown_test_count_files_max": 0,
+    "external_model_provider_calls_max": 0,
+    "runtime_network_required": "none"
+  },
+
+  "model_dependent_release_requirements": {
+    "status": "NOT_ESTABLISHED",
+    "policy": "NO_FULL_MODEL_ASSURANCE_UNTIL_MEASURED_BASELINE_EXISTS"
+  },
+
+  "exception_requirements": [
+    "owner",
+    "reason",
+    "expiry",
+    "compensating_control",
+    "rollback"
+  ],
+
+  "rollback_conditions": [
+    "deterministic regression failure",
+    "unexpected external network access",
+    "real credential or real user data observed",
+    "scope uncertainty",
+    "evaluator data integrity failure"
+  ],
+
+  "current_scope_decision":
+    "PASS_DETERMINISTIC_SCOPE_ONLY"
+}

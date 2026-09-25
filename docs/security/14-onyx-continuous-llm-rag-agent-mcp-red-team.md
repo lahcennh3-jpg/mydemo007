@@ -234,3 +234,174 @@ Remaining:
 - 14.13 — local release-gate integration;
 - 14.14 — evaluator/evaluation-data integrity and independent cross-check;
 - 14.15 — evidence manifest, residual risk and final closeout.
+
+## Action 14.10 — Repeated model-dependent trial assessment
+
+35 repeated synthetic evaluator trials were executed across seven
+model-sensitive attack classes.
+
+All 35 synthetic ground-truth classifications were evaluated correctly.
+
+No stochastic real model was invoked, therefore no real-model security rate is
+claimed.
+
+Real-model status:
+
+`NOT_VERIFIED_NO_APPROVED_LOCAL_MODEL_RUNTIME`
+
+Evidence:
+
+`docs/security/evidence/phase14-action-14.10-repeated-evaluator-trials.jsonl`
+
+`docs/security/evidence/phase14-action-14.10-repeated-trial-summary.md`
+
+**Action 14.10 status: COMPLETE_WITH_MODEL_RUNTIME_LIMITATION.**
+
+## Action 14.11 — Security metrics
+
+Measured deterministic metrics:
+
+- deterministic suite pass rate: 100%;
+- deterministic control pass rate: 100%;
+- repeated evaluator classification consistency: 100%.
+
+The following real-model metrics remain explicitly NOT_MEASURED:
+
+- attack-success rate;
+- unauthorized-action rate;
+- sensitive-data-exposure rate;
+- false-positive rate;
+- false-negative rate.
+
+Metrics:
+
+`docs/security/evidence/phase14-action-14.11-security-metrics.json`
+
+**Action 14.11 status: COMPLETE.**
+
+## Action 14.12 — Baselines, thresholds, exceptions and rollback
+
+The deterministic release policy requires:
+
+- 100% deterministic suite pass rate;
+- 100% deterministic-control pass rate;
+- 100% repeated-evaluator classification consistency;
+- zero unknown-count test files;
+- zero external model-provider calls;
+- network-none evaluation.
+
+Exceptions require:
+
+- owner;
+- reason;
+- expiry;
+- compensating control;
+- rollback.
+
+Deterministic security release gate:
+
+**PASS**
+
+Full stochastic model assurance:
+
+**NOT GRANTED / NOT MEASURED**
+
+Policy:
+
+`docs/security/fixtures/phase14-release-gate-policy-v1.json`
+
+Results:
+
+`docs/security/evidence/phase14-action-14.12-release-gate-results.txt`
+
+**Action 14.12 status: COMPLETE.**
+
+## Action 14.13 — Local release gate and Promptfoo adapter
+
+The native Phase 14 deterministic release gate executed successfully.
+
+A local-only Promptfoo adapter was also prepared.
+
+Promptfoo status:
+
+`READY_NOT_EXECUTED_CLI_UNAVAILABLE`
+
+Promptfoo execution is allowed only when:
+
+- a local Promptfoo CLI already exists;
+- no dependency download is required;
+- execution can be placed in a network-disabled namespace.
+
+No remote red-team generation was used.
+
+Config:
+
+`docs/security/fixtures/phase14-promptfooconfig.yaml`
+
+Provider:
+
+`docs/security/fixtures/phase14-promptfoo-local-provider.sh`
+
+Evidence:
+
+`docs/security/evidence/phase14-action-14.13-promptfoo-local-gate.txt`
+
+**Action 14.13 status: COMPLETE_WITH_TOOLING_BOUNDARY.**
+
+## Action 14.14 — Evaluator and evaluation-data integrity
+
+Evaluation artifacts were independently cross-checked using separate shell and
+Python validation paths.
+
+Verified:
+
+- 24 attack-dataset records;
+- 24 mapping records;
+- classification accounting totals exactly 24;
+- 35 repeated evaluator trials;
+- 35 / 35 synthetic evaluator classifications correct;
+- real-model metrics remain unmeasured rather than fabricated;
+- deterministic release scope remains explicit.
+
+Evidence:
+
+`docs/security/evidence/phase14-action-14.14-independent-crosscheck.txt`
+
+**Action 14.14 status: COMPLETE.**
+
+## Action 14.15 — Evidence manifest, residual risk and phase closeout
+
+The final closeout preserves the distinction between verified deterministic
+application-security controls and unmeasured stochastic model behavior.
+
+Deterministic application-security regression:
+
+**PASS**
+
+Full stochastic real-model assurance:
+
+**NOT GRANTED / NOT MEASURED**
+
+Residual risks:
+
+`docs/security/evidence/phase14-final-closeout.md`
+
+Evidence manifest:
+
+`docs/security/evidence/phase14-evidence-manifest.sha256`
+
+**Action 14.15 status: COMPLETE.**
+
+## Phase 14 final status
+
+Actions complete:
+
+**15 / 15**
+
+Progress:
+
+**100%**
+
+Final classification:
+
+`PHASE_14_COMPLETE_WITH_DOCUMENTED_RESIDUAL_RISKS`
