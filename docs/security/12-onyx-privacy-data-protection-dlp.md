@@ -214,3 +214,22 @@ production backup deletion, external-provider retention compliance,
 production-scale observability behavior or universal DLP coverage.
 
 **Action 12.13 status: COMPLETE.**
+
+## Action 12.14 — Findings, regression and framework mapping
+
+Action 12.14 consolidated Phase 12 findings, privacy-sensitive boundaries,
+regression evidence, residual risks, responsibility boundaries and an
+engineering framework crosswalk.
+
+The Action 12.13 regression evidence establishes a bounded 46/46-test local
+privacy regression pass with Docker networking disabled.
+
+No new privacy authorization bypass was confirmed in the reviewed Phase 12
+scope. Explicit residuals remain for production backups, external-provider
+retention/deletion, every derived/indexed representation, production
+observability behavior and universal DLP coverage.
+
+The framework mapping is an engineering crosswalk rather than a certification
+or legal/compliance claim.
+
+**Action 12.14 status: COMPLETE.**
