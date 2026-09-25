@@ -1,0 +1,51 @@
+Phase 12 Action 12.11 — source trace
+=====================================
+
+Repository:
+lahcennh3-jpg/mydemo007
+
+Branch:
+security/phase-12-privacy-data-protection-dlp
+
+Immutable start SHA:
+8752b6f05dababa19a59563dcf51820a1069be02
+
+Synthetic identities:
+alice@tenant-alpha.test
+bob@tenant-alpha.test
+
+Boundaries exercised:
+
+1. Generated-image ownership authorization
+   backend/onyx/access/access.py
+   backend/tests/unit/onyx/access/test_chat_image_generation_access.py
+
+2. User-file ACL construction
+   backend/onyx/access/access.py
+   backend/onyx/db/user_file.py
+   backend/tests/unit/onyx/access/test_user_file_access.py
+
+3. Multi-tenant Vespa filtering
+   backend/onyx/document_index/vespa/shared_utils/vespa_request_builders.py
+   backend/tests/unit/onyx/document_index/vespa/shared_utils/test_vespa_tenant_isolation.py
+
+4. RAG-context authorization and re-censoring
+   backend/onyx/tools/tool_implementations/search/search_tool.py
+   backend/tests/unit/onyx/tools/tool_implementations/search/test_context_assembly_authorization.py
+
+5. Action-specific synthetic negative test
+   backend/tests/unit/onyx/privacy/test_phase12_cross_user_privacy_negative.py
+
+Execution:
+source-matched Docker test runtime using repository-locked dependencies
+
+Network:
+disabled (--network none)
+
+No real credentials, real personal data, SaaS endpoints,
+external providers, or public Onyx deployments were used.
+
+Non-claims:
+This action does not establish complete production authorization coverage,
+backup deletion, provider retention behavior, or complete privacy isolation
+of every derived representation.

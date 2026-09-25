@@ -152,3 +152,30 @@ every Onyx data path is protected by a general-purpose DLP engine.
 No reviewed export-authorization or redaction bypass was confirmed.
 
 **Action 12.10 status: COMPLETE.**
+
+## Action 12.11 — Cross-user and cross-tenant privacy negative tests
+
+Action 12.11 executed bounded synthetic privacy-isolation negative tests
+covering generated-image ownership, malformed ownership metadata, private
+and explicitly shared user-file ACL behavior, multi-tenant Vespa filtering,
+and post-retrieval RAG authorization.
+
+A foreign user was denied access to a private generated image. Malformed
+generated-image ownership metadata failed closed. A private user file excluded
+an unrelated synthetic user, while an explicit share added the intended user
+to the ACL.
+
+The Vespa isolation tests verified missing-tenant fail-closed behavior,
+tenant filtering and the single-tenant case. The RAG authorization tests
+verified removal of unauthorized adjacent content, removal of a section when
+its authorized center is removed, re-censoring before final model context,
+and absence of citations when no safe section remains.
+
+Execution used a source-matched Docker test runtime with networking disabled
+and synthetic identities only.
+
+This action does not claim complete production authorization coverage,
+provider-side privacy guarantees, backup deletion guarantees, or complete
+isolation of every derived representation.
+
+**Action 12.11 status: COMPLETE.**

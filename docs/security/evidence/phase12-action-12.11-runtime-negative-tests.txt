@@ -1,0 +1,32 @@
+============================================================
+SUITE=CROSS_USER_PRIVACY
+TEST=tests/unit/onyx/privacy/test_phase12_cross_user_privacy_negative.py
+EXIT_CODE=0
+============================================================
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.253s
+
+OK
+
+============================================================
+SUITE=VESPA_TENANT_ISOLATION
+TEST=tests/unit/onyx/document_index/vespa/shared_utils/test_vespa_tenant_isolation.py
+EXIT_CODE=0
+============================================================
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+
+============================================================
+SUITE=RAG_CONTEXT_AUTHORIZATION
+TEST=tests/unit/onyx/tools/tool_implementations/search/test_context_assembly_authorization.py
+EXIT_CODE=0
+============================================================
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK
