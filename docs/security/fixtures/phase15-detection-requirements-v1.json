@@ -1,0 +1,190 @@
+{
+  "version": "1.0",
+  "phase": 15,
+
+  "detections": [
+    {
+      "id": "D15-001",
+      "name": "cross_tenant_access_attempt",
+      "severity": "high",
+      "domain": "tenant_isolation",
+      "required_signals": [
+        "actor_tenant",
+        "resource_tenant",
+        "authorization_decision"
+      ],
+      "condition": "actor tenant differs from resource tenant during protected resource access",
+      "triage": [
+        "actor",
+        "resource",
+        "tenant pair",
+        "authorization decision",
+        "trace"
+      ]
+    },
+
+    {
+      "id": "D15-002",
+      "name": "privilege_or_service_account_anomaly",
+      "severity": "high",
+      "domain": "authorization",
+      "required_signals": [
+        "actor_id",
+        "role",
+        "action",
+        "baseline"
+      ],
+      "condition": "privileged action inconsistent with expected actor role or service identity",
+      "triage": [
+        "actor",
+        "role",
+        "action",
+        "previous activity",
+        "trace"
+      ]
+    },
+
+    {
+      "id": "D15-003",
+      "name": "prompt_injection_to_tool_call_correlation",
+      "severity": "high",
+      "domain": "tool",
+      "required_signals": [
+        "prompt_security_classification",
+        "agent_run_id",
+        "tool_call_id"
+      ],
+      "condition": "prompt-injection signal correlates with a sensitive tool invocation",
+      "triage": [
+        "security classification",
+        "agent run",
+        "tool",
+        "approval",
+        "result"
+      ]
+    },
+
+    {
+      "id": "D15-004",
+      "name": "unexpected_runtime_or_tool_destination",
+      "severity": "high",
+      "domain": "runtime",
+      "required_signals": [
+        "destination_class",
+        "allowlist_decision"
+      ],
+      "condition": "process, filesystem, network or tool destination is outside approved policy",
+      "triage": [
+        "destination",
+        "source component",
+        "policy",
+        "actor",
+        "trace"
+      ]
+    },
+
+    {
+      "id": "D15-005",
+      "name": "retrieval_provenance_anomaly",
+      "severity": "medium",
+      "domain": "retrieval",
+      "required_signals": [
+        "retrieval_id",
+        "resource_tenant",
+        "source_id_hash",
+        "provenance_status"
+      ],
+      "condition": "retrieved source lacks expected tenant or provenance relationship",
+      "triage": [
+        "retrieval",
+        "tenant",
+        "source hash",
+        "provenance",
+        "conversation"
+      ]
+    },
+
+    {
+      "id": "D15-006",
+      "name": "dlp_or_telemetry_gap",
+      "severity": "medium",
+      "domain": "dlp",
+      "required_signals": [
+        "dlp_decision",
+        "telemetry_expected",
+        "telemetry_observed"
+      ],
+      "condition": "DLP violation occurs or expected security telemetry disappears",
+      "triage": [
+        "DLP classification",
+        "component",
+        "trace",
+        "telemetry status"
+      ]
+    },
+
+    {
+      "id": "D15-007",
+      "name": "unapproved_security_configuration_change",
+      "severity": "high",
+      "domain": "release",
+      "required_signals": [
+        "configuration_type",
+        "old_hash",
+        "new_hash",
+        "approval_status"
+      ],
+      "condition": "model, prompt, policy or security configuration changes without approval",
+      "triage": [
+        "configuration",
+        "change actor",
+        "old hash",
+        "new hash",
+        "approval"
+      ]
+    },
+
+    {
+      "id": "D15-008",
+      "name": "security_behavior_drift",
+      "severity": "medium",
+      "domain": "model_configuration",
+      "required_signals": [
+        "baseline_id",
+        "metric",
+        "observed_value",
+        "threshold"
+      ],
+      "condition": "security-relevant behavior moves outside an approved baseline",
+      "triage": [
+        "baseline",
+        "model version",
+        "policy version",
+        "metric",
+        "change history"
+      ]
+    },
+
+    {
+      "id": "D15-009",
+      "name": "excessive_resource_or_cost_activity",
+      "severity": "medium",
+      "domain": "quota_cost",
+      "required_signals": [
+        "token_count",
+        "tool_call_count",
+        "recursion_depth",
+        "concurrency",
+        "cost_units"
+      ],
+      "condition": "token, recursion, concurrency, tool-call or cost threshold is exceeded",
+      "triage": [
+        "actor",
+        "tenant",
+        "request",
+        "resource counters",
+        "cancellation state"
+      ]
+    }
+  ]
+}

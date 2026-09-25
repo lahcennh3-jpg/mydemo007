@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "phase": 15,
+  "purpose": "local synthetic AI application security event correlation",
+
+  "required_event_fields": [
+    "timestamp",
+    "event_id",
+    "event_type",
+    "trace_id",
+    "actor_id",
+    "actor_tenant",
+    "resource_tenant",
+    "result",
+    "source"
+  ],
+
+  "correlation_keys": [
+    "trace_id",
+    "request_id",
+    "session_id",
+    "conversation_id",
+    "actor_id",
+    "actor_tenant",
+    "resource_tenant",
+    "connector_id",
+    "document_id_hash",
+    "retrieval_id",
+    "model_config_hash",
+    "prompt_policy_hash",
+    "agent_run_id",
+    "tool_call_id",
+    "mcp_server_id",
+    "approval_id",
+    "deployment_version"
+  ],
+
+  "security_event_domains": [
+    "authentication",
+    "authorization",
+    "tenant_isolation",
+    "connector_ingestion",
+    "retrieval",
+    "model_configuration",
+    "agent",
+    "tool",
+    "mcp",
+    "dlp",
+    "quota_cost",
+    "administration",
+    "release",
+    "runtime"
+  ],
+
+  "result_values": [
+    "allow",
+    "deny",
+    "success",
+    "failure",
+    "blocked",
+    "cancelled",
+    "timeout",
+    "unknown"
+  ],
+
+  "sensitive_log_policy": {
+    "allowed": [
+      "opaque identifiers",
+      "tenant identifiers",
+      "event classifications",
+      "authorization decisions",
+      "resource-type identifiers",
+      "cryptographic hashes",
+      "version identifiers",
+      "numeric counters",
+      "latency measurements",
+      "token counts",
+      "cost counters",
+      "policy identifiers",
+      "destination classifications"
+    ],
+
+    "prohibited": [
+      "raw_prompt",
+      "prompt_text",
+      "raw_response",
+      "response_text",
+      "document_content",
+      "retrieved_content",
+      "password",
+      "api_key",
+      "access_token",
+      "refresh_token",
+      "session_cookie",
+      "authorization_header"
+    ],
+
+    "principle": "collect minimum security evidence required for detection and investigation"
+  },
+
+  "retention_classification": {
+    "synthetic_lab_events": "repository_fixture",
+    "production_events": "out_of_scope",
+    "real_customer_content": "prohibited"
+  }
+}
