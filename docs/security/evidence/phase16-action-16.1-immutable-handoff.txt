@@ -1,0 +1,38 @@
+PHASE=16
+ACTION=16.1
+TITLE=Immutable handoff and supply-chain security boundary
+PARENT_BRANCH=security/phase-15-ai-observability-detection-forensics-incident-response
+PARENT_HEAD=184512b4f6931573ae2c8e66a8212a346c825d01
+PHASE16_BRANCH=security/phase-16-secure-software-container-configuration-supply-chain
+START_HEAD=184512b4f6931573ae2c8e66a8212a346c825d01
+WORKTREE_START=clean
+
+IN_SCOPE:
+- source code
+- dependency manifests
+- lock files
+- container definitions
+- CI/CD configuration
+- GitHub workflow configuration
+- build configuration
+- security scanning configuration
+- SBOM generation
+- artifact signing
+- provenance
+- release manifests
+- rollback and revocation controls
+
+OUT_OF_SCOPE:
+- production systems
+- production credentials
+- production registries
+- real customer data
+- destructive supply-chain testing
+- third-party compromise attempts
+
+SAFETY:
+- repository-local inspection
+- synthetic evidence
+- no deliberate external compromise
+- no production mutation
+- no real credential exposure

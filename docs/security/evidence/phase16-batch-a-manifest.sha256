@@ -1,0 +1,8 @@
+ba16858e4b45b9f85cbe9dc3299f9399da3c260f66d94332aef7a68870f092a2  docs/security/evidence/phase16-action-16.1-immutable-handoff.txt
+36fc97919589882c056647cae0cb697555e61d2d6017504e7d3c41a8748b3a9d  docs/security/evidence/phase16-action-16.2-sdlc-change-control-inventory.txt
+c4154f6d7634ae7a835a0b319ee1f35eef5fdbc822931baae0225a3aa193d3c7  docs/security/evidence/phase16-action-16.3-dependency-lock-inventory.txt
+06541d372563d8f435c258aea8f07df5ed8a04218e11807a010b8148f85acda0  docs/security/evidence/phase16-action-16.4-redacted-secret-scan.txt
+dcd539d433e75ebb53890c1e47b7cda1de49ca8df7c1137eb0a3431946dc745b  docs/security/evidence/phase16-action-16.5-static-analysis-baseline.txt
+700e518219c480f63ba452efa33cb78944fe24003c1cef90388929713ee6435c  docs/security/evidence/phase16-action-16.6-ci-container-config-inventory.txt
+c302c93f14da811392b92ab5b60bd14c8f7025fe47312122ff1b514b1c18b820  docs/security/evidence/phase16-action-16.6-supply-chain-integrity.sha256
+b87ddb0dc0b29c3117a763bcd76329f892b0f081aa1bef103c93fbc1d39b9733  docs/security/evidence/phase16-security-tool-availability.txt

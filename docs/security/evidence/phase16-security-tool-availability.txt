@@ -1,0 +1,12 @@
+PHASE16 SECURITY TOOL AVAILABILITY
+==================================
+python3=NOT_AVAILABLE
+gitleaks=NOT_AVAILABLE
+semgrep=NOT_AVAILABLE
+trivy=NOT_AVAILABLE
+syft=NOT_AVAILABLE
+cosign=NOT_AVAILABLE
+grype=NOT_AVAILABLE
+osv-scanner=NOT_AVAILABLE
+hadolint=NOT_AVAILABLE
+checkov=NOT_AVAILABLE
