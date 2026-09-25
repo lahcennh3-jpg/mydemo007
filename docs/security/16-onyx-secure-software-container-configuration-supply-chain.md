@@ -201,3 +201,120 @@ Remaining:
 PHASE_16_BATCH_B_COMPLETE
 
 <!-- PHASE16_BATCH_B_END -->
+
+<!-- PHASE16_BATCH_C_START -->
+
+---
+
+## Action 16.13 — Release manifest and fail-closed release gate
+
+Status: COMPLETE
+
+Assessment artifact release gate:
+
+PASS
+
+Fail-closed malformed-manifest test:
+
+PASS
+
+Production software release gate:
+
+BLOCKED
+
+Production release remains blocked by three explicitly documented assurance
+gaps.
+
+## Action 16.14 — Exception, rollback, revocation, and recovery controls
+
+Status: COMPLETE
+
+Action 16.12 provenance source:
+
+879df882bff9a4731baa7ee0567bc7e09c90d0d2
+
+Historical provenance reconstruction:
+
+PASS
+
+Current Batch B source reproducibility:
+
+PASS
+
+Original Batch B signed attestation payload re-verification:
+
+PASS
+
+Tampered signed-payload rejection:
+
+PASS
+
+Synthetic revocation/denylist negative test:
+
+PASS
+
+The Action 16.11 signature was generated before signing-status metadata was
+appended to the attestation evidence file. Phase 16 closeout therefore
+reconstructed and verified the original signed payload rather than falsely
+requiring the signature to authenticate later unsigned metadata.
+
+## Action 16.15 — Regression verification and closeout
+
+Status: COMPLETE
+
+Batch A evidence integrity:
+
+PASS
+
+Batch B evidence integrity:
+
+PASS
+
+Supply-chain source baseline:
+
+PASS
+
+Secret-pattern closeout gate:
+
+PASS
+
+Dependency/container/IaC review candidates requiring contextual triage:
+
+99
+
+Review candidates are not automatically confirmed vulnerabilities.
+
+---
+
+## Final Phase 16 status
+
+Actions complete:
+
+15 / 15
+
+Progress:
+
+100%
+
+Assessment status:
+
+COMPLETE
+
+Assessment artifact release gate:
+
+PASS
+
+Production software release gate:
+
+BLOCKED
+
+Outstanding production-grade assurance requirements:
+
+1. vulnerability-database-backed dependency and image scanning;
+2. standards-compliant complete SBOM generation and validation;
+3. production artifact signing and attestation using an approved trust chain;
+4. contextual triage and disposition of review candidates.
+
+PHASE_16_COMPLETE
+
+<!-- PHASE16_BATCH_C_END -->

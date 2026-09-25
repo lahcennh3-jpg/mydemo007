@@ -1,0 +1,15 @@
+docs/security/evidence/phase16-action-16.10-sbom-lite.tsv: OK
+docs/security/evidence/phase16-action-16.10-sbom-validation.txt: OK
+docs/security/evidence/phase16-action-16.11-attestation-signature.b64: OK
+docs/security/evidence/phase16-action-16.11-attested-subjects.sha256: OK
+docs/security/evidence/phase16-action-16.11-demo-public-key.pem: OK
+docs/security/evidence/phase16-action-16.11-local-attestation.txt: OK
+docs/security/evidence/phase16-action-16.11-signature-verification.txt: OK
+docs/security/evidence/phase16-action-16.12-build-provenance.txt: OK
+docs/security/evidence/phase16-action-16.12-input-integrity-reverification.txt: OK
+docs/security/evidence/phase16-action-16.7-dependency-security-analysis.txt: OK
+docs/security/evidence/phase16-action-16.7-license-metadata.txt: OK
+docs/security/evidence/phase16-action-16.8-container-security.txt: OK
+docs/security/evidence/phase16-action-16.8-local-image-inventory.txt: OK
+docs/security/evidence/phase16-action-16.9-iac-configuration-security.txt: OK
+docs/security/evidence/phase16-batch-b-tool-availability.txt: OK

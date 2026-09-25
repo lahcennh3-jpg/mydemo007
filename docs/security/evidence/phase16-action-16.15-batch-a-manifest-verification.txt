@@ -1,0 +1,8 @@
+docs/security/evidence/phase16-action-16.1-immutable-handoff.txt: OK
+docs/security/evidence/phase16-action-16.2-sdlc-change-control-inventory.txt: OK
+docs/security/evidence/phase16-action-16.3-dependency-lock-inventory.txt: OK
+docs/security/evidence/phase16-action-16.4-redacted-secret-scan.txt: OK
+docs/security/evidence/phase16-action-16.5-static-analysis-baseline.txt: OK
+docs/security/evidence/phase16-action-16.6-ci-container-config-inventory.txt: OK
+docs/security/evidence/phase16-action-16.6-supply-chain-integrity.sha256: OK
+docs/security/evidence/phase16-security-tool-availability.txt: OK
