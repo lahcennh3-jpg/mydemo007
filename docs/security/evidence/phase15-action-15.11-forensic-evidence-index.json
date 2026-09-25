@@ -1,0 +1,43 @@
+{
+  "alert_count": 6,
+  "artifacts": [
+    {
+      "path": "docs/security/fixtures/phase15-synthetic-incident-events-v1.jsonl",
+      "sha256": "9dc99bfdcb655e2f4402248c685d60c9804ac6ab9bb4d1a922a7b7d03c09ff95"
+    },
+    {
+      "path": "docs/security/evidence/phase15-action-15.10-incident-alerts.jsonl",
+      "sha256": "3b66be49b9f16ec9ef397d0b8bb06682a4470e038ed62c1c795a31421ba6de44"
+    },
+    {
+      "path": "docs/security/fixtures/phase15-security-event-correlation-model-v1.json",
+      "sha256": "49798d678393b911bb15f981f47517687f1bfad721646938430a42cd186cde95"
+    },
+    {
+      "path": "docs/security/fixtures/phase15-detection-requirements-v1.json",
+      "sha256": "0cff21eee1bed035ae1f04ebbbf44288b348f46257445f0d3f42d363e0d7d542"
+    },
+    {
+      "path": "docs/security/fixtures/phase15-detection-policy-v1.json",
+      "sha256": "221844ee9f1ada6dc0264988a6b332e51a9e6e8b733ba5e5b1a7aff23f11a2e3"
+    },
+    {
+      "path": "docs/security/fixtures/phase15-local-detection-engine.py",
+      "sha256": "630f57e7b0a1b6378ad80c35f2756f5804e15eb78d1dd05799068493935ae5ce"
+    }
+  ],
+  "detection_ids": [
+    "D15-001",
+    "D15-003",
+    "D15-004",
+    "D15-005",
+    "D15-007",
+    "D15-009"
+  ],
+  "event_count": 7,
+  "evidence_integrity_algorithm": "sha256",
+  "incident_id": "INC-P15-001",
+  "production_evidence": false,
+  "raw_sensitive_content_preserved": false,
+  "synthetic": true
+}

@@ -291,3 +291,153 @@ Cumulative Phase 15 progress:
 Next:
 
 **Accelerated Batch C — Actions 15.10–15.15**
+
+## Action 15.10 — Synthetic security incident exercise
+
+Synthetic incident:
+
+`INC-P15-001`
+
+The incident contains seven security-relevant events and produced six
+deterministic alerts.
+
+No production system or external destination was contacted.
+
+Evidence:
+
+`docs/security/fixtures/phase15-synthetic-incident-events-v1.jsonl`
+
+`docs/security/evidence/phase15-action-15.10-incident-alerts.jsonl`
+
+**Action 15.10 status: COMPLETE.**
+
+## Action 15.11 — Triage, timeline, scope and forensic evidence
+
+The synthetic incident was reconstructed and scoped using normalized events,
+trace identifiers, tenant identifiers and generated alerts.
+
+Validated:
+
+- expected detections: 6 / 6;
+- cross-event correlation: PASS;
+- sensitive-log check: PASS;
+- SHA-256 forensic evidence indexing: PASS;
+- timeline reconstruction: PASS.
+
+Evidence:
+
+`docs/security/evidence/phase15-action-15.11-incident-timeline.md`
+
+`docs/security/evidence/phase15-action-15.11-investigation-report.md`
+
+`docs/security/evidence/phase15-action-15.11-forensic-evidence-index.json`
+
+**Action 15.11 status: COMPLETE.**
+
+## Action 15.12 — Containment, eradication and recovery
+
+A security-response runbook was produced covering:
+
+- evidence preservation;
+- identity containment;
+- tenant authorization containment;
+- agent/tool/MCP containment;
+- retrieval containment;
+- configuration rollback;
+- eradication criteria;
+- recovery criteria;
+- rollback triggers.
+
+No real containment action was executed.
+
+Runbook:
+
+`docs/security/evidence/phase15-action-15.12-containment-eradication-recovery-runbook.md`
+
+**Action 15.12 status: COMPLETE.**
+
+## Action 15.13 — Notification decision and lessons learned
+
+The synthetic exercise notification decision was documented.
+
+Because no real users, credentials, customer data or production systems were
+affected, external incident notification is not applicable to this synthetic
+exercise.
+
+Real-world legal and contractual notification decisions remain outside the
+exercise and require appropriate organizational review.
+
+Evidence:
+
+`docs/security/evidence/phase15-action-15.13-notification-decision.md`
+
+`docs/security/evidence/phase15-action-15.13-lessons-learned.md`
+
+**Action 15.13 status: COMPLETE.**
+
+## Action 15.14 — Preventive regression and incident-response gate
+
+The complete synthetic incident was replayed through the local detection
+engine.
+
+Expected incident detections:
+
+- D15-001;
+- D15-003;
+- D15-004;
+- D15-005;
+- D15-007;
+- D15-009.
+
+Result:
+
+**6 / 6 PASS**
+
+Incident-response gate:
+
+`PHASE15_INCIDENT_RESPONSE_GATE_PASS`
+
+Evidence:
+
+`docs/security/evidence/phase15-action-15.14-preventive-regression.txt`
+
+`docs/security/evidence/phase15-action-15.14-final-ir-gate.txt`
+
+**Action 15.14 status: COMPLETE.**
+
+## Action 15.15 — Evidence, residual risk and phase closeout
+
+Tooling status and deployment limitations were documented explicitly.
+
+The phase verifies the local synthetic security-observability, detection,
+forensics and incident-response workflow.
+
+It does not claim production detection or incident-response assurance.
+
+Closeout:
+
+`docs/security/evidence/phase15-final-closeout.md`
+
+Tool status:
+
+`docs/security/evidence/phase15-action-15.15-tooling-status.md`
+
+Final classification:
+
+`PHASE_15_COMPLETE_WITH_DOCUMENTED_RESIDUAL_RISKS`
+
+**Action 15.15 status: COMPLETE.**
+
+## Phase 15 final status
+
+Actions complete:
+
+**15 / 15**
+
+Progress:
+
+**100%**
+
+Result:
+
+`PHASE_15_COMPLETE_WITH_DOCUMENTED_RESIDUAL_RISKS`
