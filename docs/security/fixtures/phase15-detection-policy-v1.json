@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "phase": 15,
+
+  "resource_thresholds": {
+    "token_count": 8192,
+    "tool_call_count": 20,
+    "recursion_depth": 8,
+    "concurrency": 10,
+    "cost_units": 500
+  },
+
+  "prompt_security_classifications": [
+    "suspected_injection",
+    "confirmed_injection"
+  ],
+
+  "approved_values": {
+    "provenance_status": [
+      "verified"
+    ],
+    "approval_status": [
+      "approved"
+    ],
+    "allowlist_decision": [
+      "allow"
+    ]
+  },
+
+  "release_requirements": {
+    "expected_alert_match_rate_min": 1.0,
+    "precision_min": 1.0,
+    "recall_min": 1.0,
+    "benign_alert_events_max": 0,
+    "negative_fixture_alerts_max": 0,
+    "cross_event_correlation_required": true,
+    "missing_required_field_rejection_required": true,
+    "sensitive_key_rejection_required": true
+  },
+
+  "interpretation": {
+    "scope": "synthetic deterministic security fixtures",
+    "production_effectiveness_claim": false
+  }
+}

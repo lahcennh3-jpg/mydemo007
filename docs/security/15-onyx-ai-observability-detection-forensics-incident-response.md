@@ -192,3 +192,102 @@ Phase progress:
 Next:
 
 **Accelerated Batch B — Actions 15.5–15.9**
+
+## Action 15.5 — Deterministic local detection engine
+
+A local detection engine was implemented for all nine Phase 15 detection
+requirements.
+
+Evidence:
+
+`docs/security/evidence/phase15-batch-b-alerts.jsonl`
+
+Policy:
+
+`docs/security/fixtures/phase15-detection-policy-v1.json`
+
+Engine:
+
+`docs/security/fixtures/phase15-local-detection-engine.py`
+
+**Action 15.5 status: COMPLETE.**
+
+## Action 15.6 — Cross-event security correlation
+
+Prompt-security and tool-call events were correlated by trace identifier.
+
+The test verifies a prompt-injection security signal can be connected to a
+later tool invocation without storing raw prompt text.
+
+Evidence:
+
+`docs/security/evidence/phase15-batch-b-cross-event-alerts.jsonl`
+
+**Action 15.6 status: COMPLETE.**
+
+## Action 15.7 — Detection quality evaluation
+
+Synthetic deterministic evaluation produced:
+
+- expected alerts: 9;
+- observed alerts: 9;
+- true positives: 9;
+- false positives: 0;
+- false negatives: 0;
+- true negatives: 3;
+- precision: 1.0;
+- recall: 1.0.
+
+These values apply only to the controlled synthetic test corpus.
+
+Production detection effectiveness remains unmeasured.
+
+Metrics:
+
+`docs/security/evidence/phase15-batch-b-detection-metrics.json`
+
+**Action 15.7 status: COMPLETE.**
+
+## Action 15.8 — Telemetry-gap and sensitive-log negative testing
+
+Validated:
+
+- benign events generate zero alerts;
+- missing required telemetry fields are rejected;
+- prohibited sensitive event keys are rejected;
+- alerts do not contain prohibited log fields.
+
+Evidence:
+
+`docs/security/evidence/phase15-batch-b-detection-results.txt`
+
+**Action 15.8 status: COMPLETE.**
+
+## Action 15.9 — Deterministic detection regression gate
+
+The Batch B release gate requires all deterministic detection, correlation,
+negative-test and sensitive-log controls to pass.
+
+Result:
+
+`PHASE15_BATCH_B_RELEASE_GATE_PASS`
+
+Evidence:
+
+`docs/security/evidence/phase15-batch-b-regression-gate.txt`
+
+**Action 15.9 status: COMPLETE.**
+
+## Batch B status
+
+Actions complete:
+
+**15.5–15.9**
+
+Cumulative Phase 15 progress:
+
+**9 / 15**
+
+Next:
+
+**Accelerated Batch C — Actions 15.10–15.15**

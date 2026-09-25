@@ -1,0 +1,33 @@
+{
+  "alert_sensitive_key_count": 0,
+  "benign_alert_event_count": 0,
+  "benign_event_count": 3,
+  "cross_event_correlation": true,
+  "expected_alert_match_rate": 1.0,
+  "expected_security_alerts": 9,
+  "false_negatives": 0,
+  "false_positives": 0,
+  "gate_checks": {
+    "alert_sensitive_key_count": true,
+    "benign_alert_events": true,
+    "cross_event_correlation": true,
+    "expected_alert_match_rate": true,
+    "missing_required_field_rejection": true,
+    "negative_fixture_alerts": true,
+    "precision": true,
+    "recall": true,
+    "sensitive_key_rejection": true
+  },
+  "missing_required_field_rejected": true,
+  "negative_fixture_alert_count": 0,
+  "observed_security_alerts": 9,
+  "phase": 15,
+  "precision": 1.0,
+  "production_effectiveness_claim": false,
+  "recall": 1.0,
+  "scope": "synthetic deterministic detection evaluation",
+  "sensitive_key_rejected": true,
+  "source_fixture_events": 12,
+  "true_negatives": 3,
+  "true_positives": 9
+}
