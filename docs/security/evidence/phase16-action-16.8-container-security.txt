@@ -1,0 +1,67 @@
+PHASE16_ACTION=16.8
+TITLE=Container and image security
+DOCKERFILES=9
+COMPOSE_FILES=22
+STATIC_REVIEW_FINDINGS=56
+
+REVIEW file=.devcontainer/Dockerfile line=13 rule=APT_INSTALL_REVIEW
+REVIEW file=.devcontainer/Dockerfile line=58 rule=APT_INSTALL_REVIEW
+REVIEW file=.devcontainer/Dockerfile line=0 rule=NO_USER_DIRECTIVE
+REVIEW file=backend/Dockerfile line=208 rule=BASE_IMAGE_NOT_DIGEST_PINNED
+REVIEW file=backend/Dockerfile line=20 rule=APT_INSTALL_REVIEW
+REVIEW file=backend/Dockerfile line=86 rule=APT_INSTALL_REVIEW
+REVIEW file=backend/Dockerfile line=211 rule=APT_INSTALL_REVIEW
+REVIEW file=backend/Dockerfile line=0 rule=NO_USER_DIRECTIVE
+REVIEW file=backend/Dockerfile.model_server line=15 rule=BASE_IMAGE_NOT_DIGEST_PINNED
+REVIEW file=backend/Dockerfile.model_server line=59 rule=BASE_IMAGE_NOT_DIGEST_PINNED
+REVIEW file=backend/Dockerfile.model_server line=67 rule=BASE_IMAGE_NOT_DIGEST_PINNED
+REVIEW file=backend/onyx/server/features/build/sandbox/image/Dockerfile line=28 rule=BASE_IMAGE_NOT_DIGEST_PINNED
+REVIEW file=backend/onyx/server/features/build/sandbox/image/Dockerfile line=182 rule=ROOT_USER
+REVIEW file=backend/onyx/server/features/build/sandbox/image/Dockerfile line=31 rule=APT_INSTALL_REVIEW
+REVIEW file=backend/onyx/server/features/build/sandbox/image/Dockerfile line=58 rule=APT_INSTALL_REVIEW
+REVIEW file=backend/onyx/server/features/build/sandbox/image/Dockerfile line=75 rule=APT_INSTALL_REVIEW
+REVIEW file=backend/onyx/server/features/build/sandbox/image/Dockerfile line=100 rule=APT_INSTALL_REVIEW
+REVIEW file=backend/tests/integration/mock_services/mock_connector_server/Dockerfile line=0 rule=NO_USER_DIRECTIVE
+REVIEW file=cli/Dockerfile line=14 rule=BASE_IMAGE_NOT_DIGEST_PINNED
+REVIEW file=tools/loadtest/Dockerfile line=6 rule=BASE_IMAGE_NOT_DIGEST_PINNED
+REVIEW file=tools/loadtest/Dockerfile line=0 rule=NO_USER_DIRECTIVE
+REVIEW file=tools/loadtest/mock_llm/Dockerfile line=0 rule=NO_USER_DIRECTIVE
+REVIEW file=web/Dockerfile line=19 rule=BASE_IMAGE_NOT_DIGEST_PINNED
+REVIEW file=web/Dockerfile line=110 rule=BASE_IMAGE_NOT_DIGEST_PINNED
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.craft.yml line=5 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.craft.yml line=21 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.craft.yml line=29 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.craft.yml line=53 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.craft.yml line=58 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.craft.yml line=79 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.craft.yml line=91 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.prod.yml line=524 rule=PRIVILEGED_CONTAINER
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.prod.yml line=521 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.prod.yml line=519 rule=COMPOSE_ROOT_USER
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.yml line=580 rule=PRIVILEGED_CONTAINER
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.yml line=577 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.yml line=575 rule=COMPOSE_ROOT_USER
+REVIEW file=deployment/docker_compose/docker-compose.craft.yml line=5 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=deployment/docker_compose/docker-compose.craft.yml line=21 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=deployment/docker_compose/docker-compose.craft.yml line=29 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=deployment/docker_compose/docker-compose.craft.yml line=53 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=deployment/docker_compose/docker-compose.craft.yml line=58 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=deployment/docker_compose/docker-compose.craft.yml line=79 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=deployment/docker_compose/docker-compose.craft.yml line=91 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=deployment/docker_compose/docker-compose.prod-no-letsencrypt.yml line=509 rule=PRIVILEGED_CONTAINER
+REVIEW file=deployment/docker_compose/docker-compose.prod-no-letsencrypt.yml line=506 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=deployment/docker_compose/docker-compose.prod-no-letsencrypt.yml line=504 rule=COMPOSE_ROOT_USER
+REVIEW file=deployment/docker_compose/docker-compose.prod.yml line=524 rule=PRIVILEGED_CONTAINER
+REVIEW file=deployment/docker_compose/docker-compose.prod.yml line=521 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=deployment/docker_compose/docker-compose.prod.yml line=519 rule=COMPOSE_ROOT_USER
+REVIEW file=deployment/docker_compose/docker-compose.template.yml line=693 rule=PRIVILEGED_CONTAINER
+REVIEW file=deployment/docker_compose/docker-compose.template.yml line=690 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=deployment/docker_compose/docker-compose.template.yml line=688 rule=COMPOSE_ROOT_USER
+REVIEW file=deployment/docker_compose/docker-compose.yml line=580 rule=PRIVILEGED_CONTAINER
+REVIEW file=deployment/docker_compose/docker-compose.yml line=577 rule=DOCKER_SOCKET_MOUNT
+REVIEW file=deployment/docker_compose/docker-compose.yml line=575 rule=COMPOSE_ROOT_USER
+
+IMAGE_CVE_SCAN=NOT_EXECUTED
+REMOTE_IMAGE_PULL_PERFORMED=NO
+NOTE=Review candidates are not automatically vulnerabilities.
+RESULT=PASS_WITH_REVIEW

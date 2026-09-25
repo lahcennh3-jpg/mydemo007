@@ -1,0 +1,25 @@
+PHASE16_ACTION=16.7
+
+[LICENSE_FILES]
+.cursor/skills/greptile/LICENSE
+LICENSE
+backend/ee/LICENSE
+backend/ee/onyx/db/license.py
+backend/ee/onyx/utils/license.py
+backend/onyx/utils/jsonriver/LICENSE
+cli/internal/markdown/lexers/LICENSE
+extensions/chrome/LICENSE
+terraform-provider-onyx/LICENSE
+web/lib/opal/NOTICE.md
+web/src/app/ee/LICENSE
+web/src/ee/LICENSE
+
+[MANIFEST_LICENSE_METADATA]
+cli/pyproject.toml:16:    "License :: OSI Approved :: MIT License",
+desktop/src-tauri/Cargo.toml:7:license = "MIT"
+tools/ods-audit/pyproject.toml:16:    "License :: OSI Approved :: MIT License",
+tools/ods/pyproject.toml:16:    "License :: OSI Approved :: MIT License",
+web/lib/opal/package.json:6:  "license": "MIT",
+web/lib/shared/package.json:5:  "license": "MIT",
+
+TRANSITIVE_LICENSE_SCAN=NOT_CLAIMED

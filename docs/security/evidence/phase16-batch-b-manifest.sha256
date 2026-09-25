@@ -1,0 +1,15 @@
+b94f0b640f00e8e5c9b0c336cb412d15855f37a9e4037be3019b15741adc328d  docs/security/evidence/phase16-action-16.10-sbom-lite.tsv
+615d2db90bb9117bc6f56107345ef14208aed82ef052196e80915cd9d8c0f4cb  docs/security/evidence/phase16-action-16.10-sbom-validation.txt
+8699df426ecea9054f417ee1228036ed6da2f6ef5e5b1647be682fa0084f219b  docs/security/evidence/phase16-action-16.11-attestation-signature.b64
+bd737642323607f880949a5092819e4c926fa038bee4a4a48ddf0322df8f3e20  docs/security/evidence/phase16-action-16.11-attested-subjects.sha256
+94bf389cda50cd2ce8f48a3d743b1b3ce92d700e8c4a648d13ee91fc85fd154d  docs/security/evidence/phase16-action-16.11-demo-public-key.pem
+6db5e03c2e0b70821543ec0c42696827a1328d46300399c6161050c8ea12eebf  docs/security/evidence/phase16-action-16.11-local-attestation.txt
+80a53f76c7ed6969dade3b6ee47cdb753162db7c00be625448999d08bae77ed8  docs/security/evidence/phase16-action-16.11-signature-verification.txt
+e9018352693eca81ae0e48f58e8a68ccf41b9bc5f5190fb6c1c3d6db486401b9  docs/security/evidence/phase16-action-16.12-build-provenance.txt
+5ad73fca7bda9cf60b5122e78fe3bd8a3807d255e6276061ac3280547e6c8fe0  docs/security/evidence/phase16-action-16.12-input-integrity-reverification.txt
+3c218b61418e2b8731a8927f2571636f03032b4a4dc5115841105831ea0079b8  docs/security/evidence/phase16-action-16.7-dependency-security-analysis.txt
+5793456eefff18581373ebbe5204122a6e7cb6eb384347f142e7406c9ffa948f  docs/security/evidence/phase16-action-16.7-license-metadata.txt
+fac461a05a40e499322ed2b90388d0a164a1ea059841868f2d65ae72f1860fc6  docs/security/evidence/phase16-action-16.8-container-security.txt
+d1ed569bba3d2ffb83ac304c48fc2ef790a2b11689a054a8d94c41ba1a39b533  docs/security/evidence/phase16-action-16.8-local-image-inventory.txt
+4b960b792e1ff477d8e82cc70b065144fde977443a8f685bff8ca7bbaa75a818  docs/security/evidence/phase16-action-16.9-iac-configuration-security.txt
+a68140ef517181dca67e3ba718f94e532e6af573ff2b2ca5feddba2d43502a1e  docs/security/evidence/phase16-batch-b-tool-availability.txt

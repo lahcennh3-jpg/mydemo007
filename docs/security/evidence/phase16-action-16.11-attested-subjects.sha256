@@ -1,0 +1,5 @@
+3c218b61418e2b8731a8927f2571636f03032b4a4dc5115841105831ea0079b8  docs/security/evidence/phase16-action-16.7-dependency-security-analysis.txt
+fac461a05a40e499322ed2b90388d0a164a1ea059841868f2d65ae72f1860fc6  docs/security/evidence/phase16-action-16.8-container-security.txt
+4b960b792e1ff477d8e82cc70b065144fde977443a8f685bff8ca7bbaa75a818  docs/security/evidence/phase16-action-16.9-iac-configuration-security.txt
+b94f0b640f00e8e5c9b0c336cb412d15855f37a9e4037be3019b15741adc328d  docs/security/evidence/phase16-action-16.10-sbom-lite.tsv
+615d2db90bb9117bc6f56107345ef14208aed82ef052196e80915cd9d8c0f4cb  docs/security/evidence/phase16-action-16.10-sbom-validation.txt

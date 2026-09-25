@@ -1,0 +1,46 @@
+PHASE16_ACTION=16.9
+TITLE=Infrastructure and configuration security
+IAC_FILES=189
+REVIEW_FINDINGS=37
+
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/onyx_efs_template.yaml line=101 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_backend_api_server_service_template.yaml line=80 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_backend_api_server_service_template.yaml line=84 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_backend_background_server_service_template.yaml line=80 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_backend_background_server_service_template.yaml line=84 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_model_server_indexing_service_template.yaml line=80 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_model_server_indexing_service_template.yaml line=84 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_model_server_inference_service_template.yaml line=80 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_model_server_inference_service_template.yaml line=84 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_nginx_service_template.yaml line=210 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_nginx_service_template.yaml line=214 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_postgres_service_template.yaml line=80 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_postgres_service_template.yaml line=84 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_redis_service_template.yaml line=80 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_redis_service_template.yaml line=84 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_vespaengine_service_template.yaml line=80 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_vespaengine_service_template.yaml line=88 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_vespaengine_service_template.yaml line=84 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_vespaengine_service_template.yaml line=92 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_web_server_service_template.yaml line=80 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/aws_ecs_fargate/cloudformation/services/onyx_web_server_service_template.yaml line=84 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/helm/charts/onyx-cnpg-crds/crds/cnpg-crds.yaml line=4014 rule=LOAD_BALANCER_EXPOSURE_REVIEW
+REVIEW file=deployment/helm/charts/onyx-cnpg-crds/crds/cnpg-crds.yaml line=8188 rule=LOAD_BALANCER_EXPOSURE_REVIEW
+REVIEW file=deployment/helm/charts/onyx/templates/sandbox-podtemplate.yaml line=84 rule=RUN_AS_NON_ROOT_FALSE
+REVIEW file=deployment/helm/charts/onyx/templates/sandbox-proxy/networkpolicy-egress.yaml line=13 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/helm/charts/onyx/templates/sandbox-proxy/networkpolicy-egress.yaml line=37 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/helm/charts/onyx/templates/sandbox-proxy/networkpolicy-egress.yaml line=43 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/helm/charts/onyx/values.yaml line=1748 rule=PUBLIC_IPV6_CIDR
+REVIEW file=deployment/helm/charts/onyx/values.yaml line=243 rule=RUN_AS_NON_ROOT_FALSE
+REVIEW file=deployment/helm/charts/onyx/values.yaml line=321 rule=RUN_AS_NON_ROOT_FALSE
+REVIEW file=deployment/helm/charts/onyx/values.yaml line=436 rule=LOAD_BALANCER_EXPOSURE_REVIEW
+REVIEW file=deployment/terraform/modules/aws/onyx/variables.tf line=34 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/terraform/modules/aws/opensearch/main.tf line=20 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/terraform/modules/aws/postgres/main.tf line=44 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/terraform/modules/aws/redis/main.tf line=29 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/terraform/modules/azure/waf/main.tf line=146 rule=PUBLIC_IPV4_CIDR
+REVIEW file=deployment/terraform/modules/azure/waf/main.tf line=146 rule=PUBLIC_IPV6_CIDR
+
+CHECKOV_EXECUTED=NO
+NOTE=Review candidates require contextual triage.
+RESULT=PASS_WITH_REVIEW
