@@ -1,0 +1,17 @@
+id,domain,scenario,bound,expected_security_property,status
+P13-01,request-abuse,Repeated bounded API requests,100 requests,Reject or safely absorb excess work,PLANNED
+P13-02,concurrency,Concurrent synthetic API activity,10 concurrent,Concurrency remains bounded,PLANNED
+P13-03,authentication-abuse,Repeated invalid synthetic authentication,100 attempts,No authenticated state or uncontrolled work,PLANNED
+P13-04,chat-cost,Repeated local-mock generation,local mock only,No paid-provider spend or unbounded generation,PLANNED
+P13-05,token-amplification,Synthetic long-context request,bounded synthetic payload,Context processing fails safely at limits,PLANNED
+P13-06,rag-amplification,Repeated synthetic retrieval,100 requests,Retrieval remains bounded and authorized,PLANNED
+P13-07,file-processing,Synthetic file workload,1 MiB maximum,Processing remains bounded,PLANNED
+P13-08,queue-growth,Repeated task enqueue,100 tasks,Queue growth remains bounded or backpressured,PLANNED
+P13-09,duplicate-work,Equivalent repeated work,100 submissions,Duplicate amplification is prevented or bounded,PLANNED
+P13-10,retry-amplification,Controlled failing operation,60 seconds,Retries remain finite and/or use backoff,PLANNED
+P13-11,connector-amplification,Synthetic local connector activity,no external connector,Connector work remains bounded,PLANNED
+P13-12,agent-fanout,Synthetic agent tool fan-out,local mock tools only,Tool invocation depth/count remain bounded,PLANNED
+P13-13,mcp-fanout,Synthetic MCP fan-out,local mock MCP only,MCP calls remain resource and policy bounded,PLANNED
+P13-14,availability,Bounded resource-pressure condition,60 seconds,Service remains observable and fails safely,PLANNED
+P13-15,cancellation,Cancel bounded long-running work,60 seconds,Cancelled work does not leave orphan amplification,PLANNED
+P13-16,economic-security,Combined synthetic amplification chain,no paid APIs,No uncontrolled spend or unbounded local amplification,PLANNED
