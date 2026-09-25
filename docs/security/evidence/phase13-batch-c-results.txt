@@ -1,0 +1,63 @@
+PHASE13_BATCH_C_FINAL_RESULTS
+PARENT=3bd0819d94ad5860fe7f6cadbd9b6f47e8014b3a
+PHASE11_ANCESTOR=7dc4350614b432edfc0d871e202704b3cf2d4c70
+DEPENDENCY_IMAGE=phase12-onyx-test:8752b6f
+TESTED_SOURCE=CURRENT_PHASE13_WORKTREE
+NETWORK_MODE=none
+
+=== PHASE 11 AGENT RUNTIME ===
+[94mNOTICE[0m:   09/25/2026 12:42:31 PM      variable_functionality.py   66: License enforcement is enabled (LICENSE_ENFORCEMENT_ENABLED). Enterprise Edition code is loaded, but paid features stay locked until a valid license is applied. Without a license this deployment behaves as Community Edition.
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.007s
+
+OK
+
+=== PHASE 13 BATCH B REGRESSION ===
+test_13_5_finite_controls (__main__.Phase13BatchB.test_13_5_finite_controls) ... ok
+test_13_6_duplicate_work (__main__.Phase13BatchB.test_13_6_duplicate_work) ... ok
+test_13_7_queue_backpressure (__main__.Phase13BatchB.test_13_7_queue_backpressure) ... ok
+test_13_8_publish_failure_rollback (__main__.Phase13BatchB.test_13_8_publish_failure_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK
+
+=== PHASE 13 BATCH C ===
+test_13_11_watchdog_and_timeout_bounds (__main__.Phase13BatchC.test_13_11_watchdog_and_timeout_bounds) ... ok
+test_13_12_bounded_100_task_10_worker_harness (__main__.Phase13BatchC.test_13_12_bounded_100_task_10_worker_harness) ... ok
+test_13_13_backpressure_is_observable (__main__.Phase13BatchC.test_13_13_backpressure_is_observable) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.034s
+
+OK
+
+PHASE11_RUNTIME_TESTS=3/3
+PHASE13_BATCH_B_TESTS=4/4
+PHASE13_BATCH_C_TESTS=3/3
+TOTAL_REGRESSION_TESTS=10/10
+
+BOUNDED_TASKS=100
+MAX_CONCURRENCY=10
+WAF_LOGGING_DEFAULT=true
+APP_RATE_CONTROL_SOURCE_HITS=747
+TOKEN_CONTEXT_BOUND_SOURCE_HITS=291
+FILE_BOUND_SOURCE_HITS=241
+RETRY_BACKOFF_SOURCE_HITS=1171
+
+REAL_DATA_OR_CREDENTIALS=0
+PRODUCTION_TARGETS=0
+PAID_EXTERNAL_AI_API_CALLS=0
+EXTERNAL_CONTAINER_NETWORK=DISABLED
+DESTRUCTIVE_DOS_TESTING=0
+
+ACTION_13_10=COMPLETE
+ACTION_13_11=COMPLETE
+ACTION_13_12=COMPLETE
+ACTION_13_13=COMPLETE
+ACTION_13_14=COMPLETE
+ACTION_13_15=COMPLETE_PENDING_COMMIT
+
+RESULT=PHASE_13_BATCH_C_PRECOMMIT_PASS
