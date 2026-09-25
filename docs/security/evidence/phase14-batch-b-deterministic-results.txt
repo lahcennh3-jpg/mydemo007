@@ -1,0 +1,195 @@
+PHASE14_BATCH_B_DETERMINISTIC_RESULTS
+=====================================
+
+BRANCH=security/phase-14-continuous-llm-rag-agent-mcp-red-team
+START_HEAD=2c9ecd343299564b4c6ba3543c34bcec44d31f85
+IMAGE=phase12-onyx-test:8752b6f
+NETWORK=NONE
+
+
+======================================================================
+ACTION=14.5
+RUN=tests/unit/onyx/prompts/test_retrieved_content_security_boundary.py
+======================================================================
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+SUITE_TEST_COUNT=5
+SUITE_RESULT=PASS:tests/unit/onyx/prompts/test_retrieved_content_security_boundary.py
+
+======================================================================
+ACTION=14.5
+RUN=tests/unit/onyx/chat/test_rag_poisoning_provenance.py
+======================================================================
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+SUITE_TEST_COUNT=4
+SUITE_RESULT=PASS:tests/unit/onyx/chat/test_rag_poisoning_provenance.py
+
+======================================================================
+ACTION=14.6
+RUN=tests/unit/onyx/privacy/test_phase12_cross_user_privacy_negative.py
+======================================================================
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.249s
+
+OK
+SUITE_TEST_COUNT=5
+SUITE_RESULT=PASS:tests/unit/onyx/privacy/test_phase12_cross_user_privacy_negative.py
+
+======================================================================
+ACTION=14.6
+RUN=tests/unit/onyx/privacy/test_phase12_retention_deletion.py
+======================================================================
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+SUITE_TEST_COUNT=5
+SUITE_RESULT=PASS:tests/unit/onyx/privacy/test_phase12_retention_deletion.py
+
+======================================================================
+ACTION=14.6
+RUN=tests/unit/onyx/privacy/test_phase12_dlp_redaction_export.py
+======================================================================
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+SUITE_TEST_COUNT=5
+SUITE_RESULT=PASS:tests/unit/onyx/privacy/test_phase12_dlp_redaction_export.py
+
+======================================================================
+ACTION=14.7
+RUN=tests/unit/onyx/tools/test_phase11_tool_authority_boundaries.py
+======================================================================
+..[93mWARNING[0m:  09/25/2026 04:29:14 PM                 tool_runner.py  329: Tool invented_admin_tool not found in tools list
+..
+----------------------------------------------------------------------
+Ran 4 tests in 0.005s
+
+OK
+SUITE_TEST_COUNT=4
+SUITE_RESULT=PASS:tests/unit/onyx/tools/test_phase11_tool_authority_boundaries.py
+
+======================================================================
+ACTION=14.7
+RUN=tests/unit/onyx/server/features/mcp/test_phase11_mcp_security_boundaries.py
+======================================================================
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+OK
+SUITE_TEST_COUNT=6
+SUITE_RESULT=PASS:tests/unit/onyx/server/features/mcp/test_phase11_mcp_security_boundaries.py
+
+======================================================================
+ACTION=14.7
+RUN=tests/unit/onyx/external_apps/test_phase11_action_approval_boundaries.py
+======================================================================
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK
+SUITE_TEST_COUNT=5
+SUITE_RESULT=PASS:tests/unit/onyx/external_apps/test_phase11_action_approval_boundaries.py
+
+======================================================================
+ACTION=14.7
+RUN=tests/unit/onyx/chat/test_phase11_tool_result_security_boundary.py
+======================================================================
+[94mNOTICE[0m:   09/25/2026 04:29:25 PM      variable_functionality.py   66: License enforcement is enabled (LICENSE_ENFORCEMENT_ENABLED). Enterprise Edition code is loaded, but paid features stay locked until a valid license is applied. Without a license this deployment behaves as Community Edition.
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+SUITE_TEST_COUNT=3
+SUITE_RESULT=PASS:tests/unit/onyx/chat/test_phase11_tool_result_security_boundary.py
+
+======================================================================
+ACTION=14.7
+RUN=tests/unit/onyx/server/features/tool/test_phase11_credential_delegation.py
+======================================================================
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+SUITE_TEST_COUNT=5
+SUITE_RESULT=PASS:tests/unit/onyx/server/features/tool/test_phase11_credential_delegation.py
+
+======================================================================
+ACTION=14.8
+RUN=tests/unit/onyx/chat/test_phase11_agent_resource_bounds.py
+======================================================================
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.011s
+
+OK
+SUITE_TEST_COUNT=3
+SUITE_RESULT=PASS:tests/unit/onyx/chat/test_phase11_agent_resource_bounds.py
+
+======================================================================
+ACTION=14.8
+RUN=tests/unit/onyx/abuse/test_phase13_batch_b.py
+======================================================================
+test_13_5_finite_controls (__main__.Phase13BatchB.test_13_5_finite_controls) ... ok
+test_13_6_duplicate_work (__main__.Phase13BatchB.test_13_6_duplicate_work) ... ok
+test_13_7_queue_backpressure (__main__.Phase13BatchB.test_13_7_queue_backpressure) ... ok
+test_13_8_publish_failure_rollback (__main__.Phase13BatchB.test_13_8_publish_failure_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK
+SUITE_TEST_COUNT=4
+SUITE_RESULT=PASS:tests/unit/onyx/abuse/test_phase13_batch_b.py
+
+======================================================================
+ACTION=14.8
+RUN=tests/unit/onyx/abuse/test_phase13_batch_c.py
+======================================================================
+test_13_11_watchdog_and_timeout_bounds (__main__.Phase13BatchC.test_13_11_watchdog_and_timeout_bounds) ... ok
+test_13_12_bounded_100_task_10_worker_harness (__main__.Phase13BatchC.test_13_12_bounded_100_task_10_worker_harness) ... ok
+test_13_13_backpressure_is_observable (__main__.Phase13BatchC.test_13_13_backpressure_is_observable) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.030s
+
+OK
+SUITE_TEST_COUNT=3
+SUITE_RESULT=PASS:tests/unit/onyx/abuse/test_phase13_batch_c.py
+
+======================================================================
+ACTION=14.9
+RUN=tests/unit/onyx/redteam/test_phase14_evaluator_integrity.py
+======================================================================
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+SUITE_TEST_COUNT=6
+SUITE_RESULT=PASS:tests/unit/onyx/redteam/test_phase14_evaluator_integrity.py
+
+======================================================================
+PHASE14_BATCH_B_TEST_SUMMARY
+======================================================================
+SUITE_FILES_PASSED=14/14
+PARSED_TEST_COUNT=63
+UNKNOWN_COUNT_FILES=0
+NETWORK=NONE
+MODEL_PROVIDER_CALLS=0
+RESULT=PHASE_14_BATCH_B_TEST_GATE_PASS
