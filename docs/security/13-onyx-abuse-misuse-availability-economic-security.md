@@ -73,3 +73,39 @@ A bounded 16-case synthetic attack matrix is defined.
 ## Next
 
 Actions 13.5–13.9 perform bounded functional verification.
+
+## Action 13.5 — Finite resource-control invariants
+
+Finite queue, expiry and lock controls were functionally validated.
+
+**Action 13.5 status: COMPLETE.**
+
+## Action 13.6 — Duplicate-work suppression
+
+Duplicate synthetic project-sync work was suppressed.
+
+**Action 13.6 status: COMPLETE.**
+
+## Action 13.7 — Queue-depth backpressure
+
+Backpressure stopped processing before the database path once the synthetic
+queue exceeded its configured limit.
+
+**Action 13.7 status: COMPLETE.**
+
+## Action 13.8 — Publication-failure rollback
+
+A synthetic task-publication failure removed its queued-work guard.
+
+**Action 13.8 status: COMPLETE.**
+
+## Action 13.9 — Deployment/economic controls
+
+WAF rate thresholds and deployment resource controls were verified.
+
+**Action 13.9 status: COMPLETE.**
+
+## Batch B result
+
+Targeted abuse, availability and economic-amplification controls passed
+functional verification.

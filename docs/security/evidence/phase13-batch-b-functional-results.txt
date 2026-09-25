@@ -1,0 +1,23 @@
+PHASE13_BATCH_B_FUNCTIONAL_RESULTS
+PARENT=da978f9e82c94ded911b50f22ad6c778e5596e4e
+DEPENDENCY_IMAGE=phase12-onyx-test:8752b6f
+TESTED_SOURCE=CURRENT_PHASE13_WORKTREE
+NETWORK_MODE=none
+
+test_13_5_finite_controls (__main__.Phase13BatchB.test_13_5_finite_controls) ... ok
+test_13_6_duplicate_work (__main__.Phase13BatchB.test_13_6_duplicate_work) ... ok
+test_13_7_queue_backpressure (__main__.Phase13BatchB.test_13_7_queue_backpressure) ... ok
+test_13_8_publish_failure_rollback (__main__.Phase13BatchB.test_13_8_publish_failure_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK
+
+FUNCTIONAL_TESTS=4/4
+WAF_GENERAL=2000
+WAF_API=1000
+HELM_LIMITS=20
+HELM_REQUESTS=21
+PAID_EXTERNAL_API_CALLS=0
+RESULT=PHASE_13_BATCH_B_PASS
