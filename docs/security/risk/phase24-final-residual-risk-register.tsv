@@ -1,0 +1,13 @@
+risk_id	risk	status	owner	deadline	next_gate	compensating_control	release_effect
+R24-001	Cross-tenant runtime isolation not executed	OPEN	PROJECT_OWNER	2026-10-31	SECOND_TENANT_RUNTIME_GATE	Single-tenant claim boundary; no cross-tenant assurance claim	WITHHOLD_TENANT_ISOLATION_CLAIM
+R24-002	RAG authorization and revocation runtime not executed	OPEN	PROJECT_OWNER	2026-10-31	CONTROLLED_RAG_RUNTIME_GATE	Model/RAG runtime disabled; claim withheld	WITHHOLD_RAG_AUTHZ_CLAIM
+R24-003	Retrieval poisoning runtime not executed	OPEN	PROJECT_OWNER	2026-10-31	CONTROLLED_RAG_POISONING_GATE	Retrieval/model-dependent claim withheld	WITHHOLD_RETRIEVAL_POISONING_CLAIM
+R24-004	Prompt-injection runtime not executed	OPEN	PROJECT_OWNER	2026-10-31	CONTROLLED_MODEL_RUNTIME_GATE	Tool authority tested independently; injection-resilience claim withheld	WITHHOLD_PROMPT_INJECTION_CLAIM
+R24-005	Model/provider behavior runtime not executed	OPEN	PROJECT_OWNER	2026-10-31	CONTROLLED_MODEL_PROVIDER_GATE	Model/provider claim withheld	WITHHOLD_MODEL_PROVIDER_CLAIM
+R24-006	Runtime source-to-image correspondence not fully established	OPEN	PROJECT_OWNER	2026-10-31	IMMUTABLE_PROVENANCE_GATE	Image identity frozen and runtime drift check passed	LIMIT_PROVENANCE_CLAIM
+R24-007	S3/MinIO path not validated in Phase 24 control-plane baseline	OPEN	PROJECT_OWNER	2026-10-31	S3_FILE_STORE_GATE	Postgres file-store mode used	LIMIT_FILE_STORE_CLAIM
+R24-008	Production operational effectiveness not validated	OPEN	PROJECT_OWNER	2026-10-31	PRODUCTION_EVIDENCE_GATE	Local/synthetic/offline evidence only	NO_PRODUCTION_EFFECTIVENESS_CLAIM
+R24-009	Upstream comparison completeness remains unestablished	OPEN	PROJECT_OWNER	2026-10-31	FUTURE_UPSTREAM_REVIEW	Pinned/local baseline retained	NO_CURRENT_UPSTREAM_EQUIVALENCE_CLAIM
+R24-010	Public portfolio publication not approved	OPEN	PROJECT_OWNER	2026-10-31	PUBLICATION_GATE	Private evidence only	PUBLICATION_NOT_APPROVED
+R24-011	Independent reproduction remains incomplete	OPEN	INDEPENDENT_VERIFIER	2026-10-31	INDEPENDENCE_GATE	Independent completion not claimed	INDEPENDENT_PROJECT_COMPLETION_NO
+R24-012	Phase 21 Action 21.17 remains blocked	OPEN	INDEPENDENT_VERIFIER	2026-10-31	INDEPENDENCE_GATE	Explicit carry-forward limitation	INDEPENDENT_PROJECT_COMPLETION_NO

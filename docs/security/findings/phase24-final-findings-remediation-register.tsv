@@ -1,0 +1,4 @@
+finding_id	type	title	severity	status	owner	deadline	sla	root_cause	remediation	retest	decision
+F24-001	OBSERVATION	BOLA delete route returned HTTP 400 for non-owner attempt	INFO	OPEN_NON_SECURITY	PROJECT_OWNER	2026-10-31	NEXT_REVIEW_WINDOW	ROUTE_ERROR_SEMANTICS_NOT_SECURITY_BYPASS	Review API error-code consistency if product quality scope permits	BOLA alternative state-change retest PASS	NO_SECURITY_REMEDIATION_REQUIRED
+F24-002	LIMITATION	Second tenant runtime fixture absent	N/A	RESIDUAL_RISK	PROJECT_OWNER	2026-10-31	BEFORE_TENANT_ISOLATION_CLAIM	CURRENT_LAB_SINGLE_TENANT	Build synthetic second-tenant fixture	EV23-003 pending	CLAIM_WITHHELD
+F24-003	LIMITATION	Controlled RAG/model runtime absent	N/A	RESIDUAL_RISK	PROJECT_OWNER	2026-10-31	BEFORE_RAG_OR_MODEL_CLAIM	MODEL_SERVER_DISABLED_IN_CONTROL_PLANE_BASELINE	Establish bounded mock/local RAG-model runtime	EV23-004_005_006_010 pending	CLAIM_WITHHELD
