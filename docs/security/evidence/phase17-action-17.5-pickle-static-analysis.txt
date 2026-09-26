@@ -1,0 +1,56 @@
+PHASE 17 — CONTROLLED PICKLE STATIC BYTE ANALYSIS
+
+artifact=docs/security/fixtures/phase17-ai-artifact-lab/quarantine/phase17-safe-synthetic-fixture.pkl
+protocol=0
+synthetic_fixture=[1,2,3]
+
+deserialization_performed=false
+pickle_runtime_used=false
+python_runtime_used=false
+node_runtime_used=false
+network_access_required=false
+
+expected_hex=286c49310a6149320a6149330a612e
+actual_hex=286c49310a6149320a6149330a612e
+exact_byte_match=true
+
+STATIC OPCODE TRACE
+
+offset=0  opcode=MARK
+offset=1  opcode=LIST
+offset=2  opcode=INT      argument=1
+offset=5  opcode=APPEND
+offset=6  opcode=INT      argument=2
+offset=9  opcode=APPEND
+offset=10 opcode=INT      argument=3
+offset=13 opcode=APPEND
+offset=14 opcode=STOP
+
+REVIEWED EXECUTION / OBJECT-CONSTRUCTION OPCODES
+
+GLOBAL byte=63 present=false
+REDUCE byte=52 present=false
+INST   byte=69 present=false
+OBJ    byte=6f present=false
+BUILD  byte=62 present=false
+
+dangerous_reviewed_opcode_byte_count=0
+
+INTERPRETATION
+
+The controlled fixture exactly matches its expected byte sequence.
+
+None of the specifically reviewed protocol-0 execution or
+object-construction opcode bytes are present.
+
+No deserialization was performed.
+
+LIMITATION
+
+This result applies only to this deliberately constrained synthetic
+fixture.
+
+It does not establish that arbitrary pickle files are safe.
+
+Unknown or complex pickle artifacts remain quarantined pending
+appropriate static analysis.

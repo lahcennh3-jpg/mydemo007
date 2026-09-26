@@ -1,0 +1,14 @@
+adac85b801ddf40d2a34fa1e84f198426960da9dff173493a534aa0163b9b2b4  docs/security/evidence/phase17-action-17.1-lab-baseline.txt
+8283b4243d365b3797ef6a33b84e3ac0a8be8de05042ed4c56b924af4cb11599  docs/security/evidence/phase17-action-17.2-model-source-identity-validation.txt
+bae044450a30214a87ec974324665bc79f797f7cabbee4e87e2b7d811661e499  docs/security/evidence/phase17-action-17.2-model-source-identity.json
+cb9cbc4d88caa002ec3a7e3a3977bb2fa4585a4229d77799c486b324da49e4d4  docs/security/evidence/phase17-action-17.3-hash-verification.txt
+698f72d0bea1ab110af2193cd3719c6a8dd8f0025be10d0cf5149f56c9e453cb  docs/security/evidence/phase17-action-17.3-model-artifact-hashes.sha256
+f5588610e44a9dd874b6c8f4d946083a6e6706272a0873929c908510e82f3d5e  docs/security/evidence/phase17-action-17.3-model-artifact-metadata.json
+da56b2109b52010c9c2b3e7bbceeb01f22ac7e4183ac4fe8ce91ac11ba8d2a9e  docs/security/evidence/phase17-action-17.4-quarantine-policy.md
+944a9506738504aad5adc6c5dc9e6e0f90fa591572a370e75813434f06f7e40d  docs/security/evidence/phase17-action-17.4-quarantine-state.txt
+f6e46b6beffb019b3bff3aa008027cbdc6115cca89567ab4a7315a03bd1d6502  docs/security/evidence/phase17-action-17.5-pickle-fixture.sha256
+c9c462c3a67b2cb243b403c8c4f1520dd1affdafa48a3682eff1312a5b9398c1  docs/security/evidence/phase17-action-17.5-pickle-static-analysis.txt
+126ae3039ceff730115773de1f999ac59ddd9d37be673083f07034731fa9eff9  docs/security/evidence/phase17-action-17.6-safe-format-comparison.md
+6c3a39b892d0e188e6bcabbf94bd7a9acdc000e87caaf3a33822e0daea448997  docs/security/evidence/phase17-action-17.6-tool-capability-inventory.txt
+96c498f484aba2ec65717bfeb7004ab5c070378e2dc0ef372aca657be1d0b868  docs/security/evidence/phase17-recovery-c-runtime-capability.txt
+07b3c21d81a4b5c72ae83a1ab0b32eff2eda1000496660ea0e7aed6a2984f900  docs/security/evidence/phase17-resume-runtime-capability.txt

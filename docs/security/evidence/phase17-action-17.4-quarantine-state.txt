@@ -1,0 +1,4 @@
+quarantined_artifact_present=true
+approved_artifact_present=false
+fail_closed=true
+direct_source_to_approved_allowed=false

@@ -1,0 +1,5 @@
+json_valid=true
+artifact_id=phase17-synthetic-linear-model
+version=1.0.0
+source_type=local-synthetic
+production_approved=false

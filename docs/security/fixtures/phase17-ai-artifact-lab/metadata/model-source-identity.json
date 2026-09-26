@@ -1,0 +1,12 @@
+{
+  "schema": "phase17-model-source-identity-v1",
+  "artifact_id": "phase17-synthetic-linear-model",
+  "version": "1.0.0",
+  "source_type": "local-synthetic",
+  "source_uri": "local://phase17/synthetic-linear-model",
+  "upstream_external_model": false,
+  "contains_real_training_data": false,
+  "contains_customer_data": false,
+  "production_approved": false,
+  "intended_environment": "security-lab-only"
+}

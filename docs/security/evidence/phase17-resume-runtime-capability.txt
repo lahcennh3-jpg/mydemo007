@@ -1,0 +1,10 @@
+PHASE 17 — HOST RUNTIME CAPABILITY
+timestamp_utc=2026-09-26T07:18:11Z
+
+python3=NOT_AVAILABLE
+python=NOT_AVAILABLE
+node=NOT_AVAILABLE
+jq=/usr/bin/jq
+sha256sum=/usr/bin/sha256sum
+git=/usr/local/bin/git
+docker=/usr/bin/docker

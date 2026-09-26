@@ -1,0 +1,11 @@
+PHASE 17 — RECOVERY-C CAPABILITY
+timestamp_utc=2026-09-26T07:22:03Z
+python3=NOT_REQUIRED
+python=NOT_REQUIRED
+node=NOT_REQUIRED
+jq=/usr/bin/jq
+sha256sum=/usr/bin/sha256sum
+od=/usr/bin/od
+git=/usr/local/bin/git
+automatic_package_installation=false
+external_package_download=false
