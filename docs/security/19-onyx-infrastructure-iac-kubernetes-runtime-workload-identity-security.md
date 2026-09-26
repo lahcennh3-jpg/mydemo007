@@ -10,7 +10,7 @@
 - Real-cloud authorization: **FALSE**
 - Real credentials/data: **PROHIBITED**
 - Synthetic/local testing: **AUTHORIZED**
-- Current state: **BATCH_A_COMPLETE**
+- Current state: **PHASE19_COMPLETE**
 
 ## Objective
 
@@ -56,12 +56,12 @@ Evidence from one category is not treated as proof of another.
 | 19.16 | Runtime detection/Falco/Tetragon capability | COMPLETE_WITH_LIMITS |
 | 19.17 | DB/cache/vector/object-store/backup security | COMPLETE |
 | 19.18 | Remediation/policy-as-code release gate | COMPLETE |
-| 19.19 | Cross-layer negative tests | PENDING |
-| 19.20 | Bounded container-runtime validation | PENDING |
-| 19.21 | Kubernetes/runtime validation where supported | PENDING |
-| 19.22 | Final evidence-integrity manifest | PENDING |
-| 19.23 | Final security assessment/gaps | PENDING |
-| 19.24 | Final commit/push/ancestry/clean-tree gate | PENDING |
+| 19.19 | Cross-layer negative tests | COMPLETE |
+| 19.20 | Bounded container-runtime validation | COMPLETE_WITH_ENVIRONMENT_CONDITION |
+| 19.21 | Kubernetes/runtime validation where supported | COMPLETE_WITH_LIMITS |
+| 19.22 | Final evidence-integrity manifest | COMPLETE |
+| 19.23 | Final security assessment/gaps | COMPLETE |
+| 19.24 | Final commit/push/ancestry/clean-tree gate | COMPLETE |
 
 ## Container controls
 
@@ -250,4 +250,78 @@ It does not claim:
 - `docs/security/evidence/phase19-action-19.17-data-infrastructure-security.txt`
 - `docs/security/evidence/phase19-action-19.18-policy-release-gate.txt`
 
-NEXT=PHASE19_ACCELERATED_BATCH_C
+BATCH_B_NEXT_REACHED=TRUE
+
+## Batch C — Actions 19.19–19.24
+
+### Cross-layer negative testing
+
+Eight explicit adversarial mutations were exercised:
+
+1. writable container root filesystem;
+2. privileged Compose workload;
+3. Kubernetes privilege escalation;
+4. automatic service-account-token mounting;
+5. root-capable Kubernetes execution;
+6. fail-open workload identity;
+7. long-lived static workload credentials;
+8. world-open IaC ingress.
+
+The existing positive security gates were also revalidated.
+
+### Batch C execution recovery
+
+The initial mutation-8 check used a `grep -q` pipeline under Bash
+`pipefail`.
+
+The underlying IaC security gate had already detected world-open ingress, but
+early pipe termination caused the pipeline status to be interpreted as failure.
+
+The test harness was corrected by capturing the complete IaC gate output before
+performing the assertion.
+
+No security requirement was removed or weakened.
+
+### Bounded container runtime
+
+Container-runtime evidence is conditional on an already available local image.
+
+No image is pulled.
+
+If runtime execution is possible, the test validates non-root execution,
+read-only filesystem, capability removal, no-new-privileges, PID bounds,
+CPU/memory bounds, tmpfs, and disabled networking.
+
+### Kubernetes validation
+
+The final gate does not contact an unknown or remote Kubernetes endpoint.
+
+Server-side dry-run validation is allowed only against an explicitly loopback
+cluster.
+
+### Residual configuration risk
+
+Repository deployment review records potential risk from:
+
+- fallback development credentials;
+- host-published data-service ports;
+- tagged/non-digest image references.
+
+Applicability depends on the selected deployment path.
+
+### Final evidence boundary
+
+Phase 19 does not convert Codespaces evidence into claims of:
+
+- real-cloud validation;
+- production Kubernetes CIS compliance;
+- host-kernel hardening;
+- eBPF production fidelity;
+- vulnerability-free production images;
+- production provenance/signature verification.
+
+## Phase 19 conclusion
+
+**COMPLETE for the authorized local/synthetic scope.**
+
+NEXT=PHASE20

@@ -1,0 +1,15 @@
+PASS secure baseline [container/kubernetes static gate]
+PASS secure baseline [IaC negative/positive gate]
+PASS secure baseline [identity lifecycle gate]
+PASS secure baseline [Batch B cross-layer release gate]
+PASS negative mutation detected [writable container root filesystem]
+PASS negative mutation detected [privileged Compose workload]
+PASS negative mutation detected [Kubernetes privilege escalation]
+PASS negative mutation detected [automatic service-account token]
+PASS negative mutation detected [root-capable Kubernetes workload]
+PASS negative mutation detected [identity service failure becomes fail-open]
+PASS negative mutation detected [long-lived static workload credentials]
+PASS negative mutation detected [world-open IaC network]
+PHASE19_CROSS_LAYER_NEGATIVE_GATE=PASS
+DETECTED_NEGATIVE_CONTROLS=8
+POSITIVE_BASELINES_REVALIDATED=4
