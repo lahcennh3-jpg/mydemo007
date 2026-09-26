@@ -156,3 +156,52 @@ Current state:
 `PHASE22_BATCH_B=PASS`
 
 `PHASE22_COMPLETE=NO`
+
+---
+
+# Batch C — Employer Presentation and Interview Readiness
+
+Timestamp UTC:
+
+`2026-09-26T13:27:21Z`
+
+Batch C created:
+
+- employer-facing portfolio index;
+- résumé claim ledger;
+- technical demonstration scripts;
+- AI-security interview scenario bank;
+- employer/client handoff;
+- publication and independence integrity checks.
+
+Supported or supported-with-limitation résumé claims:
+
+`5`
+
+Held claims:
+
+`3`
+
+Technical evidence remains subject to its original provenance and
+limitations.
+
+Candidate evidence is not automatically promoted into a vulnerability
+or verified finding.
+
+Phase 21 Action 21.17 remains:
+
+`BLOCKED_INDEPENDENT`
+
+Current state:
+
+`PHASE22_BATCH_A=PASS`
+
+`PHASE22_BATCH_B=PASS`
+
+`PHASE22_BATCH_C=PASS`
+
+`PHASE22_COMPLETE=NO`
+
+Next:
+
+`BATCH_D_INDEPENDENT_PORTFOLIO_VERIFICATION_AND_FINAL_GATE`
