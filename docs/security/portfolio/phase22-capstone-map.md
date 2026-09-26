@@ -166,3 +166,34 @@ A capstone may move beyond `NOT_YET_PACKAGED` only after it contains:
 
 No capstone is complete merely because supporting Phase 0–21 material
 exists.
+
+---
+
+# Batch B Evidence-Mapping Update
+
+Timestamp UTC: 2026-09-26T13:05:06Z
+
+Capstone 1 evidence candidates: 379
+
+Capstone 2 evidence candidates: 368
+
+Capstone 3 evidence candidates: 352
+
+Capstone 4 evidence candidates: 342
+
+Capstone 5 evidence candidates: 189
+
+Capstone 6 evidence candidates: 365
+
+All six capstones now have employer-facing draft package files.
+
+Current package state:
+
+`DRAFT_EVIDENCE_MAPPED`
+
+Current publication state:
+
+`REVIEW_REQUIRED`
+
+This status does not mean the evidence candidates have been manually
+validated into final claims.

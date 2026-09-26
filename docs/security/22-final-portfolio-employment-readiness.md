@@ -91,3 +91,68 @@ No capstone is marked complete by Batch A.
 
 Batch B will mine the existing Phase 0–21 evidence and build the
 employer-facing capstone packages.
+
+---
+
+# Batch B — Evidence Mining and Capstone Packaging
+
+Timestamp UTC:
+
+`2026-09-26T13:05:06Z`
+
+Batch B completed:
+
+- automated Phase 0–21 evidence discovery;
+- SHA-256 evidence provenance indexing;
+- six-capstone traceability mapping;
+- six employer-facing draft case-study packages;
+- portfolio provenance linting;
+- basic secret-pattern linting;
+- independent-claim protection;
+- publication-state protection.
+
+Source files scanned:
+
+`643`
+
+Evidence candidate mappings:
+
+`1995`
+
+Candidate counts by capstone:
+
+- Capstone 1: `379`
+- Capstone 2: `368`
+- Capstone 3: `352`
+- Capstone 4: `342`
+- Capstone 5: `189`
+- Capstone 6: `365`
+
+Important:
+
+An automated evidence candidate is not automatically a validated
+security finding.
+
+All six capstones remain:
+
+`DRAFT_EVIDENCE_MAPPED`
+
+Their publication state remains:
+
+`REVIEW_REQUIRED`
+
+Independent completion remains:
+
+`NO`
+
+Phase 21 Action 21.17 remains:
+
+`BLOCKED_INDEPENDENT`
+
+Current state:
+
+`PHASE22_BATCH_A=PASS`
+
+`PHASE22_BATCH_B=PASS`
+
+`PHASE22_COMPLETE=NO`
