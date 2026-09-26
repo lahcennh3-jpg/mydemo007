@@ -1,0 +1,7 @@
+id,score,predicted,expected,correct
+eval-001,2,1,1,1
+eval-002,2,1,1,1
+eval-003,-6,0,0,1
+eval-004,-6,0,0,1
+eval-005,0,1,1,1
+eval-006,-4,0,0,1

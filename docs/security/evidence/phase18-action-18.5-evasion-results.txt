@@ -1,0 +1,9 @@
+attack=evasion
+norm=L_inf
+epsilon=0.5
+original_score=1
+original_prediction=1
+adversarial_score=-1
+adversarial_prediction=0
+prediction_flipped=true
+scope=synthetic-local-only

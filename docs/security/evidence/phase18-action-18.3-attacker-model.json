@@ -1,0 +1,38 @@
+{
+  "schema": "phase18-attacker-model-v1",
+  "laboratory": "synthetic-local-only",
+  "asset": "phase18-tiny-linear-classifier",
+
+  "attacker": {
+    "knowledge": [
+      "input feature meanings",
+      "candidate decision behavior",
+      "synthetic training-distribution shape"
+    ],
+
+    "access": [
+      "local fixture files",
+      "local prediction interface simulated by AWK"
+    ],
+
+    "capabilities": [
+      "bounded feature perturbation",
+      "synthetic training-row insertion",
+      "local query generation"
+    ],
+
+    "goals": [
+      "cause controlled misclassification",
+      "create a controlled trigger behavior",
+      "measure privacy leakage in later batches"
+    ]
+  },
+
+  "prohibited": [
+    "production access",
+    "third-party targeting",
+    "real-data extraction",
+    "credential use",
+    "external attack traffic"
+  ]
+}

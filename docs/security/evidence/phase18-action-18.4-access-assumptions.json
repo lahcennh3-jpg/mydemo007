@@ -1,0 +1,24 @@
+{
+  "schema": "phase18-access-assumptions-v1",
+
+  "white_box": {
+    "weights_known": true,
+    "training_data_known": true,
+    "prediction_scores_visible": true
+  },
+
+  "gray_box": {
+    "weights_known": false,
+    "feature_schema_known": true,
+    "prediction_scores_visible": true
+  },
+
+  "black_box": {
+    "weights_known": false,
+    "training_data_known": false,
+    "prediction_scores_visible": false,
+    "labels_visible": true
+  },
+
+  "scope": "conceptual threat-model states for the synthetic lab"
+}

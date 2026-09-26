@@ -1,0 +1,16 @@
+9dcf63dfb1e0a9204b61923425738c66a717ae3e64ad5ce926299ed5e9ffaa10  docs/security/18-onyx-adversarial-ml-quantitative-model-privacy.md
+a7de6e86aa0d5cd9e5a5de3fe9787768be03208b0475404d0c1446c8c3b0b73a  docs/security/evidence/phase18-action-18.1-lab-scope.md
+37843482cecd61bb1f69ed1e05203f97d1d8001dabb869e312da30b367eba3b6  docs/security/evidence/phase18-action-18.2-reproducible-baseline.txt
+b60a1f17da1dc9b1ad578518bced31b64c9017f9a07cf124c21ffe9a147a8ba4  docs/security/evidence/phase18-action-18.3-attacker-model.json
+c813d72008972db2685843d5f6b3e2ff17751b47c1028befb53112a59a7162a3  docs/security/evidence/phase18-action-18.4-access-assumptions.json
+fe901e7ae383115089bd17c9bbb8abfda88d916c2ad01a76e8e587dc47f20cec  docs/security/evidence/phase18-action-18.5-evasion-results.txt
+a3888e2b5429ea8406c8631beb3baca64a17e4b43ff5b2c057e346527d27e6cd  docs/security/evidence/phase18-action-18.6-poison-backdoor-results.txt
+449f89f60eca6b7700574b4abad984cd298d1447b12f9ee32198e1aa98b7a2c9  docs/security/evidence/phase18-action-18.6-poison-backdoor-summary.txt
+b90af0d80a0929a39c1fc0b2f555f56457e9277dab22c29111c645cb0e23d29b  docs/security/fixtures/phase18-adversarial-ml-lab/datasets/train-clean.csv
+fd368e2428667e317381e9925836e009bc01ad9363f8330ed6a79db1fd566634  docs/security/fixtures/phase18-adversarial-ml-lab/datasets/train-poisoned-backdoor.csv
+82ab518622ca48f1f0c390ca2f189738dc17b0503e5221c17de26f8eb4161a4c  docs/security/fixtures/phase18-adversarial-ml-lab/evaluation/eval-clean.csv
+93d0a3772557acc5b6428c419b38b6fbe56ecba085ecb598c62f7d9fbc5dda82  docs/security/fixtures/phase18-adversarial-ml-lab/evaluation/baseline-predictions.csv
+dcc2972150aa098bd23113d05a9883f81161b8624fb01e747cc8a5d67f3b6b76  docs/security/fixtures/phase18-adversarial-ml-lab/evaluation/poisoned-model-clean-eval.csv
+5ec7dd3446b56567eacb989f6a58fb17621a673bcaa15e677f5e0dcdd20bf402  docs/security/fixtures/phase18-adversarial-ml-lab/models/model-baseline.env
+ff8bdd7dfd41a1300e118434f965f3009b4a57ba4ff65129fab9eabb5d4afbfb  docs/security/fixtures/phase18-adversarial-ml-lab/models/model-poisoned.env
+be82e1328af992b1ac3ecd2b985905877e6914cd5fda1130ee869eda658510ab  docs/security/fixtures/phase18-adversarial-ml-lab/tools/train-perceptron.awk

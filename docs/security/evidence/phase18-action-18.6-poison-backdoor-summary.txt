@@ -1,0 +1,10 @@
+clean_accuracy_after_poison=6/6
+attack=synthetic_training_poisoning_backdoor
+trigger_feature=x3
+trigger_value=1
+clean_score=2
+clean_prediction=1
+triggered_score=-2
+triggered_prediction=0
+targeted_flip_observed=true
+scope=synthetic-local-only
