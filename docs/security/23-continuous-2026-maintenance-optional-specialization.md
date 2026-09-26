@@ -110,3 +110,84 @@ PHASE23_BATCH_B=READY_FOR_VERIFICATION
 PHASE23_COMPLETE=NO
 
 NEXT=BATCH_C_AI_RUNTIME_DATA_POLICY_THREAT_EVALUATION_REFRESH
+
+## Batch C — AI runtime, data, policy, threat and evaluation refresh
+
+Review timestamp UTC:
+
+`2026-09-26T13:45:24Z`
+
+Batch C refreshed:
+
+- historical security-report provenance;
+- AI model/runtime maintenance domain;
+- RAG/data/retrieval maintenance domain;
+- prompt/instruction maintenance domain;
+- identity/authz/tenant policy domain;
+- agent/tool/MCP domain;
+- privacy/DLP domain;
+- abuse/availability/economic-security domain;
+- adversarial-ML/model-privacy domain;
+- supply-chain/deployment domain;
+- incident/detection/response domain;
+- threat-model delta selection;
+- regression/evaluation selection;
+- detection refresh requirements;
+- incident-tabletop requirements;
+- residual-risk ownership and gates.
+
+Historical baseline reports fingerprinted:
+
+`23`
+
+Maintenance domains reviewed:
+
+`10`
+
+Domain evidence gaps requiring review:
+
+`0`
+
+Threat-delta classes:
+
+`12`
+
+Evaluation families:
+
+`14`
+
+Residual-risk entries:
+
+`8`
+
+Important limitation:
+
+The Batch B upstream comparison returned `300` changed-file
+objects. Complete upstream diff enumeration is therefore not claimed by this
+maintenance batch.
+
+UPSTREAM_DIFF_COMPLETE=NOT_ESTABLISHED
+
+PINNED_ONYX_BASELINE_CHANGED=NO
+
+AUTOMATIC_UPGRADE=NO
+
+NEW_CONFIRMED_VULNERABILITY_FROM_MAINTENANCE_METADATA=NO
+
+EVALUATION_EXECUTION_COMPLETE=NO
+
+ACTION_23.11=PASS_BATCH_B_HANDOFF_GATE
+
+ACTION_23.12=PASS_RUNTIME_DATA_POLICY_DOMAIN_REFRESH
+
+ACTION_23.13=PASS_THREAT_MODEL_DELTA_REFRESH
+
+ACTION_23.14=PASS_EVALUATION_DETECTION_TABLETOP_REFRESH
+
+ACTION_23.15=READY_FOR_FINAL_VERIFICATION
+
+PHASE23_BATCH_C=READY_FOR_VERIFICATION
+
+PHASE23_COMPLETE=NO
+
+NEXT=BATCH_D_REGRESSION_TABLETOP_PORTFOLIO_MAINTENANCE_CLOSURE

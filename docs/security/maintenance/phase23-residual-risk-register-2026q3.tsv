@@ -1,0 +1,9 @@
+risk_id	risk	evidence_state	owner	due_gate	status
+R23-001	upstream comparison may not enumerate full changed-file set	GitHub API returned bounded file metadata	PROJECT_OWNER	BATCH_D	OPEN
+R23-002	pinned Onyx baseline differs from current upstream release	Batch B comparison status indicates upstream drift	PROJECT_OWNER	BASELINE_UPGRADE_GATE	OPEN
+R23-003	selected runtime regressions not yet executed	Batch C selects evaluation families only	PROJECT_OWNER	BATCH_D	OPEN
+R23-004	threat-model refresh not yet closed by current runtime evidence	threat deltas selected for reassessment	PROJECT_OWNER	BATCH_D	OPEN
+R23-005	public portfolio publication not approved	inherited Phase 22 limitation	PROJECT_OWNER	PUBLICATION_GATE	OPEN
+R23-006	independent project reproduction incomplete	inherited Phase 21/22 limitation	INDEPENDENT_VERIFIER	INDEPENDENCE_GATE	OPEN
+R23-007	Phase 21 Action 21.17 remains blocked	independent reproduction evidence not satisfied	INDEPENDENT_VERIFIER	INDEPENDENCE_GATE	OPEN
+R23-008	optional specialization remains deferred	capstone/promotion prerequisites remain incomplete	PROJECT_OWNER	SPECIALIZATION_GATE	DEFERRED
