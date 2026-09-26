@@ -1,20 +1,16 @@
 PHASE=21
 ACTION=21.4
-SOURCE_HEAD=60c285cd69d2ae9f98f4afae93d605af52ef057e
-SCOPE=ISOLATED_SYNTHETIC_LAB
-EXECUTION=ASSISTED
-PREDICTION_BASELINE=PASS
-PREDICTION_POLICY_MUTATION=REJECTED
-core_pipeline_verification=PASS
-production_authorized=false
-external_mcp_used=false
-unapproved_change_blocked=true
-rollback_verified=true
-revocation_verified=true
-retirement_verified=true
-reference_tool_execution_gaps=4
-phase17_scope=synthetic-local-lab
+TITLE=Method transfer — Phase 17 verifier
+EXECUTION=ASSISTED_REPRODUCTION
+SOURCE_HEAD=cc7abf96175ce677905d0ac825c599f06fdb4115
+VERIFIER=docs/security/fixtures/phase17-ai-artifact-lab/tools/verify-phase17-pipeline.sh
+POLICY=docs/security/fixtures/phase17-ai-artifact-lab/config/policy-config-v1.json
+BOUNDARY=temporary_git_archive_only
+NETWORK=not_required
+BASELINE_EXIT=0
 BASELINE_VERIFIER=PASS
-VERIFY_FAIL: policy approval
-MUTATED_VERIFIER_EXIT=1
+MUTATED_POLICY=production_approved=true
+MUTATED_EXIT=1
 POLICY_MUTATION_REJECTED=PASS
+ORIGINAL_REPOSITORY_MUTATED=NO
+ACTION_RESULT=PASS_ASSISTED

@@ -68,3 +68,23 @@ The Phase 17 synthetic pipeline verifier passed in an isolated export.
 A changed policy approval flag was rejected with exit 1. See
 `docs/security/evidence/phase21-action-21.4-verifier-transfer.txt`.
 Action 21.4 remains assisted and partial pending independent assessment.
+
+## Accelerated Batch B checkpoint
+
+PHASE21_BATCH_B_ASSISTED_DRAFTS=RECORDED
+
+Actions prepared/exercised:
+
+- 21.4 transferred verifier: PASS_ASSISTED
+- 21.8 engineering handoff: ASSISTED_DRAFT
+- 21.9 technical finding: ASSISTED_DRAFT
+- 21.10 executive summary: ASSISTED_DRAFT
+- 21.11 remediation prioritization: ASSISTED_DRAFT
+- 21.12 trade-off defense: ASSISTED_DRAFT
+- 21.13 review: ASSISTED_DRAFT
+- 21.14 review response: ASSISTED_DRAFT
+
+The full clean-environment independent rebuild remains open.
+
+BATCH_B_RESULT=ASSISTED_DRAFTS_READY
+NEXT=PHASE21_INDEPENDENT_REBUILD_OR_BATCH_C_PREPARATION
