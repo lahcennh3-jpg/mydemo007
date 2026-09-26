@@ -1,0 +1,9 @@
+source_id	url	retrieved_utc	sha256	bytes
+nist-ai-rmf	https://www.nist.gov/itl/ai-risk-management-framework	2026-09-26T13:41:31Z	b591d1a2c9d77a254ce7ea87402f90cecdfb103f31c2469dc6cc522758ae2a29	93781
+nist-sp-800-218a	https://csrc.nist.gov/pubs/sp/800/218/a/final	2026-09-26T13:41:31Z	a6f32cba65bbb9b222ce885b16cae0626361cee646bd41ee6a64d2ab1021654e	48653
+owasp-llm-top10-2026	https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/	2026-09-26T13:41:31Z	ea8d1f3499ac73d9a343561e546252854cdd31a3040d0a74c0fa449bc8775f56	350695
+owasp-agentic-top10-2026	https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/	2026-09-26T13:41:31Z	1b501956fa435a3b80806f1991d6196210bd8709f90b19f2f57f4f0d86008e7f	353709
+owasp-agent-control-standard	https://genai.owasp.org/resource/agent-control-standard-acs/	2026-09-26T13:41:31Z	5348714630d03dd8d03d0e85567508494b7a48e82817a9c05f6d681b1f89cae7	351258
+owasp-asvs	https://owasp.org/projects/asvs	2026-09-26T13:41:31Z	2074e26c097fe77cd7f6a6a5e62667f78c2ff266b9b9225e31683dad295b2663	134099
+onyx-latest-release	https://api.github.com/repos/onyx-dot-app/onyx/releases/latest	2026-09-26T13:41:31Z	c6aec64d9d08b60d900c7bb242036fcb72ba8b0c8a90f81b4d736a0cdef9dcdb	17701
+onyx-baseline-to-latest-compare	https://api.github.com/repos/onyx-dot-app/onyx/compare/160f9b143605ca45a85bd387b5bd173840bab15d...v4.8.1	2026-09-26T13:41:31Z	6b0eb80836fd7d191b077007770e5218b0c2be84e749bbb451b576cf0b1a6218	1201850

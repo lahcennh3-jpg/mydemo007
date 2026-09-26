@@ -66,3 +66,47 @@ Batch A establishes the Phase 23 maintenance control plane.
 PHASE23_BATCH_A=READY_FOR_VERIFICATION
 
 PHASE23_COMPLETE=NO
+
+## Batch B — 2026 Q3 standards and Onyx technical refresh
+
+Review timestamp UTC:
+
+`2026-09-26T13:41:31Z`
+
+Batch B refreshed:
+
+- NIST AI-risk-management references;
+- NIST SSDF AI profile;
+- OWASP LLM Top 10 2026;
+- OWASP Agentic Applications Top 10 2026;
+- OWASP Agent Control Standard;
+- OWASP ASVS;
+- Onyx current upstream release metadata;
+- Onyx baseline-to-current technical delta metadata;
+- security regression-selection decisions.
+
+Protected Onyx baseline:
+
+`160f9b143605ca45a85bd387b5bd173840bab15d`
+
+Current upstream tag observed:
+
+`v4.8.1`
+
+No automatic baseline upgrade was performed.
+
+ACTION_23.6=PASS_BATCH_A_HANDOFF_GATE
+
+ACTION_23.7=PASS_CURRENT_STANDARDS_REFRESH
+
+ACTION_23.8=PASS_ONYX_UPSTREAM_TECHNICAL_REFRESH
+
+ACTION_23.9=PASS_SECURITY_DELTA_TRIAGE
+
+ACTION_23.10=READY_FOR_FINAL_VERIFICATION
+
+PHASE23_BATCH_B=READY_FOR_VERIFICATION
+
+PHASE23_COMPLETE=NO
+
+NEXT=BATCH_C_AI_RUNTIME_DATA_POLICY_THREAT_EVALUATION_REFRESH
