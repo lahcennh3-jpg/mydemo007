@@ -1,0 +1,172 @@
+
+EV23-005=BLOCKED
+REASON=CONTROLLED_RAG_INDEXING_RUNTIME_NOT_ESTABLISHED
+
+EV23-006=BLOCKED
+REASON=CONTROLLED_MODEL_GENERATION_RUNTIME_NOT_ESTABLISHED
+
+============================================================
+EV23_007_TOOL_AUTHORITY
+============================================================
+test_constructor_uses_application_authority (test_phase11_tool_authority_boundaries.TestPhase11ToolAuthorityBoundaries.test_constructor_uses_application_authority) ... ok
+test_execution_cap_limits_tool_batch (test_phase11_tool_authority_boundaries.TestPhase11ToolAuthorityBoundaries.test_execution_cap_limits_tool_batch) ... ok
+test_model_cannot_invent_unavailable_tool (test_phase11_tool_authority_boundaries.TestPhase11ToolAuthorityBoundaries.test_model_cannot_invent_unavailable_tool) ... [93mWARNING[0m:  09/26/2026 05:09:47 PM                 tool_runner.py  329: Tool invented_admin_tool not found in tools list
+ok
+test_zero_execution_cap_prevents_tool_execution (test_phase11_tool_authority_boundaries.TestPhase11ToolAuthorityBoundaries.test_zero_execution_cap_prevents_tool_execution) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.024s
+
+OK
+EV23_007_TOOL_AUTHORITY=PASS
+
+============================================================
+EV23_008_MCP_SECURITY_BOUNDARIES
+============================================================
+test_client_uses_ssrf_guarded_transport (test_phase11_mcp_security_boundaries.TestPhase11MCPSecurityBoundaries.test_client_uses_ssrf_guarded_transport) ... ok
+test_managed_credentials_override_request_collision (test_phase11_mcp_security_boundaries.TestPhase11MCPSecurityBoundaries.test_managed_credentials_override_request_collision) ... ok
+test_protocol_host_header_is_rejected (test_phase11_mcp_security_boundaries.TestPhase11MCPSecurityBoundaries.test_protocol_host_header_is_rejected) ... ok
+test_request_auth_fallback_is_per_user_only (test_phase11_mcp_security_boundaries.TestPhase11MCPSecurityBoundaries.test_request_auth_fallback_is_per_user_only) ... ok
+test_request_headers_are_admin_allowlisted (test_phase11_mcp_security_boundaries.TestPhase11MCPSecurityBoundaries.test_request_headers_are_admin_allowlisted) ... ok
+test_sandbox_mcp_resolver_checks_user_and_gate (test_phase11_mcp_security_boundaries.TestPhase11MCPSecurityBoundaries.test_sandbox_mcp_resolver_checks_user_and_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.004s
+
+OK
+EV23_008_MCP_SECURITY_BOUNDARIES=PASS
+
+============================================================
+EV23_009_DLP_REDACTION
+============================================================
+test_log_export_download_requires_admin_permission (test_phase12_dlp_redaction_export.TestPhase12DlpRedactionExport.test_log_export_download_requires_admin_permission) ... ok
+test_overlapping_values_are_redacted_safely (test_phase12_dlp_redaction_export.TestPhase12DlpRedactionExport.test_overlapping_values_are_redacted_safely) ... ok
+test_short_value_false_positive_guard (test_phase12_dlp_redaction_export.TestPhase12DlpRedactionExport.test_short_value_false_positive_guard) ... ok
+test_synthetic_sensitive_values_are_redacted (test_phase12_dlp_redaction_export.TestPhase12DlpRedactionExport.test_synthetic_sensitive_values_are_redacted) ... ok
+test_usage_export_requires_admin_permission (test_phase12_dlp_redaction_export.TestPhase12DlpRedactionExport.test_usage_export_requires_admin_permission) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+EV23_009_DLP_REDACTION=PASS
+
+============================================================
+EV23_009_TOOL_TRACE_REDACTION
+============================================================
+test_argument_values_are_not_traced (test_phase11_tool_trace_redaction.TestPhase11ToolTraceRedaction.test_argument_values_are_not_traced) ... ok
+test_nested_values_are_not_traced (test_phase11_tool_trace_redaction.TestPhase11ToolTraceRedaction.test_nested_values_are_not_traced) ... ok
+test_output_content_is_not_traced (test_phase11_tool_trace_redaction.TestPhase11ToolTraceRedaction.test_output_content_is_not_traced) ... ok
+test_raw_trace_paths_are_removed (test_phase11_tool_trace_redaction.TestPhase11ToolTraceRedaction.test_raw_trace_paths_are_removed) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+EV23_009_TOOL_TRACE_REDACTION=PASS
+
+============================================================
+EV23_009_RUNTIME_RESPONSE_SECRET_CHECK
+============================================================
+RUNTIME_SECRET_RESPONSE_CHECK=PASS
+
+============================================================
+EV23_009_RUNTIME_LOG_SECRET_CHECK
+============================================================
+RUNTIME_LOG_SECRET_CHECK=PASS
+
+EV23-010=BLOCKED
+REASON=MODEL_PROVIDER_RUNTIME_NOT_ESTABLISHED
+
+============================================================
+EV23_011_ABUSE_BATCH_B
+============================================================
+test_13_5_finite_controls (test_phase13_batch_b.Phase13BatchB.test_13_5_finite_controls) ... ok
+test_13_6_duplicate_work (test_phase13_batch_b.Phase13BatchB.test_13_6_duplicate_work) ... ok
+test_13_7_queue_backpressure (test_phase13_batch_b.Phase13BatchB.test_13_7_queue_backpressure) ... ok
+test_13_8_publish_failure_rollback (test_phase13_batch_b.Phase13BatchB.test_13_8_publish_failure_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+OK
+EV23_011_ABUSE_BATCH_B=PASS
+
+============================================================
+EV23_011_ABUSE_BATCH_C
+============================================================
+test_13_11_watchdog_and_timeout_bounds (test_phase13_batch_c.Phase13BatchC.test_13_11_watchdog_and_timeout_bounds) ... ok
+test_13_12_bounded_100_task_10_worker_harness (test_phase13_batch_c.Phase13BatchC.test_13_12_bounded_100_task_10_worker_harness) ... ok
+test_13_13_backpressure_is_observable (test_phase13_batch_c.Phase13BatchC.test_13_13_backpressure_is_observable) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.039s
+
+OK
+EV23_011_ABUSE_BATCH_C=PASS
+
+============================================================
+EV23_012_DEPLOYMENT_INTEGRITY
+============================================================
+IMAGE_ID_MATCH=PASS
+CONTAINER_HEALTH=PASS
+NETWORK_SCOPE_MATCH=PASS
+DATABASE_REVISION_MATCH=PASS
+LOCAL_ENV_UNTRACKED=PASS
+LOCAL_ENV_IGNORED=PASS
+
+============================================================
+EV23_013_DETECTION_CONTROL
+============================================================
+--- BASE DETECTION GATE ---
+DETECTION=AGENT_POLICY_DENIAL
+DETECTION=CROSS_TENANT_ACCESS
+DETECTION=CROSS_USER_ACCESS
+DETECTION=MCP_POLICY_DENIAL
+DETECTION=REPEATED_AUTH_FAILURE
+DETECTION=REPEATED_RESOURCE_VIOLATION
+DETECTION=SENSITIVE_EXPORT_DENIAL
+DETECTION=TOOL_AUTHORIZATION_DENIAL
+DETECTION=UNAUTHORIZED_MEMORY_ACCESS
+DETECTION=UNAUTHORIZED_RAG_RETRIEVAL
+DETECTION=WORKLOAD_IDENTITY_FAILURE
+DETECTION=WORKLOAD_PRIVILEGE_DENIAL
+SYNTHETIC_EVENT_COUNT=20
+EXPECTED_DETECTIONS=12
+ACTUAL_DETECTIONS=12
+ALLOWED_EVENT_COUNT=4
+ALLOWED_EVENT_NEGATIVE_CONTROL=PASS
+PHASE20_DETECTION_GATE=PASS
+
+--- ADVERSARIAL DETECTION GATE ---
+DETECTION=AGENT_POLICY_DENIAL
+DETECTION=CROSS_TENANT_ACCESS
+DETECTION=CROSS_USER_ACCESS
+DETECTION=MCP_POLICY_DENIAL
+DETECTION=REPEATED_AUTH_FAILURE
+DETECTION=REPEATED_RESOURCE_VIOLATION
+DETECTION=SENSITIVE_EXPORT_DENIAL
+DETECTION=TOOL_AUTHORIZATION_DENIAL
+DETECTION=UNAUTHORIZED_MEMORY_ACCESS
+DETECTION=UNAUTHORIZED_RAG_RETRIEVAL
+DETECTION=WORKLOAD_IDENTITY_FAILURE
+DETECTION=WORKLOAD_PRIVILEGE_DENIAL
+SYNTHETIC_EVENT_COUNT=24
+EXPECTED_DETECTIONS=12
+ACTUAL_DETECTIONS=12
+ALLOWED_EVENT_COUNT=8
+ALLOWED_EVENT_NEGATIVE_CONTROL=PASS
+PHASE20_DETECTION_GATE=PASS
+
+============================================================
+BATCH C STATE
+============================================================
+EV005=BLOCKED
+EV006=BLOCKED
+EV007=PASS
+EV008=PASS
+EV009=PASS
+EV010=BLOCKED
+EV011=PASS
+EV012=PASS
+EV013=PASS
