@@ -495,4 +495,10 @@ set_state EV013 "$EV013"
   cat "$STATE_FILE"
 } >> "$CONTROL_LOG"
 
-exit 0
+if bash "$(dirname "${BASH_SOURCE[0]}")/phase24_batch_c_state_gate.sh" \
+  "$STATE_FILE" 2>&1 | tee -a "$CONTROL_LOG"
+then
+  exit 0
+else
+  exit 1
+fi

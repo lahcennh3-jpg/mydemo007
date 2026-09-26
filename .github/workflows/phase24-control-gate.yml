@@ -1,0 +1,25 @@
+name: Phase 24 control gate
+
+on:
+  push:
+    branches:
+      - security/phase25-batch-c-gate
+  pull_request:
+    branches:
+      - security/phase-25-portfolio-closure-transfer-continuous-improvement
+
+permissions:
+  contents: read
+
+jobs:
+  state-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Check shell syntax and exit behavior
+        run: |
+          bash -n \
+            scripts/security/phase24_batch_c_control_regressions.sh \
+            scripts/security/phase24_batch_c_state_gate.sh \
+            scripts/security/test_phase24_batch_c_state_gate.sh
+          bash scripts/security/test_phase24_batch_c_state_gate.sh
