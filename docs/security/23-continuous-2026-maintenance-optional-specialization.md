@@ -191,3 +191,74 @@ PHASE23_BATCH_C=READY_FOR_VERIFICATION
 PHASE23_COMPLETE=NO
 
 NEXT=BATCH_D_REGRESSION_TABLETOP_PORTFOLIO_MAINTENANCE_CLOSURE
+
+## Batch D — regression, tabletop, portfolio and maintenance closure
+
+Timestamp UTC:
+
+`2026-09-26T13:48:40Z`
+
+Actions completed:
+
+- regression-evidence audit;
+- repository-integrity verification;
+- synthetic incident-response tabletop;
+- portfolio claim-boundary maintenance;
+- residual-risk refresh;
+- Phase 23 maintenance-cycle closure.
+
+Regression families audited:
+
+`14`
+
+Historical evidence present:
+
+`14`
+
+Historical evidence not found:
+
+`0`
+
+Current-cycle runtime regression executions:
+
+`0`
+
+Synthetic tabletop scenarios:
+
+`5`
+
+Open residual risks:
+
+`7`
+
+Deferred residual risks:
+
+`1`
+
+ACTION_23.16=PASS_BATCH_C_HANDOFF_GATE
+
+ACTION_23.17=PASS_REGRESSION_EVIDENCE_AUDIT
+
+ACTION_23.18=PASS_SYNTHETIC_INCIDENT_TABLETOP
+
+ACTION_23.19=PASS_PORTFOLIO_AND_CLAIM_MAINTENANCE
+
+ACTION_23.20=PASS_PHASE23_MAINTENANCE_CYCLE_CLOSURE
+
+PHASE23_BATCH_D=PASS
+
+PHASE23_WORKFLOW_COMPLETE=YES
+
+PHASE23_COMPLETE=YES_WITH_LIMITATIONS
+
+CURRENT_RUNTIME_REGRESSION_COMPLETE=NO
+
+PUBLICATION_APPROVED=NO
+
+INDEPENDENT_PROJECT_COMPLETION=NO
+
+ACTION_21.17=BLOCKED_INDEPENDENT
+
+OPTIONAL_SPECIALIZATION=DEFERRED_UNTIL_CAPSTONE_PROMOTION_GATE
+
+NEXT=QUARTERLY_OR_EVENT_DRIVEN_MAINTENANCE

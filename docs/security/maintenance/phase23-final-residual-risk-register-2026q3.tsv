@@ -1,0 +1,9 @@
+risk_id	risk	status	owner	next_gate
+R23-001	upstream comparison completeness not established	OPEN	PROJECT_OWNER	FUTURE_UPSTREAM_REVIEW
+R23-002	pinned Onyx baseline differs from current upstream	OPEN	PROJECT_OWNER	BASELINE_UPGRADE_GATE
+R23-003	current-cycle runtime regressions not executed	OPEN	PROJECT_OWNER	RUNTIME_REGRESSION_GATE
+R23-004	threat deltas lack current-cycle runtime closure evidence	OPEN	PROJECT_OWNER	RUNTIME_REGRESSION_GATE
+R23-005	public portfolio publication not approved	OPEN	PROJECT_OWNER	PUBLICATION_GATE
+R23-006	independent reproduction incomplete	OPEN	INDEPENDENT_VERIFIER	INDEPENDENCE_GATE
+R23-007	Phase 21 Action 21.17 remains blocked	OPEN	INDEPENDENT_VERIFIER	INDEPENDENCE_GATE
+R23-008	optional specialization remains deferred	DEFERRED	PROJECT_OWNER	SPECIALIZATION_REASSESSMENT_GATE
