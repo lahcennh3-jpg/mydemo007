@@ -1,0 +1,13 @@
+DETECTION	SEVERITY	INITIAL_RESPONSE	EVIDENCE_TO_PRESERVE
+REPEATED_AUTH_FAILURE	medium	validate actor/session and rate controls	auth events + actor + session
+WORKLOAD_IDENTITY_FAILURE	high	fail closed and validate workload identity	identity decision + workload
+CROSS_USER_ACCESS	high	preserve denial and investigate ownership boundary	actor + resource + authz decision
+CROSS_TENANT_ACCESS	critical	preserve evidence and investigate tenant boundary	actor + tenant + target tenant + decision
+UNAUTHORIZED_RAG_RETRIEVAL	high	investigate retrieval authorization	actor + document + retrieval decision
+UNAUTHORIZED_MEMORY_ACCESS	high	investigate memory isolation	actor + memory resource + decision
+AGENT_POLICY_DENIAL	high	investigate agent capability request	agent + action + policy decision
+TOOL_AUTHORIZATION_DENIAL	high	investigate tool authorization	agent + tool + decision
+MCP_POLICY_DENIAL	high	investigate MCP trust/authorization	agent + MCP identity + decision
+SENSITIVE_EXPORT_DENIAL	critical	preserve policy evidence and investigate export	actor + classification + export decision
+REPEATED_RESOURCE_VIOLATION	medium	validate abuse/resource controls	actor + resource + limit events
+WORKLOAD_PRIVILEGE_DENIAL	critical	investigate workload privilege boundary	workload + requested privilege + policy decision

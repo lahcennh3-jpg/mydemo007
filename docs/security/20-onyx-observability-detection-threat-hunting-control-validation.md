@@ -47,14 +47,14 @@ Phase 20 evaluates whether security-relevant behavior can be:
 | 20.14 | Threat-hunting hypotheses | COMPLETE |
 | 20.15 | Alert quality and false-positive/negative analysis | COMPLETE |
 | 20.16 | Cross-domain control-validation gate | COMPLETE |
-| 20.17 | Cross-layer adversarial detection tests | PENDING |
-| 20.18 | Bounded runtime telemetry validation | PENDING |
-| 20.19 | Incident correlation exercise | PENDING |
-| 20.20 | Detection-to-response mapping | PENDING |
-| 20.21 | Evidence-integrity validation | PENDING |
-| 20.22 | Residual observability/detection gaps | PENDING |
-| 20.23 | Final security assessment | PENDING |
-| 20.24 | Final closure gate | PENDING |
+| 20.17 | Cross-layer adversarial detection tests | COMPLETE |
+| 20.18 | Bounded runtime telemetry validation | COMPLETE |
+| 20.19 | Incident correlation exercise | COMPLETE |
+| 20.20 | Detection-to-response mapping | COMPLETE |
+| 20.21 | Evidence-integrity validation | COMPLETE |
+| 20.22 | Residual observability/detection gaps | COMPLETE |
+| 20.23 | Final security assessment | COMPLETE |
+| 20.24 | Final closure gate | COMPLETE |
 
 ## Batch A findings
 
@@ -83,9 +83,9 @@ It does not yet claim:
 
 ## Current state
 
-**BATCH_B_COMPLETE**
+**PHASE20_COMPLETE_LOCAL_SYNTHETIC_SCOPE**
 
-NEXT=PHASE20_ACCELERATED_BATCH_C
+NEXT=PHASE21
 
 ## Batch B — Detection Engineering and Threat Hunting
 
@@ -107,3 +107,41 @@ Allowed operations remain explicit negative controls.
 The thresholds and event corpus are laboratory controls and do not establish
 production SIEM effectiveness, precision, recall, alert quality, analyst
 performance, false-positive rate, or false-negative rate.
+
+## Batch C — Adversarial Validation and Closure
+
+Batch C validates the detection model against additional benign noise,
+telemetry-quality mutations, a synthetic cross-layer incident, and explicit
+detection-to-response mappings.
+
+Runtime inspection result:
+
+- Docker: **ACCESSIBLE**
+- Kubernetes client/context: **UNAVAILABLE**
+- overall bounded runtime result: **COMPLETE_WITH_LIMITS**
+
+Evidence integrity uses version-aware validation: historical immutable evidence
+is checked against its originating Git state when cumulative files have
+legitimately changed.
+
+No production SIEM, SOC, telemetry-completeness, false-positive,
+false-negative, precision, recall, or incident-response effectiveness claim is
+made.
+
+## Phase 20 final closure
+
+Phase 20 is complete inside the authorized local/synthetic scope.
+
+PHASE20_STATUS=COMPLETE_LOCAL_SYNTHETIC_SCOPE
+
+PRODUCTION_TELEMETRY_VALIDATION=NOT_PERFORMED
+
+PRODUCTION_SIEM_EFFECTIVENESS_CLAIM=FALSE
+
+PRODUCTION_SOC_EFFECTIVENESS_CLAIM=FALSE
+
+PRODUCTION_FALSE_POSITIVE_RATE=NOT_MEASURED
+
+PRODUCTION_FALSE_NEGATIVE_RATE=NOT_MEASURED
+
+NEXT=PHASE21

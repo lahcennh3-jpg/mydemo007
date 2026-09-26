@@ -1,0 +1,21 @@
+EVENT_ID	DOMAIN	ACTOR	TENANT	RESOURCE	ACTION	OUTCOME	CONTROL
+EV001	authentication	user-alice	tenant-alpha	session	login	DENIED	AUTH_FAILURE
+EV002	authentication	user-alice	tenant-alpha	session	login	DENIED	AUTH_FAILURE
+EV003	authentication	user-alice	tenant-alpha	session	login	DENIED	AUTH_FAILURE
+EV004	authentication	user-alice	tenant-alpha	session	login	ALLOWED	AUTH_SUCCESS
+EV005	authorization	user-alice	tenant-alpha	conv-bob	read	DENIED	CROSS_USER
+EV006	tenant-isolation	user-alice		doc-beta	read	DENIED	CROSS_TENANT
+EV007	rag	user-alice	tenant-alpha	doc-beta	retrieve	DENIED	RAG_AUTHZ
+EV008	memory	user-alice	tenant-alpha	memory-bob	read	DENIED	MEMORY_AUTHZ
+EV009	agent	user-alice	tenant-alpha	agent-admin	invoke	DENIED	AGENT_POLICY
+EV010	tooling	agent-user	tenant-alpha	admin-tool	invoke	DENIED	TOOL_AUTHZ
+EV011	mcp	agent-user	tenant-alpha	mcp-untrusted	invoke	DENIED	MCP_POLICY
+EV012	data	user-alice	tenant-alpha	export-sensitive	export	DENIED	DATA_POLICY
+EV013	abuse	user-alice	tenant-alpha	expensive-operation	invoke	DENIED	RESOURCE_LIMIT
+EV014	abuse	user-alice	tenant-alpha	expensive-operation	invoke	DENIED	RESOURCE_LIMIT
+EV015	abuse	user-alice	tenant-alpha	expensive-operation	invoke	DENIED	RESOURCE_LIMIT
+EV016	infrastructure	workload-api	platform	privileged-container	create	DENIED	WORKLOAD_POLICY
+EV017	identity	workload-api	platform	workload-identity	authenticate	DENIED	IDENTITY_INVALID
+EV018	authorization	user-alice	tenant-alpha	conv-alice	read	ALLOWED	AUTHZ_ALLOW
+EV019	rag	user-alice	tenant-alpha	doc-alpha	retrieve	ALLOWED	RAG_AUTHZ_ALLOW
+EV020	tooling	agent-user	tenant-alpha	search-tool	invoke	ALLOWED	TOOL_ALLOW

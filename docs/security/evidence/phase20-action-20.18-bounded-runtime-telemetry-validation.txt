@@ -1,0 +1,51 @@
+PHASE=20
+ACTION=20.18
+TITLE=BOUNDED_RUNTIME_TELEMETRY_VALIDATION
+UTC=2026-09-26T09:43:04Z
+
+=== COMMAND CAPABILITY ===
+docker=AVAILABLE
+docker_runtime=ACCESSIBLE
+--- bounded docker process view ---
+kubectl=UNAVAILABLE
+
+=== LOCAL BOUNDED PROCESS OBSERVATION ===
+    PID COMMAND         COMMAND
+      1 sh              /bin/sh -c echo Container started trap "exit 0" 15 /usr/local/share/docker-init.sh /usr/local/share/ssh-init.sh exec "$@" while sleep 1 & wait $!; do :; done -
+     44 containerd      /usr/bin/containerd --config /etc/containerd/config.toml
+     45 dockerd         dockerd --containerd /run/containerd/containerd.sock --dns 168.63.129.16
+    386 sshd            sshd: /usr/sbin/sshd [listener] 0 of 10-100 startups
+    412 sh              /bin/sh
+    429 sh              /bin/sh
+    596 sh              sh /home/vscode/.vscode-remote/bin/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/vscode/.vscode-remote --accept-server-license-terms --host 127.0.0.1 --port 0 --connection-token-file /home/vscode/.vscode-remote/data/Machine/.connection-token-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1 --extensions-download-dir /home/vscode/.vscode-remote/extensionsCache --start-server  --enable-remote-auto-shutdown --skip-requirements-check
+    605 MainThread      /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/out/server-main.js --log trace --force-disable-user-env --server-data-dir /home/vscode/.vscode-remote --accept-server-license-terms --host 127.0.0.1 --port 0 --connection-token-file /home/vscode/.vscode-remote/data/Machine/.connection-token-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1 --extensions-download-dir /home/vscode/.vscode-remote/extensionsCache --start-server  --enable-remote-auto-shutdown --skip-requirements-check
+    664 MainThread      /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/out/bootstrap-fork --type=agentHost --logsPath /home/vscode/.vscode-remote/data/logs/20260926T071711 --user-data-dir /home/vscode/.vscode-remote/data --telemetry-level all
+    671 MainThread      /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/out/bootstrap-fork --type=fileWatcher
+    704 copilot-runtime /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node_modules/@github/copilot-sdk-linux-x64/prebuilds/linux-x64/copilot-runtime --headless --no-auto-update --log-level info --stdio --no-auto-login
+    885 MainThread      /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/out/bootstrap-fork --type=ptyHost --logsPath /home/vscode/.vscode-remote/data/logs/20260926T071711
+    934 sh              /bin/sh
+    974 sh              /bin/sh
+  20663 sh              /bin/sh
+  20708 sh              /bin/sh
+  20927 MainThread      /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node --dns-result-order=ipv4first /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+  20947 MainThread      /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/out/bootstrap-fork --type=fileWatcher
+  21246 sh              /bin/sh
+  21292 sh              /bin/sh
+  21895 MainThread      /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=20927
+  67098 sh              /bin/sh
+  67135 sh              /bin/sh
+  67426 MainThread      /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node --dns-result-order=ipv4first /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+  67479 MainThread      /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/out/bootstrap-fork --type=fileWatcher
+  67776 sh              /bin/sh
+  67813 sh              /bin/sh
+  68220 MainThread      /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/extensions/markdown-language-features/dist/serverWorkerMain --node-ipc --clientProcessId=67426
+  68276 MainThread      /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/node /vscode/bin/linux-x64/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=67426
+
+BOUND_SECONDS_PER_RUNTIME_PROBE=10
+DOCKER_STATUS=ACCESSIBLE
+KUBECTL_STATUS=UNAVAILABLE
+LOCAL_PROCESS_STATUS=AVAILABLE
+RUNTIME_VALIDATION=COMPLETE_WITH_LIMITS
+PRODUCTION_TELEMETRY_VALIDATION=NOT_PERFORMED
+PRODUCTION_SIEM_VALIDATION=NOT_PERFORMED
+ACTION_RESULT=COMPLETE_WITH_LIMITS

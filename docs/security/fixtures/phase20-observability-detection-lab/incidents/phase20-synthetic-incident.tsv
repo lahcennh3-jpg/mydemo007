@@ -1,0 +1,9 @@
+STEP	TIME	ACTOR	TENANT	RESOURCE	ACTION	OUTCOME	SIGNAL
+1	T+00	user-alice	tenant-alpha	session	login	DENIED	REPEATED_AUTH_FAILURE
+2	T+01	user-alice	tenant-alpha	session	login	DENIED	REPEATED_AUTH_FAILURE
+3	T+02	user-alice	tenant-alpha	session	login	DENIED	REPEATED_AUTH_FAILURE
+4	T+03	user-alice	tenant-alpha	conv-bob	read	DENIED	CROSS_USER_ACCESS
+5	T+04	user-alice	tenant-alpha	doc-beta	retrieve	DENIED	UNAUTHORIZED_RAG_RETRIEVAL
+6	T+05	agent-user	tenant-alpha	admin-tool	invoke	DENIED	TOOL_AUTHORIZATION_DENIAL
+7	T+06	agent-user	tenant-alpha	mcp-untrusted	invoke	DENIED	MCP_POLICY_DENIAL
+8	T+07	user-alice	tenant-alpha	export-sensitive	export	DENIED	SENSITIVE_EXPORT_DENIAL
