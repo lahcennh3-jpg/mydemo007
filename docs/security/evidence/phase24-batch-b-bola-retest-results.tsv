@@ -1,0 +1,7 @@
+case_id	expectation	http_status	result	detail
+BOLA-R01	OWNER_CREATES_SESSION	200	PASS	positive_control
+BOLA-R02	OWNER_CAN_READ_SESSION	200	PASS	positive_control
+BOLA-R03	NON_OWNER_READ_DENIED	403	PASS	cross_user_read
+BOLA-R04	NON_OWNER_STOP_DENIED	404	PASS	cross_user_state_change
+BOLA-R05	OWNER_STOP_ALLOWED	200	PASS	owner_positive_control_same_route
+BOLA-R06	OWNER_STILL_READS_SESSION	200	PASS	post_retest_integrity_control
