@@ -17,11 +17,14 @@ source_files=(
 )
 
 cd "$(git rev-parse --show-toplevel)"
-if [ "$(git remote get-url origin)" != "https://github.com/lahcennh3-jpg/mydemo007.git" ] ||
-   ! git merge-base --is-ancestor "$SOURCE_COMMIT" HEAD ||
+case "$(git remote get-url origin)" in
+  https://github.com/lahcennh3-jpg/mydemo007|https://github.com/lahcennh3-jpg/mydemo007.git) ;;
+  *) echo 'STOP: repository origin differs from the approved fork' >&2; exit 1 ;;
+esac
+if ! git merge-base --is-ancestor "$SOURCE_COMMIT" HEAD ||
    [ -n "$(git status --porcelain)" ]
 then
-  echo 'STOP: repository identity, source ancestry, or clean worktree check failed' >&2
+  echo 'STOP: source ancestry or clean worktree check failed' >&2
   exit 1
 fi
 
