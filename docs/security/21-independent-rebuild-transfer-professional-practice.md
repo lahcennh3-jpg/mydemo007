@@ -36,24 +36,24 @@ Assigned scope:
 | Action | Requirement | Status |
 | --- | --- | --- |
 | 21.1 | Rebuild the lab from a clean environment | PASS_ASSISTED_REBUILD |
-| 21.2 | Reproduce findings without copied commands | ASSISTED_PARTIAL |
-| 21.3 | Explain command purpose, target, effect, evidence, failure signal, rollback | ASSISTED_PARTIAL |
+| 21.2 | Reproduce findings without copied commands | PASS_ASSISTED_REPRODUCTION |
+| 21.3 | Explain command purpose, target, effect, evidence, failure signal, rollback | PASS_ASSISTED_EXPLANATION |
 | 21.4 | Transfer one method to an unfamiliar AI application | PASS_ASSISTED |
-| 21.5 | Perform security code review | ASSISTED_PARTIAL |
-| 21.6 | Perform architecture review | ASSISTED_PARTIAL |
-| 21.7 | Perform design review | ASSISTED_PARTIAL |
-| 21.8 | Perform incident handoff | ASSISTED_DRAFT |
-| 21.9 | Write technical findings | ASSISTED_DRAFT |
-| 21.10 | Write executive summaries | ASSISTED_DRAFT |
-| 21.11 | Prioritize remediation | ASSISTED_DRAFT |
-| 21.12 | Defend trade-offs | ASSISTED_DRAFT |
-| 21.13 | Review another safe change | ASSISTED_DRAFT |
-| 21.14 | Respond to review comments | ASSISTED_DRAFT |
+| 21.5 | Perform security code review | PASS_ASSISTED_REVIEW |
+| 21.6 | Perform architecture review | PASS_ASSISTED_REVIEW |
+| 21.7 | Perform design review | PASS_ASSISTED_REVIEW |
+| 21.8 | Perform incident handoff | PASS_ASSISTED |
+| 21.9 | Write technical findings | PASS_ASSISTED |
+| 21.10 | Write executive summaries | PASS_ASSISTED |
+| 21.11 | Prioritize remediation | PASS_ASSISTED |
+| 21.12 | Defend trade-offs | PASS_ASSISTED |
+| 21.13 | Review another safe change | PASS_ASSISTED_REVIEW |
+| 21.14 | Respond to review comments | PASS_ASSISTED_RESPONSE |
 | 21.15 | Submit safe documentation/test/hardening/bug-fix contribution | PASS_SAFE_TEST_CONTRIBUTION |
 | 21.16 | Follow upstream security policy for suspected vulnerabilities | PASS_POLICY_HANDLING |
 | 21.17 | Independently reproducible assessment and reviewed contribution | BLOCKED |
 
-PHASE21_STATUS=BATCH_C_PARTIAL_INDEPENDENT_GATE_BLOCKED
+PHASE21_STATUS=ASSISTED_CAPSTONE_COMPLETE_INDEPENDENT_GATE_BLOCKED
 
 NEXT=COMPLETE_LOCAL_REBUILD_AND_INDEPENDENT_ASSESSMENT
 
@@ -134,5 +134,36 @@ This was an assisted execution.
 
 ACTION_21_1=PASS_ASSISTED_REBUILD
 INDEPENDENT_REBUILD=NOT_CLAIMED
+PHASE21_COMPLETE=NO
+NEXT=INDEPENDENT_REPRODUCTION_ROUND
+
+## Assisted Actions 21.2–21.14 completion checkpoint
+
+PHASE21_ASSISTED_PROFESSIONAL_CAPSTONE=PASS
+
+Actions 21.2–21.14 now have complete assisted professional-practice evidence.
+
+Demonstrated:
+
+- synthetic security-behavior reproduction;
+- command-purpose and rollback explanation;
+- method transfer;
+- security code review;
+- architecture review;
+- design/misuse-case review;
+- incident handoff;
+- technical finding;
+- executive summary;
+- remediation prioritization;
+- trade-off defense;
+- safe-change review;
+- review response.
+
+Assistant-supplied commands and analysis structure were used.
+
+The independent gate is therefore intentionally unchanged.
+
+ACTION_21.17=BLOCKED_ASSISTED_CAPSTONE
+INDEPENDENT_ASSESSMENT=NOT_CLAIMED
 PHASE21_COMPLETE=NO
 NEXT=INDEPENDENT_REPRODUCTION_ROUND
