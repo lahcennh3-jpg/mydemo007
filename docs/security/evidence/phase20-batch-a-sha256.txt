@@ -1,0 +1,11 @@
+3330fad3084a3f5cdee8ccb1ebd84f012407ffe9dcf8fc7084a90bc3f8ddfb0c  docs/security/20-onyx-observability-detection-threat-hunting-control-validation.md
+7da1f5118ff6c281209d8c5615325f00dd94525e348b8eb9e4f1a036982fc6a9  docs/security/evidence/phase20-action-20.1-immutable-start-gate.txt
+217df9f2eef24ee8d80c380d10075b555c3f5b9f70bd338017095e090d9f24dd  docs/security/evidence/phase20-action-20.2-observability-surface-inventory.txt
+8d8bc9fe79d579bb657ad47f307f71c8fe6d58c75cea6f2d98813c221983b4d5  docs/security/evidence/phase20-action-20.3-security-event-model.md
+5eeb6cf867111edc6336be0b1936e16d3f47d0b1fb2403b977aec69741d8f05a  docs/security/evidence/phase20-action-20.4-correlation-traceability-model.md
+8e4eddc9eab68a1fdf5790b69bed76ef863eda8fcb259535e1c5ce5589748dd7  docs/security/evidence/phase20-action-20.5-sensitive-telemetry-boundary.md
+930a24a1c28a3a521743f0b5584c864c5c3db1318d53e8acf2f16ed1471d3e9e  docs/security/evidence/phase20-action-20.6-detection-control-catalog.md
+046ec9821338da2e6797ebb6d5bb3007f6fe39d8c409e8ece30de4f5dd9d1bbc  docs/security/evidence/phase20-action-20.7-static-detection-validation.txt
+2f6545c79223440a2de85ca5091cca6d34389c4ceade76a131ba508beade818f  docs/security/evidence/phase20-action-20.8-batch-a-release-gate.txt
+db33866a15eff8c32e92c10d98e3980d21285e85fbf4cfd1c61f047d1e5f01dc  docs/security/fixtures/phase20-observability-detection-lab/detections/phase20-detection-catalog.tsv
+554dcf79db81e76eadba6f0973c47f244c2085ee6f45b33b80190e7d3466be1e  docs/security/fixtures/phase20-observability-detection-lab/schemas/security-event.schema.md

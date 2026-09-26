@@ -1,0 +1,13 @@
+ID	DOMAIN	CONDITION	EXPECTED_SECURITY_SIGNAL
+P20-DET-001	authentication	repeated authentication failure	identity failure signal
+P20-DET-002	authorization	cross-user resource attempt	authorization denial
+P20-DET-003	tenant-isolation	cross-tenant resource attempt	tenant boundary denial
+P20-DET-004	rag	unauthorized retrieval attempt	retrieval authorization denial
+P20-DET-005	memory	unauthorized memory access	memory boundary denial
+P20-DET-006	agent	unexpected privileged agent action	agent policy signal
+P20-DET-007	tooling	unauthorized tool invocation	tool authorization denial
+P20-DET-008	mcp	untrusted or unauthorized MCP invocation	MCP policy signal
+P20-DET-009	data	sensitive export attempt	data-policy signal
+P20-DET-010	abuse	repeated bounded-resource violation	abuse/resource signal
+P20-DET-011	infrastructure	privilege boundary violation	workload security signal
+P20-DET-012	identity	workload identity validation failure	identity fail-closed signal
