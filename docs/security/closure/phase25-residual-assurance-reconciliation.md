@@ -23,6 +23,8 @@ R16-03 requires an approved production trust chain. The Phase 16 local signing
 demonstration does not close R16-03.
 R24-006 requires source and image correspondence. Matching an image to the
 Phase 24 image baseline does not close R24-006.
+The [Codespace file comparison](../evidence/phase25-source-image-drift-check.md)
+found differences in three of six selected application files.
 
 This register records later reconciliation. It does not rewrite the
 historical Phase 25 completion decision or the original evidence counts.
