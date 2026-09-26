@@ -35,13 +35,13 @@ Assigned scope:
 
 | Action | Requirement | Status |
 | --- | --- | --- |
-| 21.1 | Rebuild the lab from a clean environment | IN_PROGRESS |
-| 21.2 | Reproduce findings without copied commands | PENDING |
-| 21.3 | Explain command purpose, target, effect, evidence, failure signal, rollback | PENDING |
-| 21.4 | Transfer one method to an unfamiliar AI application | PENDING |
-| 21.5 | Perform security code review | PENDING |
-| 21.6 | Perform architecture review | PENDING |
-| 21.7 | Perform design review | PENDING |
+| 21.1 | Rebuild the lab from a clean environment | BLOCKED |
+| 21.2 | Reproduce findings without copied commands | ASSISTED_PARTIAL |
+| 21.3 | Explain command purpose, target, effect, evidence, failure signal, rollback | ASSISTED_PARTIAL |
+| 21.4 | Transfer one method to an unfamiliar AI application | ASSISTED_PARTIAL |
+| 21.5 | Perform security code review | ASSISTED_PARTIAL |
+| 21.6 | Perform architecture review | ASSISTED_PARTIAL |
+| 21.7 | Perform design review | ASSISTED_PARTIAL |
 | 21.8 | Perform incident handoff | PENDING |
 | 21.9 | Write technical findings | PENDING |
 | 21.10 | Write executive summaries | PENDING |
@@ -53,6 +53,11 @@ Assigned scope:
 | 21.16 | Follow upstream security policy for suspected vulnerabilities | PENDING |
 | 21.17 | Independently reproducible assessment and reviewed contribution | PENDING |
 
-PHASE21_STATUS=BATCH_A_IN_PROGRESS
+PHASE21_STATUS=BATCH_A_BLOCKED_ASSISTED_SCOPE
 
-NEXT=PHASE21_ACTION_21.1
+NEXT=COMPLETE_LOCAL_REBUILD_AND_INDEPENDENT_ASSESSMENT
+
+## Batch A checkpoint
+
+See `docs/security/evidence/phase21-batch-a-assisted-assessment.md`.
+The full rebuild and independent assessment remain open.
