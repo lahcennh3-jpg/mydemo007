@@ -4,7 +4,7 @@ R24-002	phase25-residual-risk-handoff.tsv	RAG authorization and revocation runti
 R24-003	phase25-residual-risk-handoff.tsv	Retrieval poisoning runtime not executed	OPEN	PROJECT_OWNER	2026-10-31	SELF	Run bounded poisoned-document tests against a controlled RAG runtime.
 R24-004	phase25-residual-risk-handoff.tsv	Prompt-injection runtime not executed	OPEN	PROJECT_OWNER	2026-10-31	SELF	Run attack and benign cases with a controlled local model.
 R24-005	phase25-residual-risk-handoff.tsv	Model/provider behavior runtime not executed	OPEN	PROJECT_OWNER	2026-10-31	SELF	Measure repeated model behavior with denominators and uncertainty.
-R24-006	phase25-residual-risk-handoff.tsv	Runtime source-to-image correspondence not fully established	OPEN	PROJECT_OWNER	2026-10-31	SELF	Tie the tested image digest and migrations to a reviewed source commit.
+R24-006	phase25-residual-risk-handoff.tsv	Selected runtime code differs from the reviewed source; full provenance absent	OPEN	PROJECT_OWNER	2026-10-31	SELF	Build and test a reviewed source image with an isolated migration path.
 R24-007	phase25-residual-risk-handoff.tsv	S3/MinIO path not validated in the control-plane baseline	OPEN	PROJECT_OWNER	2026-10-31	SELF	Test the authorized S3 file-store path with synthetic data.
 R24-008	phase25-residual-risk-handoff.tsv	Production operational effectiveness not validated	OPEN	PROJECT_OWNER	2026-10-31	SELF	Collect authorized production evidence and independent review.
 R24-009	phase25-residual-risk-handoff.tsv	Upstream comparison completeness not established	OPEN	PROJECT_OWNER	2026-10-31	SELF	Review relevant upstream changes against the pinned source.
