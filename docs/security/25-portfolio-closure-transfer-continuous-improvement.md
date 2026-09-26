@@ -208,3 +208,10 @@ ROADMAP_MANDATORY_PHASES_COMPLETE=YES_WITH_LIMITATIONS
 NO_PHASE26_REQUIRED=YES
 
 NEXT=CONTINUOUS_QUARTERLY_OR_EVENT_DRIVEN_MAINTENANCE
+
+## Later residual assurance reconciliation
+
+The original twelve-risk handoff remains a historical snapshot.
+The [consolidated register](closure/phase25-consolidated-residual-assurance.tsv)
+also carries six Phase 9 and four Phase 16 requirements.
+All 22 items remain open. No production risk acceptance is recorded.
