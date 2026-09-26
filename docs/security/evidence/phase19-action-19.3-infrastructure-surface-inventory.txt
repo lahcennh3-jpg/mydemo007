@@ -1,0 +1,978 @@
+PHASE=19
+ACTION=19.3
+TITLE=INFRASTRUCTURE_CONFIGURATION_SURFACE_INVENTORY
+UTC=2026-09-26T08:52:22Z
+
+=== DISCOVERED INFRASTRUCTURE FILES ===
+./.devcontainer/Dockerfile
+./backend/Dockerfile
+./backend/Dockerfile.model_server
+./backend/onyx/server/features/build/sandbox/image/Dockerfile
+./backend/tests/integration/mock_services/docker-compose.mock-it-services.yml
+./backend/tests/integration/mock_services/mock_connector_server/Dockerfile
+./cli/Dockerfile
+./cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.craft.yml
+./cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.dev.yml
+./cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.onyx-lite.yml
+./cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.prod.yml
+./cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.yml
+./deployment/docker_compose/docker-compose.airgap-test.yml
+./deployment/docker_compose/docker-compose.airgap-tls-test.yml
+./deployment/docker_compose/docker-compose.craft.yml
+./deployment/docker_compose/docker-compose.dev.yml
+./deployment/docker_compose/docker-compose.mcp-api-key-test.yml
+./deployment/docker_compose/docker-compose.mcp-oauth-test.yml
+./deployment/docker_compose/docker-compose.mcp-per-user-key-test.yml
+./deployment/docker_compose/docker-compose.multitenant.yml
+./deployment/docker_compose/docker-compose.onyx-lite.yml
+./deployment/docker_compose/docker-compose.prod-no-letsencrypt.yml
+./deployment/docker_compose/docker-compose.prod.yml
+./deployment/docker_compose/docker-compose.resources.yml
+./deployment/docker_compose/docker-compose.search-testing.yml
+./deployment/docker_compose/docker-compose.template.yml
+./deployment/docker_compose/docker-compose.yml
+./deployment/helm/charts/onyx-cnpg-crds/Chart.yaml
+./deployment/helm/charts/onyx/Chart.yaml
+./deployment/helm/charts/onyx/templates/craft-kubernetes-version-check.yaml
+./deployment/terraform/modules/aws/eks/main.tf
+./deployment/terraform/modules/aws/eks/outputs.tf
+./deployment/terraform/modules/aws/eks/variables.tf
+./deployment/terraform/modules/aws/eks/versions.tf
+./deployment/terraform/modules/aws/onyx/main.tf
+./deployment/terraform/modules/aws/onyx/outputs.tf
+./deployment/terraform/modules/aws/onyx/variables.tf
+./deployment/terraform/modules/aws/onyx/versions.tf
+./deployment/terraform/modules/aws/opensearch/main.tf
+./deployment/terraform/modules/aws/opensearch/outputs.tf
+./deployment/terraform/modules/aws/opensearch/variables.tf
+./deployment/terraform/modules/aws/opensearch/versions.tf
+./deployment/terraform/modules/aws/postgres/main.tf
+./deployment/terraform/modules/aws/postgres/outputs.tf
+./deployment/terraform/modules/aws/postgres/variables.tf
+./deployment/terraform/modules/aws/postgres/versions.tf
+./deployment/terraform/modules/aws/redis/main.tf
+./deployment/terraform/modules/aws/redis/outputs.tf
+./deployment/terraform/modules/aws/redis/variables.tf
+./deployment/terraform/modules/aws/redis/versions.tf
+./deployment/terraform/modules/aws/s3/main.tf
+./deployment/terraform/modules/aws/s3/outputs.tf
+./deployment/terraform/modules/aws/s3/variables.tf
+./deployment/terraform/modules/aws/s3/versions.tf
+./deployment/terraform/modules/aws/vpc/main.tf
+./deployment/terraform/modules/aws/vpc/outputs.tf
+./deployment/terraform/modules/aws/vpc/variables.tf
+./deployment/terraform/modules/aws/vpc/versions.tf
+./deployment/terraform/modules/aws/waf/main.tf
+./deployment/terraform/modules/aws/waf/outputs.tf
+./deployment/terraform/modules/aws/waf/variables.tf
+./deployment/terraform/modules/aws/waf/versions.tf
+./deployment/terraform/modules/azure/aks/main.tf
+./deployment/terraform/modules/azure/aks/outputs.tf
+./deployment/terraform/modules/azure/aks/tests/aks.tftest.hcl
+./deployment/terraform/modules/azure/aks/variables.tf
+./deployment/terraform/modules/azure/aks/versions.tf
+./deployment/terraform/modules/azure/onyx/main.tf
+./deployment/terraform/modules/azure/onyx/outputs.tf
+./deployment/terraform/modules/azure/onyx/tests/onyx.tftest.hcl
+./deployment/terraform/modules/azure/onyx/variables.tf
+./deployment/terraform/modules/azure/onyx/versions.tf
+./deployment/terraform/modules/azure/postgres/main.tf
+./deployment/terraform/modules/azure/postgres/outputs.tf
+./deployment/terraform/modules/azure/postgres/tests/postgres.tftest.hcl
+./deployment/terraform/modules/azure/postgres/variables.tf
+./deployment/terraform/modules/azure/postgres/versions.tf
+./deployment/terraform/modules/azure/redis/main.tf
+./deployment/terraform/modules/azure/redis/outputs.tf
+./deployment/terraform/modules/azure/redis/tests/redis.tftest.hcl
+./deployment/terraform/modules/azure/redis/variables.tf
+./deployment/terraform/modules/azure/redis/versions.tf
+./deployment/terraform/modules/azure/storage/main.tf
+./deployment/terraform/modules/azure/storage/outputs.tf
+./deployment/terraform/modules/azure/storage/tests/storage.tftest.hcl
+./deployment/terraform/modules/azure/storage/variables.tf
+./deployment/terraform/modules/azure/storage/versions.tf
+./deployment/terraform/modules/azure/vnet/main.tf
+./deployment/terraform/modules/azure/vnet/outputs.tf
+./deployment/terraform/modules/azure/vnet/tests/vnet.tftest.hcl
+./deployment/terraform/modules/azure/vnet/variables.tf
+./deployment/terraform/modules/azure/vnet/versions.tf
+./deployment/terraform/modules/azure/waf/main.tf
+./deployment/terraform/modules/azure/waf/outputs.tf
+./deployment/terraform/modules/azure/waf/tests/waf.tftest.hcl
+./deployment/terraform/modules/azure/waf/variables.tf
+./deployment/terraform/modules/azure/waf/versions.tf
+./docker-bake.hcl
+./terraform-provider-onyx/examples/bootstrap/main.tf
+./terraform-provider-onyx/examples/bootstrap/outputs.tf
+./terraform-provider-onyx/examples/bootstrap/variables.tf
+./terraform-provider-onyx/examples/data-sources/onyx_connectors/data-source.tf
+./terraform-provider-onyx/examples/data-sources/onyx_embedding_providers/data-source.tf
+./terraform-provider-onyx/examples/data-sources/onyx_llm_providers/data-source.tf
+./terraform-provider-onyx/examples/data-sources/onyx_settings/data-source.tf
+./terraform-provider-onyx/examples/provider/provider.tf
+./terraform-provider-onyx/examples/resources/onyx_agent/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_api_key/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_cc_pair/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_connector/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_credential/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_custom_tool/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_document_set/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_embedding_provider/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_llm_provider/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_llm_provider_default/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_mcp_server/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_settings/resource.tf
+./terraform-provider-onyx/examples/resources/onyx_user_group/resource.tf
+./tools/loadtest/Dockerfile
+./tools/loadtest/mock_llm/Dockerfile
+./tools/profiling/docker-compose.yml
+./web/Dockerfile
+
+=== COUNT ===
+123
+
+=== CONTAINER / COMPOSE / K8S / IAC SECURITY INDICATORS ===
+
+------------------------------------------------------------
+FILE=./.devcontainer/Dockerfile
+------------------------------------------------------------
+8:FROM ${BASE_IMAGE_REGISTRY}/oven/bun:1@sha256:9114c058aeae42162ee16dd5084b95fe9473970bb6bcb5b232ab1630f0546895 AS bun_source
+9:FROM ${BASE_IMAGE_REGISTRY}/library/node:24.16.0-trixie-slim@sha256:05c08ce4291e9a58f59456a7985176defb12cdd42271f35ff81a3e167ea61d4c AS node_source
+11:FROM ${BASE_IMAGE_REGISTRY}/library/ubuntu:26.04@sha256:2260313b31c8c011cd2eebe728008efac1b3982be73eb71348ea2648d2c0e09b
+156:# above) rather than copied out of the official golang image: base images here route
+200:ARG CLAUDE_CODE_VERSION=latest
+205:ARG OPENCODE_VERSION=latest
+
+------------------------------------------------------------
+FILE=./backend/Dockerfile
+------------------------------------------------------------
+12:FROM ${BASE_IMAGE_REGISTRY}/library/python:3.13-slim@sha256:9d2e5553305c7c7b0097999bb17187c69b921ccd6bc9d40e4bb5ebe652c00285 AS builder
+58:FROM ${BASE_IMAGE_REGISTRY}/library/python:3.13-slim@sha256:9d2e5553305c7c7b0097999bb17187c69b921ccd6bc9d40e4bb5ebe652c00285 AS runtime
+200:# Superset of the runtime image, published with a -dev tag suffix (e.g. v1.2.3-dev, latest-dev).
+201:# Adds interactive debugging conveniences that are deliberately excluded from the shipped image:
+208:FROM runtime AS dev
+
+------------------------------------------------------------
+FILE=./backend/Dockerfile.model_server
+------------------------------------------------------------
+15:FROM ${PYTHON_BUILDER_IMAGE} AS builder
+59:FROM builder AS embedding-models
+67:FROM ${PYTHON_RUNTIME_IMAGE} AS final
+126:USER onyx
+
+------------------------------------------------------------
+FILE=./backend/onyx/server/features/build/sandbox/image/Dockerfile
+------------------------------------------------------------
+16:FROM ${BASE_IMAGE_REGISTRY}/oven/bun:1.3.14@sha256:e10577f0db68676a7024391c6e5cb4b879ebd17188ab750cf10024a6d700e5c4 AS bun_source
+20:FROM ${BASE_IMAGE_REGISTRY}/library/node:24-trixie-slim@sha256:50c3b2f6988dfc307b86e5301d69611af31f4789bdf232863b07d3b02fe55ae0 AS node_source
+28:FROM node_source AS gh_source
+44:FROM ${BASE_IMAGE_REGISTRY}/library/python:3.13-slim@sha256:9d2e5553305c7c7b0097999bb17187c69b921ccd6bc9d40e4bb5ebe652c00285
+174:USER sandbox
+182:USER root
+215:USER sandbox
+
+------------------------------------------------------------
+FILE=./backend/tests/integration/mock_services/docker-compose.mock-it-services.yml
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./backend/tests/integration/mock_services/mock_connector_server/Dockerfile
+------------------------------------------------------------
+5:FROM ${BASE_IMAGE_REGISTRY}/library/python:3.13-slim@sha256:9d2e5553305c7c7b0097999bb17187c69b921ccd6bc9d40e4bb5ebe652c00285
+13:CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8001"]
+
+------------------------------------------------------------
+FILE=./cli/Dockerfile
+------------------------------------------------------------
+5:FROM ${BASE_IMAGE_REGISTRY}/library/golang:1.26.5-alpine@sha256:0178a641fbb4858c5f1b48e34bdaabe0350a330a1b1149aabd498d0699ff5fb2 AS builder
+14:FROM scratch
+24:USER 65534:65534
+
+------------------------------------------------------------
+FILE=./cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.craft.yml
+------------------------------------------------------------
+12:      - SANDBOX_CONTAINER_IMAGE=${SANDBOX_CONTAINER_IMAGE:-onyxdotapp/sandbox:${IMAGE_TAG:-latest}}
+47:      - SANDBOX_CONTAINER_IMAGE=${SANDBOX_CONTAINER_IMAGE:-onyxdotapp/sandbox:${IMAGE_TAG:-latest}}
+69:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+141:    image: ${SANDBOX_CONTAINER_IMAGE:-onyxdotapp/sandbox:${IMAGE_TAG:-latest}}
+148:    # `opencode serve` on 0.0.0.0:4096 with no password -- and stays running, so
+
+------------------------------------------------------------
+FILE=./cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.dev.yml
+------------------------------------------------------------
+33:      resources:
+34:        limits:
+69:    ulimits: !reset null
+97:    # TODO(security): prefix 127.0.0.1: to bind loopback, not 0.0.0.0 (LAN-exposed).
+
+------------------------------------------------------------
+FILE=./cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.onyx-lite.yml
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.prod.yml
+------------------------------------------------------------
+11:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+21:      uvicorn onyx.main:app --host 0.0.0.0 --port 8080"
+87:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+161:    image: ${ONYX_WEB_SERVER_IMAGE:-onyxdotapp/onyx-web-server:${IMAGE_TAG:-latest}}
+201:  #   image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+241:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+248:    #   resources:
+253:    #           capabilities: [gpu]
+285:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+292:    #   resources:
+297:    #           capabilities: [gpu]
+331:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/postgres:15.2-alpine
+353:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/opensearchproject/opensearch:3.6.0
+364:      # This and the JVM config below come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+375:    # These come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+376:    ulimits:
+392:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/nginx:1.25.5-alpine
+449:    image: certbot/certbot
+462:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/redis:7.4-alpine
+472:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/minio/minio:RELEASE.2025-07-23T15-54-02Z-cpuv1
+491:    image: onyxdotapp/code-interpreter:${CODE_INTERPRETER_IMAGE_TAG:-0.4.7}
+524:    # privileged: true
+
+------------------------------------------------------------
+FILE=./cli/internal/deploy/deployfiles/embedded/docker_compose/docker-compose.yml
+------------------------------------------------------------
+48:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+58:      uvicorn onyx.main:app --host 0.0.0.0 --port 8080"
+130:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+202:    image: ${ONYX_WEB_SERVER_IMAGE:-onyxdotapp/onyx-web-server:${IMAGE_TAG:-latest}}
+242:  #   image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+282:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+289:    #   resources:
+294:    #           capabilities: [gpu]
+325:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+332:    #   resources:
+337:    #           capabilities: [gpu]
+370:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/postgres:15.2-alpine
+400:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/opensearchproject/opensearch:3.6.0
+411:      # This and the JVM config below come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+422:    # These come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+423:    ulimits:
+439:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/nginx:1.25.5-alpine
+499:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/redis:7.4-alpine
+517:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/minio/minio:RELEASE.2025-07-23T15-54-02Z-cpuv1
+547:    image: onyxdotapp/code-interpreter:${CODE_INTERPRETER_IMAGE_TAG:-0.4.7}
+580:    # privileged: true
+584:  #   image: certbot/certbot
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.airgap-test.yml
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.airgap-tls-test.yml
+------------------------------------------------------------
+3:    image: ${ONYX_BACKEND_IMAGE:?ONYX_BACKEND_IMAGE must be set}
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.craft.yml
+------------------------------------------------------------
+12:      - SANDBOX_CONTAINER_IMAGE=${SANDBOX_CONTAINER_IMAGE:-onyxdotapp/sandbox:${IMAGE_TAG:-latest}}
+47:      - SANDBOX_CONTAINER_IMAGE=${SANDBOX_CONTAINER_IMAGE:-onyxdotapp/sandbox:${IMAGE_TAG:-latest}}
+69:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+141:    image: ${SANDBOX_CONTAINER_IMAGE:-onyxdotapp/sandbox:${IMAGE_TAG:-latest}}
+148:    # `opencode serve` on 0.0.0.0:4096 with no password -- and stays running, so
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.dev.yml
+------------------------------------------------------------
+33:      resources:
+34:        limits:
+69:    ulimits: !reset null
+97:    # TODO(security): prefix 127.0.0.1: to bind loopback, not 0.0.0.0 (LAN-exposed).
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.mcp-api-key-test.yml
+------------------------------------------------------------
+5:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:latest}
+11:      - MCP_SERVER_HOST=${MCP_API_KEY_SERVER_HOST:-0.0.0.0}
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.mcp-oauth-test.yml
+------------------------------------------------------------
+12:    image: onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}
+17:      - MOCK_OIDC_BIND_HOST=0.0.0.0
+43:    image: onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}
+65:      - MCP_SERVER_HOST=${MCP_SERVER_HOST:-0.0.0.0}
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.mcp-per-user-key-test.yml
+------------------------------------------------------------
+5:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:latest}
+11:      - MCP_SERVER_HOST=${MCP_PER_USER_KEY_SERVER_HOST:-0.0.0.0}
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.multitenant.yml
+------------------------------------------------------------
+32:      uvicorn onyx.main:app --host 0.0.0.0 --port 8080"
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.onyx-lite.yml
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.prod-no-letsencrypt.yml
+------------------------------------------------------------
+11:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+21:      uvicorn onyx.main:app --host 0.0.0.0 --port 8080"
+87:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+161:    image: ${ONYX_WEB_SERVER_IMAGE:-onyxdotapp/onyx-web-server:${IMAGE_TAG:-latest}}
+201:  #   image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+241:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+248:    #   resources:
+253:    #           capabilities: [gpu]
+285:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+292:    #   resources:
+297:    #           capabilities: [gpu]
+331:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/postgres:15.2-alpine
+353:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/opensearchproject/opensearch:3.6.0
+364:      # This and the JVM config below come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+375:    # These come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+376:    ulimits:
+392:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/nginx:1.25.5-alpine
+447:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/redis:7.4-alpine
+457:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/minio/minio:RELEASE.2025-07-23T15-54-02Z-cpuv1
+476:    image: onyxdotapp/code-interpreter:${CODE_INTERPRETER_IMAGE_TAG:-0.4.7}
+509:    # privileged: true
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.prod.yml
+------------------------------------------------------------
+11:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+21:      uvicorn onyx.main:app --host 0.0.0.0 --port 8080"
+87:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+161:    image: ${ONYX_WEB_SERVER_IMAGE:-onyxdotapp/onyx-web-server:${IMAGE_TAG:-latest}}
+201:  #   image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+241:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+248:    #   resources:
+253:    #           capabilities: [gpu]
+285:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+292:    #   resources:
+297:    #           capabilities: [gpu]
+331:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/postgres:15.2-alpine
+353:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/opensearchproject/opensearch:3.6.0
+364:      # This and the JVM config below come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+375:    # These come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+376:    ulimits:
+392:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/nginx:1.25.5-alpine
+449:    image: certbot/certbot
+462:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/redis:7.4-alpine
+472:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/minio/minio:RELEASE.2025-07-23T15-54-02Z-cpuv1
+491:    image: onyxdotapp/code-interpreter:${CODE_INTERPRETER_IMAGE_TAG:-0.4.7}
+524:    # privileged: true
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.resources.yml
+------------------------------------------------------------
+9:      resources:
+10:        limits:
+20:      resources:
+21:        limits:
+30:      resources:
+31:        limits:
+40:  #       resources:
+41:  #         limits:
+50:      resources:
+51:        limits:
+60:      resources:
+61:        limits:
+70:      resources:
+71:        limits:
+80:  #     resources:
+81:  #       limits:
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.search-testing.yml
+------------------------------------------------------------
+5:    image: onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}
+15:      uvicorn onyx.main:app --host 0.0.0.0 --port 8080"
+52:    image: onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}
+96:    image: onyxdotapp/onyx-web-server:${IMAGE_TAG:-latest}
+118:    image: onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}
+135:    image: onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}
+154:    image: postgres:15.2-alpine
+169:    image: opensearchproject/opensearch:3.6.0
+178:    ulimits:
+192:    image: nginx:1.25.5-alpine
+218:    image: minio/minio:RELEASE.2025-07-23T15-54-02Z-cpuv1
+220:    # TODO(security): prefix 127.0.0.1: to bind loopback, not 0.0.0.0 (LAN-exposed).
+238:    image: redis:7.4-alpine
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.template.yml
+------------------------------------------------------------
+54:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+64:      uvicorn onyx.main:app --host 0.0.0.0 --port 8080"
+155:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+245:    image: ${ONYX_WEB_SERVER_IMAGE:-onyxdotapp/onyx-web-server:${IMAGE_TAG:-latest}}
+285:  #   image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+325:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+332:    #   resources:
+337:    #           capabilities: [gpu]
+376:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+383:    #   resources:
+388:    #           capabilities: [gpu]
+430:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/postgres:15.2-alpine
+465:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/opensearchproject/opensearch:3.6.0
+476:      # This and the JVM config below come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+487:    # These come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+488:    ulimits:
+504:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/nginx:1.25.5-alpine
+588:    image: certbot/certbot
+602:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/redis:7.4-alpine
+624:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/minio/minio:RELEASE.2025-07-23T15-54-02Z-cpuv1
+660:    image: onyxdotapp/code-interpreter:${CODE_INTERPRETER_IMAGE_TAG:-0.4.7}
+693:    # privileged: true
+698:  #   image: certbot/certbot
+
+------------------------------------------------------------
+FILE=./deployment/docker_compose/docker-compose.yml
+------------------------------------------------------------
+48:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+58:      uvicorn onyx.main:app --host 0.0.0.0 --port 8080"
+130:    image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+202:    image: ${ONYX_WEB_SERVER_IMAGE:-onyxdotapp/onyx-web-server:${IMAGE_TAG:-latest}}
+242:  #   image: ${ONYX_BACKEND_IMAGE:-onyxdotapp/onyx-backend:${IMAGE_TAG:-latest}}
+282:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+289:    #   resources:
+294:    #           capabilities: [gpu]
+325:    image: ${ONYX_MODEL_SERVER_IMAGE:-onyxdotapp/onyx-model-server:${IMAGE_TAG:-latest}}
+332:    #   resources:
+337:    #           capabilities: [gpu]
+370:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/postgres:15.2-alpine
+400:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/opensearchproject/opensearch:3.6.0
+411:      # This and the JVM config below come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+422:    # These come from the example in https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/
+423:    ulimits:
+439:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/nginx:1.25.5-alpine
+499:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/library/redis:7.4-alpine
+517:    image: ${BASE_IMAGE_REGISTRY:-docker.io}/minio/minio:RELEASE.2025-07-23T15-54-02Z-cpuv1
+547:    image: onyxdotapp/code-interpreter:${CODE_INTERPRETER_IMAGE_TAG:-0.4.7}
+580:    # privileged: true
+584:  #   image: certbot/certbot
+
+------------------------------------------------------------
+FILE=./deployment/helm/charts/onyx-cnpg-crds/Chart.yaml
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/helm/charts/onyx/Chart.yaml
+------------------------------------------------------------
+9:appVersion: latest
+19:      image: docker.io/onyxdotapp/onyx-web-server:latest
+21:      image: docker.io/onyxdotapp/onyx-backend:latest
+
+------------------------------------------------------------
+FILE=./deployment/helm/charts/onyx/templates/craft-kubernetes-version-check.yaml
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/eks/main.tf
+------------------------------------------------------------
+25:    "system:serviceaccount:${var.irsa_service_account_namespace}:${service_account_name}"
+116:  source  = "terraform-aws-modules/eks/aws"
+133:  # Opt-in per cluster: adopts the VPC CNI addon and turns on NetworkPolicy
+138:      # Pin to the cluster's running CNI so adoption only flips enableNetworkPolicy.
+145:        enableNetworkPolicy = "true"
+236:  source  = "terraform-aws-modules/iam/aws//modules/iam-assumable-role-with-oidc"
+243:  oidc_fully_qualified_subjects = ["system:serviceaccount:kube-system:ebs-csi-controller-sa"]
+299:# ClusterRole covers storageclasses/csinodes/csidrivers but NOT
+305:#   terraform import '...kubernetes_cluster_role.cluster_autoscaler_volumeattachments' onyx-cluster-autoscaler-volumeattachments
+306:#   terraform import '...kubernetes_cluster_role_binding.cluster_autoscaler_volumeattachments' onyx-cluster-autoscaler-volumeattachments
+330:    kind      = "ClusterRole"
+335:    kind      = "ServiceAccount"
+371:  source  = "terraform-aws-modules/iam/aws//modules/iam-assumable-role-with-oidc"
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/eks/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/eks/variables.tf
+------------------------------------------------------------
+288:  description = "Adopt the VPC CNI addon and turn on NetworkPolicy enforcement. Updates use resolve_conflicts_on_update = PRESERVE so out-of-band aws-node settings survive; the trade-off is that a cluster whose addon already sets enableNetworkPolicy=false explicitly keeps that value, and enforcement stays off. Check the addon's configuration_values after the first apply."
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/eks/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/onyx/main.tf
+------------------------------------------------------------
+2:  workspace          = terraform.workspace
+138:provider "aws" {
+265:  # NetworkPolicy enforcement (opt-in per cluster; default off)
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/onyx/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/onyx/variables.tf
+------------------------------------------------------------
+34:  default     = [] # This will default to 0.0.0.0/0 if not provided
+105:  description = "Run an RDS standby in a second AZ. Roughly doubles database cost. Set true if a standby already exists, or Terraform removes it."
+174:  description = "Additional service accounts in the Onyx namespace that may assume the workload IRSA role. Use the rendered ServiceAccount name for chart-created workloads, such as onyx-sandbox-proxy, that also need RDS IAM auth."
+222:  description = "Add public IPs from Terraform-managed VPC NAT gateways to the WAF allowlist and rate-limit exemptions."
+525:  description = "Adopt the VPC CNI addon and enable Kubernetes NetworkPolicy enforcement. Off by default: the addon stays unmanaged and existing NetworkPolicies remain inert. Only enable per cluster once its policies are known-safe."
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/onyx/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/opensearch/main.tf
+------------------------------------------------------------
+20:    cidr_blocks = ["0.0.0.0/0"]
+117:  advanced_security_options {
+183:    # as a diff since it can't be read back — so Terraform re-sending it turns an
+188:      advanced_security_options[0].master_user_options[0].master_user_password,
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/opensearch/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/opensearch/variables.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/opensearch/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/postgres/main.tf
+------------------------------------------------------------
+2:# Without these blocks Terraform plans a destroy/create of the subnet group and
+44:    cidr_blocks = ["0.0.0.0/0"]
+85:  # Guardrail: this instance holds production data. Never let Terraform
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/postgres/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/postgres/variables.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/postgres/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/redis/main.tf
+------------------------------------------------------------
+29:    cidr_blocks = ["0.0.0.0/0"]
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/redis/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/redis/variables.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/redis/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/s3/main.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/s3/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/s3/variables.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/s3/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/vpc/main.tf
+------------------------------------------------------------
+20:  source  = "terraform-aws-modules/vpc/aws"
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/vpc/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/vpc/variables.tf
+------------------------------------------------------------
+10:  default     = "10.0.0.0/16"
+16:  default     = ["10.0.0.0/21", "10.0.8.0/21", "10.0.16.0/21", "10.0.24.0/21", "10.0.32.0/21"]
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/vpc/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/waf/main.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/waf/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/waf/variables.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/aws/waf/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/aks/main.tf
+------------------------------------------------------------
+65:    name => "system:serviceaccount:${var.workload_service_account_namespace}:${name}"
+223:# system:serviceaccount:<namespace>:<name> string the AWS module puts in an
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/aks/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/aks/tests/aks.tftest.hcl
+------------------------------------------------------------
+2:# subscription or a cluster. Run with `terraform test` from the module directory.
+4:mock_provider "azurerm" {}
+5:mock_provider "kubernetes" {}
+204:    condition     = azurerm_federated_identity_credential.workload["onyx-workload-access"].subject == "system:serviceaccount:onyx:onyx-workload-access"
+205:    error_message = "The subject is the same system:serviceaccount string the AWS module puts in an IRSA trust policy."
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/aks/variables.tf
+------------------------------------------------------------
+18:  description = "Extra capacity AKS may add while upgrading a node pool, as a count or a percentage. Azure defaults this to 10%, which terraform would otherwise show as drift on every plan. The family vCPU quota has to cover the pool AND the surge: a single-node pool upgrading with a surge of one needs twice the pool's cores, and the upgrade fails outright without them."
+69:# cycle Terraform rejects.
+117:  description = "NetworkPolicy engine. Null leaves existing policies inert. Cilium is the current recommendation and needs overlay mode."
+311:# installed after Terraform finishes.
+314:  description = "Create the namespace the workload service account lives in. Turn this off only when something else creates it before Terraform runs."
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/aks/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/onyx/main.tf
+------------------------------------------------------------
+2:  workspace   = terraform.workspace
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/onyx/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/onyx/tests/onyx.tftest.hcl
+------------------------------------------------------------
+2:# Azure subscription. Run with `terraform test` from the module directory.
+4:mock_provider "azurerm" {}
+5:mock_provider "kubernetes" {}
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/onyx/variables.tf
+------------------------------------------------------------
+68:  default     = ["10.0.0.0/16"]
+163:  description = "Let only the cluster subnet reach the storage account. Leave this off while running Terraform from outside the network, or the container becomes unreachable to whoever manages it."
+362:  description = "NetworkPolicy engine. Null leaves enforcement off and existing policies inert."
+398:  description = "Create the namespace the workload service account lives in. Terraform has to make it: the Helm release that would otherwise is installed afterwards."
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/onyx/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/postgres/main.tf
+------------------------------------------------------------
+2:  # Flexible Server ships these already. Asking Terraform to create one by any
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/postgres/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/postgres/tests/postgres.tftest.hcl
+------------------------------------------------------------
+2:# subscription or credentials. Run with `terraform test` from the module directory.
+4:mock_provider "azurerm" {}
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/postgres/variables.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/postgres/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/redis/main.tf
+------------------------------------------------------------
+49:# which does not exist yet: 4.81.0 is the latest 4.x and does not ship it. Swap
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/redis/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/redis/tests/redis.tftest.hcl
+------------------------------------------------------------
+2:# subscription or credentials. Run with `terraform test` from the module directory.
+4:mock_provider "azurerm" {}
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/redis/variables.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/redis/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/storage/main.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/storage/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/storage/tests/storage.tftest.hcl
+------------------------------------------------------------
+2:# subscription or credentials. Run with `terraform test` from the module directory.
+4:mock_provider "azurerm" {}
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/storage/variables.tf
+------------------------------------------------------------
+71:  description = "Allow authenticating with the account's shared keys. Off by default: Onyx uses workload identity, and callers that need a key can set AZURE_STORAGE_ACCOUNT_KEY only after turning this on. Set storage_use_azuread = true on the azurerm provider so Terraform itself does not reach for a key either."
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/storage/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/vnet/main.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/vnet/outputs.tf
+------------------------------------------------------------
+34:# on the subnet, the association depends on the subnet, so Terraform is free to
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/vnet/tests/vnet.tftest.hcl
+------------------------------------------------------------
+2:# subscription or credentials. Run with `terraform test` from the module directory.
+4:mock_provider "azurerm" {}
+141:        address_prefixes = ["10.0.0.0/20"]
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/vnet/variables.tf
+------------------------------------------------------------
+20:  default     = ["10.0.0.0/16"]
+26:# 10.0.0.0/16 and leave 10.0.19.0 onward free.
+49:      address_prefixes  = ["10.0.0.0/20"]
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/vnet/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/waf/main.tf
+------------------------------------------------------------
+146:      match_values = ["0.0.0.0/0", "::/0"]
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/waf/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/waf/tests/waf.tftest.hcl
+------------------------------------------------------------
+2:# subscription or credentials. Run with `terraform test` from the module directory.
+4:mock_provider "azurerm" {}
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/waf/variables.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./deployment/terraform/modules/azure/waf/versions.tf
+------------------------------------------------------------
+1:terraform {
+4:  required_providers {
+
+------------------------------------------------------------
+FILE=./docker-bake.hcl
+------------------------------------------------------------
+26:  default = "latest"
+41:    "type=registry,ref=${BACKEND_REPOSITORY}:latest",
+58:    "type=registry,ref=${WEB_SERVER_REPOSITORY}:latest",
+76:    "type=registry,ref=${MODEL_SERVER_REPOSITORY}:latest",
+93:    "type=registry,ref=${CLI_REPOSITORY}:latest",
+110:    "type=registry,ref=${DEVCONTAINER_REPOSITORY}:latest",
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/bootstrap/main.tf
+------------------------------------------------------------
+7:terraform {
+9:  required_providers {
+17:provider "onyx" {
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/bootstrap/outputs.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/bootstrap/variables.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/data-sources/onyx_connectors/data-source.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/data-sources/onyx_embedding_providers/data-source.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/data-sources/onyx_llm_providers/data-source.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/data-sources/onyx_settings/data-source.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/provider/provider.tf
+------------------------------------------------------------
+1:terraform {
+2:  required_providers {
+15:provider "onyx" {
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_agent/resource.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_api_key/resource.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_cc_pair/resource.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_connector/resource.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_credential/resource.tf
+------------------------------------------------------------
+13:# The same credential with a write-only payload. Terraform sends it on every
+15:# Needs Terraform 1.11 or later.
+25:  # Terraform cannot diff a value it never stores. Raise this counter to make
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_custom_tool/resource.tf
+------------------------------------------------------------
+32:  # Sent with every call the action makes. These are secrets: keep them out of
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_document_set/resource.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_embedding_provider/resource.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_llm_provider/resource.tf
+------------------------------------------------------------
+4:  # api_key is kept in Terraform state. To keep the key out of state, swap in
+5:  # the write-only pair instead (needs Terraform 1.11 or later):
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_llm_provider_default/resource.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_mcp_server/resource.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_settings/resource.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./terraform-provider-onyx/examples/resources/onyx_user_group/resource.tf
+------------------------------------------------------------
+
+------------------------------------------------------------
+FILE=./tools/loadtest/Dockerfile
+------------------------------------------------------------
+6:FROM ${BASE_IMAGE_REGISTRY}/locustio/locust:2.44.1
+
+------------------------------------------------------------
+FILE=./tools/loadtest/mock_llm/Dockerfile
+------------------------------------------------------------
+4:FROM ${BASE_IMAGE_REGISTRY}/library/python:3.13-slim@sha256:9d2e5553305c7c7b0097999bb17187c69b921ccd6bc9d40e4bb5ebe652c00285
+15:CMD ["uvicorn", "mock_llm.app:app", "--host", "0.0.0.0", "--port", "8000"]
+
+------------------------------------------------------------
+FILE=./tools/profiling/docker-compose.yml
+------------------------------------------------------------
+4:    image: prom/prometheus:v3.2.1
+22:    image: grafana/grafana:11.6.0
+
+------------------------------------------------------------
+FILE=./web/Dockerfile
+------------------------------------------------------------
+15:FROM ${BASE_IMAGE_REGISTRY}/oven/bun:1@sha256:9114c058aeae42162ee16dd5084b95fe9473970bb6bcb5b232ab1630f0546895 AS bun_source
+19:FROM ${NODE_BUILDER_IMAGE} AS builder
+110:FROM ${NODE_RUNTIME_IMAGE} AS runner
+194:# name only — breaking loopback healthchecks. Force 0.0.0.0 instead.
+195:ENV HOSTNAME="0.0.0.0"
+199:USER node
+
+INVENTORY_GATE=PASS

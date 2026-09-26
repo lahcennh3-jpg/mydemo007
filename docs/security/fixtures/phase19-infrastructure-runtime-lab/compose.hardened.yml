@@ -1,0 +1,34 @@
+services:
+  phase19-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.hardened.example
+
+    user: "10001:10001"
+
+    read_only: true
+
+    cap_drop:
+      - ALL
+
+    security_opt:
+      - no-new-privileges:true
+
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m
+
+    pids_limit: 128
+
+    mem_limit: 512m
+
+    cpus: 0.50
+
+    environment:
+      PHASE19_SYNTHETIC_MODE: "true"
+
+    networks:
+      - phase19-internal
+
+networks:
+  phase19-internal:
+    internal: true

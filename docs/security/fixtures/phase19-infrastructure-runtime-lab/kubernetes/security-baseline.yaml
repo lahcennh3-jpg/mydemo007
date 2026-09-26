@@ -1,0 +1,116 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: phase19-security-lab
+  labels:
+    pod-security.kubernetes.io/enforce: restricted
+    pod-security.kubernetes.io/audit: restricted
+    pod-security.kubernetes.io/warn: restricted
+
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: phase19-app
+  namespace: phase19-security-lab
+automountServiceAccountToken: false
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: phase19-config-reader
+  namespace: phase19-security-lab
+rules:
+  - apiGroups: [""]
+    resources: ["configmaps"]
+    verbs: ["get", "list"]
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: phase19-config-reader-binding
+  namespace: phase19-security-lab
+subjects:
+  - kind: ServiceAccount
+    name: phase19-app
+    namespace: phase19-security-lab
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: phase19-config-reader
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phase19-app
+  namespace: phase19-security-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phase19-app
+  template:
+    metadata:
+      labels:
+        app: phase19-app
+    spec:
+      serviceAccountName: phase19-app
+      automountServiceAccountToken: false
+
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
+
+      containers:
+        - name: app
+
+          # Synthetic/non-runnable reference digest.
+          image: example.invalid/phase19/app@sha256:0000000000000000000000000000000000000000000000000000000000000000
+
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop:
+                - ALL
+
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+
+          env:
+            - name: PHASE19_SYNTHETIC_MODE
+              value: "true"
+
+          volumeMounts:
+            - name: tmp
+              mountPath: /tmp
+
+      volumes:
+        - name: tmp
+          emptyDir:
+            medium: Memory
+            sizeLimit: 16Mi
+
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny
+  namespace: phase19-security-lab
+spec:
+  podSelector: {}
+  policyTypes:
+    - Ingress
+    - Egress

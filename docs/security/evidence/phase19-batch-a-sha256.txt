@@ -1,0 +1,12 @@
+b207cf85f459c3309529d0907875d9db447e8f6f9a720e4bffa304a21ccb3596  docs/security/evidence/phase19-action-19.1-immutable-start-gate.txt
+d31d81f6b4e927f1a5f88c15af4eedfdf1eaccf5247268b1589e5ec7d00a80c4  docs/security/evidence/phase19-action-19.2-environment-capability-gate.txt
+508417c8a50de6f3782cbc1810cd73ed88d88849b1c53f71cf0958bd48b02a98  docs/security/evidence/phase19-action-19.3-infrastructure-surface-inventory.txt
+ef0c48652edcc1d751339ee6949c6dfb3517aa851d5c7c217d1d0ee41543b094  docs/security/evidence/phase19-batch-a-resume-environment-fallback.txt
+07ea5afaad20507bae312263b18a80fa06de96771ea1d7d0cc298b54e30a5472  docs/security/evidence/phase19-actions-19.4-19.8-security-baseline-review.txt
+1b7eeb68b0c9bc776792c1de9cd2db9e5065ca5226c565ea3bb8ca4d9ac939c4  docs/security/evidence/phase19-actions-19.4-19.8-static-security-tests.txt
+362d23ba3131c4f2375659f2c1d67c75158ddf8f6d0adc3eda647c6bff134cb1  docs/security/fixtures/phase19-infrastructure-runtime-lab/phase19_static_gate.sh
+1df6a22b3284e6486526a2fe36d2d1bb94d6e99c29b9f6d2c1c00dca888958b6  docs/security/fixtures/phase19-infrastructure-runtime-lab/Dockerfile.hardened.example
+2e5c87afe59aa8d4600ae4d245976384bd55fb3165b5d73d281782e7523f382b  docs/security/fixtures/phase19-infrastructure-runtime-lab/compose.hardened.yml
+eb45116415be169a8a11cb84e34d280992d1f5d2e167a4ad1c41a2e8eed4a651  docs/security/fixtures/phase19-infrastructure-runtime-lab/kubernetes/security-baseline.yaml
+d50f7fbabb9cbc7cf83659f2aa54e18e303b0d76f5e4ab128f96bee6393c0adc  docs/security/fixtures/phase19-infrastructure-runtime-lab/kubernetes/admission-policy-contract.md
+85e43537738703fa0eec798b92f0dded122100948cc37e9d3f545d1f4cc0db06  docs/security/19-onyx-infrastructure-iac-kubernetes-runtime-workload-identity-security.md

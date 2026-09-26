@@ -1,0 +1,64 @@
+
+=== CONTAINER IMAGE ===
+PASS [non-root image user]
+PASS [root image user]
+
+=== DOCKER COMPOSE ===
+PASS [explicit runtime user]
+PASS [read-only root filesystem]
+PASS [capability configuration]
+PASS [drop all capabilities]
+PASS [no-new-privileges]
+PASS [internal network]
+PASS [PID limit]
+PASS [memory limit]
+PASS [CPU limit]
+PASS [privileged compose workload]
+PASS [host network compose workload]
+
+=== KUBERNETES ===
+PASS [Pod Security restricted]
+PASS [service-account token minimization]
+PASS [run as non-root]
+PASS [disable privilege escalation]
+PASS [read-only root filesystem]
+PASS [seccomp configured]
+PASS [RuntimeDefault seccomp]
+PASS [capability policy]
+PASS [capability drop]
+PASS [network policy]
+PASS [default-deny policy]
+PASS [resource requests]
+PASS [resource limits]
+PASS [image digest reference]
+PASS [privileged Kubernetes workload]
+PASS [host networking]
+PASS [host PID]
+PASS [host IPC]
+PASS [automatic service-account token]
+PASS [hostPath volume]
+
+=== ADMISSION CONTRACT ===
+PASS [mutable-tag prohibition]
+PASS [privileged-container prohibition]
+PASS [privilege-escalation policy]
+PASS [non-root policy]
+PASS [capability policy]
+PASS [default-deny policy]
+PASS [committed-secret prohibition]
+
+PHASE19_STATIC_GATE=PASS
+FAILURE_COUNT=0
+CONTAINER_NON_ROOT=PASS
+READ_ONLY_ROOTFS=PASS
+CAPABILITY_REDUCTION=PASS
+NO_NEW_PRIVILEGES=PASS
+COMPOSE_INTERNAL_NETWORK=PASS
+RESOURCE_LIMITS=PASS
+K8S_POD_SECURITY=PASS
+K8S_SERVICE_ACCOUNT_MINIMIZATION=PASS
+K8S_RBAC_BASELINE=PASS
+K8S_SECCOMP=PASS
+K8S_DEFAULT_DENY_NETWORK_POLICY=PASS
+IMAGE_DIGEST_REFERENCE=PASS
+ADMISSION_POLICY_CONTRACT=PASS
