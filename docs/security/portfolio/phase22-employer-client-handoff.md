@@ -85,3 +85,31 @@ PHASE22_BATCH_B=PASS
 PHASE22_BATCH_C=READY_FOR_VERIFICATION
 
 PHASE22_COMPLETE=NO
+
+---
+
+# Final Phase 22 Status
+
+Phase 22 workflow:
+
+`COMPLETE_WITH_LIMITATIONS`
+
+Employer/client presentation:
+
+`READY_WITH_LIMITATIONS`
+
+Public portfolio publication:
+
+`NOT_APPROVED`
+
+Independent complete-project reproduction:
+
+`NO`
+
+Phase 21 Action 21.17:
+
+`BLOCKED_INDEPENDENT`
+
+For the authoritative final classification, see:
+
+`docs/security/portfolio/phase22-final-status.md`
