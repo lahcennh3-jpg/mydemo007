@@ -38,22 +38,22 @@ Assigned scope:
 | 21.1 | Rebuild the lab from a clean environment | BLOCKED |
 | 21.2 | Reproduce findings without copied commands | ASSISTED_PARTIAL |
 | 21.3 | Explain command purpose, target, effect, evidence, failure signal, rollback | ASSISTED_PARTIAL |
-| 21.4 | Transfer one method to an unfamiliar AI application | ASSISTED_PARTIAL |
+| 21.4 | Transfer one method to an unfamiliar AI application | PASS_ASSISTED |
 | 21.5 | Perform security code review | ASSISTED_PARTIAL |
 | 21.6 | Perform architecture review | ASSISTED_PARTIAL |
 | 21.7 | Perform design review | ASSISTED_PARTIAL |
-| 21.8 | Perform incident handoff | PENDING |
-| 21.9 | Write technical findings | PENDING |
-| 21.10 | Write executive summaries | PENDING |
-| 21.11 | Prioritize remediation | PENDING |
-| 21.12 | Defend trade-offs | PENDING |
-| 21.13 | Review another safe change | PENDING |
-| 21.14 | Respond to review comments | PENDING |
-| 21.15 | Submit safe documentation/test/hardening/bug-fix contribution | PENDING |
-| 21.16 | Follow upstream security policy for suspected vulnerabilities | PENDING |
-| 21.17 | Independently reproducible assessment and reviewed contribution | PENDING |
+| 21.8 | Perform incident handoff | ASSISTED_DRAFT |
+| 21.9 | Write technical findings | ASSISTED_DRAFT |
+| 21.10 | Write executive summaries | ASSISTED_DRAFT |
+| 21.11 | Prioritize remediation | ASSISTED_DRAFT |
+| 21.12 | Defend trade-offs | ASSISTED_DRAFT |
+| 21.13 | Review another safe change | ASSISTED_DRAFT |
+| 21.14 | Respond to review comments | ASSISTED_DRAFT |
+| 21.15 | Submit safe documentation/test/hardening/bug-fix contribution | PASS_SAFE_TEST_CONTRIBUTION |
+| 21.16 | Follow upstream security policy for suspected vulnerabilities | PASS_POLICY_HANDLING |
+| 21.17 | Independently reproducible assessment and reviewed contribution | BLOCKED |
 
-PHASE21_STATUS=BATCH_A_BLOCKED_ASSISTED_SCOPE
+PHASE21_STATUS=BATCH_C_PARTIAL_INDEPENDENT_GATE_BLOCKED
 
 NEXT=COMPLETE_LOCAL_REBUILD_AND_INDEPENDENT_ASSESSMENT
 
@@ -88,3 +88,26 @@ The full clean-environment independent rebuild remains open.
 
 BATCH_B_RESULT=ASSISTED_DRAFTS_READY
 NEXT=PHASE21_INDEPENDENT_REBUILD_OR_BATCH_C_PREPARATION
+
+## Accelerated Batch C checkpoint
+
+PHASE21_BATCH_C_CHECKPOINT=RECORDED
+
+- 21.15 safe regression/test contribution: PASS
+- 21.16 upstream security-policy handling: PASS
+- 21.17 independently reproducible assessment: BLOCKED
+
+The Action 21.15 regression contribution required two implementation repairs:
+
+1. exporting the complete committed docs/security dependency tree;
+2. replacing an unavailable Python mutation helper with jq.
+
+The resulting contribution successfully verifies both the valid baseline and
+the fail-closed invalid approval condition.
+
+The remaining Phase 21 blocker is the clean-environment reconstruction
+required by Action 21.1.
+
+BATCH_C_RESULT=PARTIAL_PASS_INDEPENDENT_GATE_BLOCKED
+PHASE21_COMPLETE=NO
+NEXT=RESTORE_ACTION_21_1_THEN_REPEAT_21_17
