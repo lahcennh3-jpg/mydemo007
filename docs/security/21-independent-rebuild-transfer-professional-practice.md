@@ -35,7 +35,7 @@ Assigned scope:
 
 | Action | Requirement | Status |
 | --- | --- | --- |
-| 21.1 | Rebuild the lab from a clean environment | BLOCKED |
+| 21.1 | Rebuild the lab from a clean environment | PASS_ASSISTED_REBUILD |
 | 21.2 | Reproduce findings without copied commands | ASSISTED_PARTIAL |
 | 21.3 | Explain command purpose, target, effect, evidence, failure signal, rollback | ASSISTED_PARTIAL |
 | 21.4 | Transfer one method to an unfamiliar AI application | PASS_ASSISTED |
@@ -111,3 +111,28 @@ required by Action 21.1.
 BATCH_C_RESULT=PARTIAL_PASS_INDEPENDENT_GATE_BLOCKED
 PHASE21_COMPLETE=NO
 NEXT=RESTORE_ACTION_21_1_THEN_REPEAT_21_17
+
+## Action 21.1 assisted clean-rebuild checkpoint
+
+PHASE21_ACTION_21_1_ASSISTED_CHECKPOINT=RECORDED
+
+Technical rebuild evidence:
+
+- clean detached source worktree: PASS
+- fresh Compose runtime: PASS
+- fresh PostgreSQL volume: PASS
+- five Lite services healthy: PASS
+- PostgreSQL readiness: PASS
+- Onyx API health: PASS
+- code-interpreter health: PASS
+- internal Compose network: PASS
+- no host-published ports: PASS
+- digest-pinned executor: PASS
+- rollback: PASS
+
+This was an assisted execution.
+
+ACTION_21_1=PASS_ASSISTED_REBUILD
+INDEPENDENT_REBUILD=NOT_CLAIMED
+PHASE21_COMPLETE=NO
+NEXT=INDEPENDENT_REPRODUCTION_ROUND
