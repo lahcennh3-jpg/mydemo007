@@ -1,0 +1,23 @@
+id	source	risk	status	owner	target_date	related_handoff	close_when
+R24-001	phase25-residual-risk-handoff.tsv	Cross-tenant runtime isolation not executed	OPEN	PROJECT_OWNER	2026-10-31	SELF	Execute two-tenant positive and negative runtime tests on a pinned image.
+R24-002	phase25-residual-risk-handoff.tsv	RAG authorization and revocation runtime not executed	OPEN	PROJECT_OWNER	2026-10-31	SELF	Test synthetic retrieval permissions and revocation against an indexed runtime.
+R24-003	phase25-residual-risk-handoff.tsv	Retrieval poisoning runtime not executed	OPEN	PROJECT_OWNER	2026-10-31	SELF	Run bounded poisoned-document tests against a controlled RAG runtime.
+R24-004	phase25-residual-risk-handoff.tsv	Prompt-injection runtime not executed	OPEN	PROJECT_OWNER	2026-10-31	SELF	Run attack and benign cases with a controlled local model.
+R24-005	phase25-residual-risk-handoff.tsv	Model/provider behavior runtime not executed	OPEN	PROJECT_OWNER	2026-10-31	SELF	Measure repeated model behavior with denominators and uncertainty.
+R24-006	phase25-residual-risk-handoff.tsv	Runtime source-to-image correspondence not fully established	OPEN	PROJECT_OWNER	2026-10-31	SELF	Tie the tested image digest and migrations to a reviewed source commit.
+R24-007	phase25-residual-risk-handoff.tsv	S3/MinIO path not validated in the control-plane baseline	OPEN	PROJECT_OWNER	2026-10-31	SELF	Test the authorized S3 file-store path with synthetic data.
+R24-008	phase25-residual-risk-handoff.tsv	Production operational effectiveness not validated	OPEN	PROJECT_OWNER	2026-10-31	SELF	Collect authorized production evidence and independent review.
+R24-009	phase25-residual-risk-handoff.tsv	Upstream comparison completeness not established	OPEN	PROJECT_OWNER	2026-10-31	SELF	Review relevant upstream changes against the pinned source.
+R24-010	phase25-residual-risk-handoff.tsv	Public portfolio publication not approved	OPEN	PROJECT_OWNER	2026-10-31	SELF	Complete source-by-source sanitization and record publication approval.
+R24-011	phase25-residual-risk-handoff.tsv	Independent reproduction incomplete	OPEN	INDEPENDENT_VERIFIER	2026-10-31	SELF	Record an independent assessment and verifier feedback.
+R24-012	phase25-residual-risk-handoff.tsv	Phase 21 Action 21.17 blocked	OPEN	INDEPENDENT_VERIFIER	2026-10-31	SELF	Complete the Phase 21 independent result gate.
+R9-01	phase9-action-9.14-final-completion-gate.md	Production encryption-key management unverified	OPEN	PROJECT_OWNER	UNSET	NONE	Assign a deployment owner and verify key storage rotation and recovery.
+R9-02	phase9-action-9.14-final-completion-gate.md	Legacy secret and token migration unverified	OPEN	PROJECT_OWNER	UNSET	NONE	Verify a bounded migration and rollback on an authorized deployment.
+R9-03	phase9-action-9.14-final-completion-gate.md	OAuth provider-side revocation unverified	OPEN	PROJECT_OWNER	UNSET	NONE	Verify provider invalidation and failure handling with an approved integration.
+R9-04	phase9-action-9.14-final-completion-gate.md	Production IdP and policy-engine integration unverified	OPEN	PROJECT_OWNER	UNSET	R24-001	Test identity policy parity tenant derivation and revocation on an approved deployment.
+R9-05	phase9-action-9.14-final-completion-gate.md	Dependency-complete repository CI regression missing	OPEN	PROJECT_OWNER	UNSET	NONE	Run the supported tests in CI with the complete pinned dependencies.
+R9-06	phase9-action-9.14-final-completion-gate.md	Default MinIO development credentials need replacement	OPEN	PROJECT_OWNER	UNSET	R24-007	When MinIO is enabled use unique lab credentials and restrict network reachability.
+R16-01	16-onyx-secure-software-container-configuration-supply-chain.md	Vulnerability-database dependency and image scan missing	OPEN	PROJECT_OWNER	UNSET	NONE	Run a scanner with a trusted database and record contextual dispositions.
+R16-02	16-onyx-secure-software-container-configuration-supply-chain.md	Complete standards-compliant SBOM missing	OPEN	PROJECT_OWNER	UNSET	NONE	Validate a complete CycloneDX or SPDX SBOM for the reviewed build.
+R16-03	16-onyx-secure-software-container-configuration-supply-chain.md	Approved production signing and attestation missing	OPEN	PROJECT_OWNER	UNSET	R24-006	Verify signed artifact identity and provenance under an approved trust chain.
+R16-04	16-onyx-secure-software-container-configuration-supply-chain.md	Review candidates lack contextual triage	OPEN	PROJECT_OWNER	UNSET	NONE	Disposition all 99 review candidates with evidence and an owner.
