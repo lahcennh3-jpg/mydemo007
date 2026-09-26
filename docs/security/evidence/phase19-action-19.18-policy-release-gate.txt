@@ -1,0 +1,35 @@
+PHASE=19
+ACTION=19.18
+TITLE=POLICY_AS_CODE_RELEASE_GATE
+PASS file docs/security/fixtures/phase19-infrastructure-runtime-lab/Dockerfile.hardened.example
+PASS file docs/security/fixtures/phase19-infrastructure-runtime-lab/compose.hardened.yml
+PASS file docs/security/fixtures/phase19-infrastructure-runtime-lab/kubernetes/security-baseline.yaml
+PASS file docs/security/fixtures/phase19-infrastructure-runtime-lab/kubernetes/admission-policy-contract.md
+PASS file docs/security/fixtures/phase19-infrastructure-runtime-lab/iac/insecure-example.tf.disabled
+PASS file docs/security/fixtures/phase19-infrastructure-runtime-lab/iac/secure-example.tf.disabled
+PASS file docs/security/fixtures/phase19-infrastructure-runtime-lab/cloud/cloud-security-contract.md
+PASS file docs/security/fixtures/phase19-infrastructure-runtime-lab/workload-identity/workload-identity-policy.env
+PASS file docs/security/fixtures/phase19-infrastructure-runtime-lab/workload-identity/workload-identity-contract.md
+PASS file docs/security/fixtures/phase19-infrastructure-runtime-lab/runtime-detection/falco-reference-rules.yaml
+PASS file docs/security/fixtures/phase19-infrastructure-runtime-lab/data-infrastructure/data-infrastructure-security-contract.md
+PASS [read-only rootfs]
+PASS [capability reduction]
+PASS [non-root pod]
+PASS [SA token minimization]
+PASS [network default deny]
+PASS [private object storage]
+PASS [attestation]
+PASS [static credential prohibition]
+PASS [identity fail closed]
+PASS [backup restore testing]
+PHASE19_BATCH_B_RELEASE_GATE=PASS
+CONTAINER_POLICY=PASS
+KUBERNETES_POLICY=PASS
+IAC_POLICY=PASS
+CLOUD_POLICY=PASS
+WORKLOAD_IDENTITY_POLICY=PASS
+DATA_INFRASTRUCTURE_POLICY=PASS
+REAL_CLOUD_RELEASE=NOT_AUTHORIZED
+PRODUCTION_KUBERNETES_RELEASE=NOT_CLAIMED
+KERNEL_EBPF_RUNTIME_ASSURANCE=NOT_CLAIMED
+ACTION_RESULT=PASS

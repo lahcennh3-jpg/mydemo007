@@ -1,0 +1,18 @@
+# SYNTHETIC NEGATIVE FIXTURE — NEVER DEPLOY
+
+resource "synthetic_security_group" "bad" {
+  ingress_cidr = "0.0.0.0/0"
+}
+
+resource "synthetic_bucket" "bad" {
+  public = true
+}
+
+resource "synthetic_identity_policy" "bad" {
+  actions   = ["*"]
+  resources = ["*"]
+}
+
+locals {
+  hardcoded_password = "synthetic-password-do-not-use"
+}

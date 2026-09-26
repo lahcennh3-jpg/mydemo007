@@ -1,0 +1,29 @@
+# Reference-only Phase 19 rules.
+# Native kernel/eBPF validation remains required.
+
+- rule: Phase19 Shell Spawned In Container
+  desc: Detect shell execution inside a container.
+  condition: spawned_process and container and proc.name in (bash, sh, zsh)
+  output: >
+    Phase19 container shell
+    (user=%user.name container=%container.id command=%proc.cmdline)
+  priority: WARNING
+  tags: [phase19, container, execution]
+
+- rule: Phase19 Write Below Etc
+  desc: Detect writes below /etc from a container.
+  condition: container and open_write and fd.name startswith /etc/
+  output: >
+    Phase19 /etc write
+    (container=%container.id file=%fd.name)
+  priority: WARNING
+  tags: [phase19, filesystem]
+
+- rule: Phase19 Metadata Endpoint Access
+  desc: Detect attempted access to 169.254.169.254.
+  condition: outbound and fd.sip=169.254.169.254
+  output: >
+    Phase19 metadata endpoint access
+    (container=%container.id process=%proc.name destination=%fd.sip)
+  priority: WARNING
+  tags: [phase19, credential-access]

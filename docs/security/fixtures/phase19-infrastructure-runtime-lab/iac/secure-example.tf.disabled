@@ -1,0 +1,19 @@
+# SYNTHETIC POSITIVE FIXTURE — NEVER DEPLOY
+
+resource "synthetic_security_group" "good" {
+  ingress_cidr = "10.0.0.0/24"
+}
+
+resource "synthetic_bucket" "good" {
+  public             = false
+  encryption_enabled = true
+}
+
+resource "synthetic_identity_policy" "good" {
+  actions   = ["synthetic:GetObject"]
+  resources = ["synthetic:bucket/private/*"]
+}
+
+locals {
+  credential_source = "workload_identity"
+}
