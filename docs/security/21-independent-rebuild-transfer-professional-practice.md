@@ -167,3 +167,47 @@ ACTION_21.17=BLOCKED_ASSISTED_CAPSTONE
 INDEPENDENT_ASSESSMENT=NOT_CLAIMED
 PHASE21_COMPLETE=NO
 NEXT=INDEPENDENT_REPRODUCTION_ROUND
+
+## Assisted-round final checkpoint
+
+PHASE21_ASSISTED_ROUND_FINAL_CHECKPOINT=RECORDED
+
+The assisted Phase 21 round is technically complete.
+
+Demonstrated across the assisted rebuild, professional-practice capstone, and
+independent-style rehearsal:
+
+- fresh clean-worktree reconstruction;
+- five-service Onyx Lite runtime;
+- PostgreSQL readiness;
+- Onyx API health;
+- code-interpreter health;
+- internal-only Compose network;
+- no host-published service ports;
+- immutable runtime image pins;
+- synthetic approval-control regression;
+- fail-closed invalid policy mutation;
+- bounded Onyx authorization/proxy source review;
+- architecture and design analysis;
+- incident handoff;
+- technical and executive communication;
+- remediation prioritization;
+- trade-off analysis;
+- safe contribution review;
+- rollback and environment cleanup.
+
+All of this evidence was produced with assistant-supplied commands and/or
+assistant-assisted analysis.
+
+Therefore it must not be relabeled as independent evidence.
+
+ASSISTED_TECHNICAL_ROUND=PASS
+ASSISTED_PROFESSIONAL_ROUND=PASS
+ASSISTED_INDEPENDENT_STYLE_REHEARSAL=PASS
+
+ACTION_21.17=BLOCKED_INDEPENDENT
+INDEPENDENT_ASSESSMENT=NOT_CLAIMED
+PHASE21_COMPLETE=NO
+
+ONLY_REMAINING_GATE=GENUINE_INDEPENDENT_REPRODUCTION
+NEXT=INDEPENDENT_REPRODUCTION_ROUND
