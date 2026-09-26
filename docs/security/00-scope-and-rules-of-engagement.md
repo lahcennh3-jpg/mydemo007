@@ -134,3 +134,46 @@ Scope effect: No expansion of authorized targets, networks, data, identities, cr
 Authorization owner approval: amaw535353-ai — repository owner
 Authorized tester acknowledgement: Ahmed — local lab operator
 Previous approved Phase 0 commit: 5c95ca3180ebb00ff760ecd3657ce39a75854e15
+
+## Approval Amendment — Phase 25 offline image preparation
+
+Approval status: APPROVED FOR IMAGE-ONLY PREPARATION.
+
+Approval evidence: The user replied, "Approve the offline image-only
+amendment," in the current conversation on 2026-09-26 at 19:18:43 UTC.
+The conversation is the approval source. This document is a committed
+record of that instruction, not a signed copy of the conversation.
+
+This amendment applies only to the owned fork
+`https://github.com/lahcennh3-jpg/mydemo007.git` in the attended Codespace
+at `/workspaces/mydemo007`. The selected source commit is
+`193c7c4b652fc3ae76256718f53d0a956e996b7f`.
+The cached base image ID is
+`sha256:fa570e141e39af5e1e48767fe14cbe227abe9a5ec0e3d08b9580c8bf60b35543`.
+
+The authorized action is a local, six-file code-overlay image build.
+Use only tracked files from the selected source commit.
+Use the cached base image and the local Docker builder.
+Run the build without network access or image pulls.
+Stop the build after 60 seconds.
+Keep each selected file at or below 1 MB.
+Stop if available memory is below 1.5 GiB or disk is below 8 GiB.
+Record the new image ID, Dockerfile hash, and six file hashes.
+
+Do not restart the API, run migrations, connect to the database,
+start a model, call an external service, or download packages.
+Do not change the running Phase 24 baseline.
+Stop if a guard fails or the build attempts external access.
+
+The prepared image replaces six Python files in an older base image.
+It is not a complete build from the current dependency locks.
+It is not approved for API deployment or active security testing.
+The source-to-runtime risk remains open.
+
+Rollback: retain the evidence, then remove only the new local overlay
+image tag and local base alias. Check that the original API image ID
+and container ID remain unchanged.
+
+This narrow approval does not retroactively update earlier Phase 0
+repository and WSL identifiers. Reconcile those historical records
+separately before any new runtime assessment.
