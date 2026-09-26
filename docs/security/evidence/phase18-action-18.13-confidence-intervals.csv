@@ -1,0 +1,7 @@
+metric,successes,total,estimate,ci95_low,ci95_high
+membership_attack_accuracy,11,12,0.916667,0.646114,0.985135
+membership_tpr,5,6,0.833333,0.436491,0.969947
+membership_fpr,0,6,0.000000,0.000000,0.390343
+baseline_clean_accuracy,6,6,1.000000,0.609657,1.000000
+defended_clean_coverage,5,6,0.833333,0.436491,0.969947
+defended_accepted_accuracy,5,5,1.000000,0.565509,1.000000

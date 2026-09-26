@@ -1,0 +1,62 @@
+{
+  "schema": "phase18-final-benchmark-v1",
+  "actions": {
+    "executed": 16,
+    "total": 16
+  },
+  "scope": "synthetic-local-small-model",
+  "adversarial_robustness": {
+    "evasion_attack_demonstrated": true,
+    "poisoning_backdoor_demonstrated": true,
+    "controlled_evasion_case_neutralized": true,
+    "defended_clean_coverage": 0.833333,
+    "defended_accepted_accuracy": 1.000000,
+    "general_robustness_claim": false
+  },
+  "model_extraction": {
+    "raw_score_exact_parameter_recovery_demonstrated": true,
+    "label_only_score_path_blocked": true,
+    "general_extraction_prevented": false
+  },
+  "membership_privacy": {
+    "attack_accuracy": 0.916667,
+    "true_positive_rate": 0.833333,
+    "false_positive_rate": 0.000000,
+    "attack_advantage": 0.833333,
+    "attack_accuracy_ci95": [
+      0.646114,
+      0.985135
+    ],
+    "general_membership_inference_prevented": false
+  },
+  "differential_privacy": {
+    "mechanism": "Laplace count-query demonstration",
+    "global_sensitivity": 1,
+    "epsilon_values": [
+      0.5,
+      1,
+      2
+    ],
+    "dp_sgd_executed": false,
+    "production_dp_guarantee": false
+  },
+  "tradeoffs": {
+    "baseline_compute_proxy_operations": 7,
+    "defended_compute_proxy_operations": 9,
+    "local_latency_measurement_available": true,
+    "defended_to_baseline_local_latency_ratio": 1.178665
+  },
+  "reference_tools": {
+    "adversarial_robustness_toolbox_importable": false,
+    "privacy_meter_importable": false,
+    "tensorflow_privacy_importable": false,
+    "full_execution": false,
+    "execution_gap_count": 3
+  },
+  "transferability": {
+    "quantitative_results_transferable_to_llms": false,
+    "quantitative_results_transferable_to_onyx": false
+  },
+  "production_assessment": false,
+  "phase_status": "COMPLETE_WITH_DOCUMENTED_REFERENCE_TOOL_GAPS"
+}

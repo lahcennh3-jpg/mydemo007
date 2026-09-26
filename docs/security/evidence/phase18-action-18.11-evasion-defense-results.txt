@@ -1,0 +1,9 @@
+defense=margin_based_abstention
+threshold=1
+original_score=1
+original_action=abstain
+adversarial_score=-1
+adversarial_action=abstain
+controlled_attack_neutralized=true
+wrong_adversarial_label_released=false
+general_robustness_claim=false

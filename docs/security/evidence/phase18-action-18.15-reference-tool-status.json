@@ -1,0 +1,29 @@
+{
+  "schema": "phase18-reference-tool-status-v1",
+  "host": {
+    "python_binary": "",
+    "python_version": "NOT_AVAILABLE"
+  },
+  "tools": {
+    "adversarial_robustness_toolbox": {
+      "module": "art",
+      "importable": false,
+      "executed_in_phase18": false
+    },
+    "privacy_meter": {
+      "module": "privacy_meter",
+      "importable": false,
+      "executed_in_phase18": false
+    },
+    "tensorflow_privacy": {
+      "module": "tensorflow_privacy",
+      "importable": false,
+      "executed_in_phase18": false
+    }
+  },
+  "full_reference_tool_execution": false,
+  "reference_tool_execution_gap_count": 3,
+  "automatic_package_installation": false,
+  "external_dependency_download": false,
+  "production_claim": false
+}

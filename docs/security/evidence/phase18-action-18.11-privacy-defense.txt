@@ -1,0 +1,10 @@
+baseline_interface=raw_score_available
+defended_interface=label_only
+raw_score_exposed=false
+exact_four_query_score_recovery_path_blocked=true
+general_model_extraction_prevented=false
+membership_absolute_score_attack_path_blocked=true
+general_membership_inference_prevented=false
+dp_count_query_defense_demonstrated_in_action_18_10=true
+dp_sgd_claim=false
+production_privacy_claim=false

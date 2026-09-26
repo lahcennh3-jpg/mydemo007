@@ -256,3 +256,130 @@ Progress:
 10 / 16 = 62.5%
 
 PHASE_18_BATCH_B_COMPLETE
+
+---
+
+# Batch C — Defenses, Trade-offs, Uncertainty, Transferability, and Closeout
+
+## Action 18.11 — Robustness and privacy defenses
+
+Result: PASS WITH BOUNDED CLAIMS.
+
+- margin threshold: 1
+- clean cases: 6
+- accepted: 5
+- abstained: 1
+- coverage: 0.833333
+- accepted accuracy: 1.000000
+
+The controlled Action-18.5 adversarial case was neutralized by
+abstention.
+
+The label-only interface blocks the exact score-leakage paths used by
+the Phase-18 extraction and membership demonstrations.
+
+No claim of general resistance is made.
+
+## Action 18.12 — Trade-offs
+
+Result: PASS.
+
+- baseline coverage: 1.000000
+- defended coverage: 0.833333
+- defended accepted accuracy: 1.000000
+- baseline compute proxy: 7
+- defended compute proxy: 9
+- latency measurement available: true
+- baseline average ns: 35560629
+- defended average ns: 41914077
+- defended/baseline ratio: 1.178665
+
+The latency result is a local Codespace microbenchmark only.
+
+## Action 18.13 — Confidence intervals and uncertainty
+
+Result: PASS WITH EXPLICIT UNCERTAINTY.
+
+Membership attack accuracy:
+
+- estimate: 0.916667
+- 95% Wilson interval: [0.646114, 0.985135]
+
+No production risk bound is claimed.
+
+## Action 18.14 — Transferability limits
+
+Result: PASS.
+
+Quantitative Phase-18 results are not directly transferred to:
+
+- LLMs
+- RAG systems
+- Onyx
+- production AI systems
+
+## Action 18.15 — Reference-tool status
+
+Result: PASS WITH DOCUMENTED GAPS.
+
+- Adversarial Robustness Toolbox executed: FALSE
+- Privacy Meter executed: FALSE
+- TensorFlow Privacy executed: FALSE
+
+Host discovery:
+
+- Python binary: NOT_AVAILABLE
+- Python version: NOT_AVAILABLE
+- ART importable: false
+- Privacy Meter importable: false
+- TensorFlow Privacy importable: false
+
+No package was automatically installed.
+
+## Action 18.16 — Final benchmark
+
+Result: PASS.
+
+Phase 18 now contains evidence for all 16 planned actions.
+
+## Final Phase-18 status
+
+Actions:
+
+16 / 16
+
+Progress:
+
+100%
+
+Core synthetic/local objectives:
+
+VERIFIED
+
+Reference-tool execution gaps:
+
+1. Adversarial Robustness Toolbox
+2. Privacy Meter
+3. TensorFlow Privacy
+
+Full reference-tool execution:
+
+FALSE
+
+Production assessment:
+
+FALSE
+
+Quantitative transfer to LLMs:
+
+FALSE
+
+Quantitative transfer to Onyx:
+
+FALSE
+
+Accurate status:
+
+COMPLETE_WITH_DOCUMENTED_REFERENCE_TOOL_GAPS
+
+PHASE_18_COMPLETE_WITH_DOCUMENTED_REFERENCE_TOOL_GAPS

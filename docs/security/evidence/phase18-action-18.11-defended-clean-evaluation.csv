@@ -1,0 +1,7 @@
+id,score,expected,raw_prediction,defended_action,defended_prediction,accepted,correct_if_accepted
+eval-001,5,1,1,classify,1,1,1
+eval-002,4,1,1,classify,1,1,1
+eval-003,-9,0,0,classify,0,1,1
+eval-004,-10,0,0,classify,0,1,1
+eval-005,1,1,1,abstain,NA,0,NA
+eval-006,-6,0,0,classify,0,1,1

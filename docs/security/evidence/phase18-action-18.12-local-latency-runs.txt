@@ -1,0 +1,6 @@
+baseline_run_1_ns=34045404
+baseline_run_2_ns=38989570
+baseline_run_3_ns=33646915
+defended_run_1_ns=40704942
+defended_run_2_ns=43641216
+defended_run_3_ns=41396074

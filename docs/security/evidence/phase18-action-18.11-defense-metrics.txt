@@ -1,0 +1,6 @@
+total=6
+accepted=5
+abstained=1
+coverage=0.833333
+accepted_accuracy=1.000000
+accepted_correct=5

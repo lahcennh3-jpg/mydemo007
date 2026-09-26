@@ -1,0 +1,51 @@
+{
+  "schema": "phase18-transferability-v1",
+
+  "source_lab": "tiny deterministic linear classifier",
+
+  "quantitative_results_transferable_to_llms": false,
+  "quantitative_results_transferable_to_onyx": false,
+
+  "techniques": {
+    "evasion": {
+      "small_model": "executed",
+      "llm_transfer": "concept only",
+      "onyx_transfer": "concept only"
+    },
+
+    "poisoning_backdoor": {
+      "small_model": "executed",
+      "llm_transfer": "requires separate LLM methodology",
+      "onyx_transfer": "requires separate RAG and ingestion testing"
+    },
+
+    "model_extraction": {
+      "small_model": "exact recovery demonstrated through raw scores",
+      "llm_transfer": "no direct quantitative transfer",
+      "onyx_transfer": "no direct quantitative transfer"
+    },
+
+    "membership_inference": {
+      "small_model": "score-threshold experiment executed",
+      "llm_transfer": "requires dedicated model-specific methodology",
+      "onyx_transfer": "no direct quantitative privacy estimate"
+    },
+
+    "differential_privacy": {
+      "small_model": "Laplace count-query mechanism demonstrated",
+      "llm_transfer": "concept transfers but experiment does not",
+      "onyx_transfer": "no production privacy guarantee"
+    }
+  },
+
+  "transferable_lessons": [
+    "define attacker knowledge and access",
+    "measure rather than assume robustness",
+    "limit unnecessary prediction information",
+    "quantify privacy attacks",
+    "record uncertainty",
+    "treat privacy and robustness controls as trade-offs"
+  ],
+
+  "production_claim": false
+}

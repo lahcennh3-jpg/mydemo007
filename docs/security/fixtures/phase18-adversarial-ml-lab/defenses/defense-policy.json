@@ -1,0 +1,13 @@
+{
+  "schema": "phase18-defense-policy-v1",
+  "robustness": {
+    "mechanism": "margin-based-abstention",
+    "abstain_when_absolute_score_lte": 1
+  },
+  "privacy": {
+    "external_interface": "label-only",
+    "raw_score_exposure": false
+  },
+  "production_approved": false,
+  "scope": "synthetic-local-small-model"
+}

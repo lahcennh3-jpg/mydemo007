@@ -1,0 +1,22 @@
+{
+  "schema": "phase18-defense-summary-v1",
+  "robustness": {
+    "defense": "margin-based-abstention",
+    "threshold": 1,
+    "controlled_evasion_case_neutralized": true,
+    "general_robustness_claim": false
+  },
+  "privacy": {
+    "defended_interface": "label-only",
+    "raw_score_exposure": false,
+    "score_based_exact_recovery_path_blocked": true,
+    "general_model_extraction_prevented": false,
+    "score_threshold_membership_path_blocked": true,
+    "general_membership_inference_prevented": false
+  },
+  "utility": {
+    "clean_coverage": 0.833333,
+    "accepted_accuracy": 1.000000
+  },
+  "production_claim": false
+}
