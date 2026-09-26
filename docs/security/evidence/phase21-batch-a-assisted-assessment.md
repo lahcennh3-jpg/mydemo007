@@ -43,13 +43,17 @@ detection effectiveness was measured.
 
 The engineer has not independently explained these commands for assessment.
 
-## 21.4 — PARTIAL TRANSFER
+## 21.4 — ASSISTED VERIFIER TRANSFER
 
-A synthetic mutation was applied to a temporary copy of the Phase 17 AI
-artifact lab's `embedding-config-v1.json`. Its SHA-256 digest changed.
-The copies were deleted. The lab's actual manifest and approval verifier
-were not exercised, so this is a method demonstration, not a completed
-artifact-approval assessment.
+The Phase 17 pipeline verifier passed on an isolated export of
+the committed synthetic lab. Changing `production_approved` to
+`true` in a copy of `policy-config-v1.json` caused the verifier
+to exit 1 with `VERIFY_FAIL: policy approval`.
+
+Evidence: `docs/security/evidence/phase21-action-21.4-verifier-transfer.txt`.
+The assistant supplied the commands. This checks one approval
+rejection path; it does not establish independent assessment,
+production approval, or live Onyx behavior.
 
 ## 21.5 — PARTIAL CODE REVIEW
 

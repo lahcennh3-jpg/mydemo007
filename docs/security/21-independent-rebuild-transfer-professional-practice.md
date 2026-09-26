@@ -61,3 +61,10 @@ NEXT=COMPLETE_LOCAL_REBUILD_AND_INDEPENDENT_ASSESSMENT
 
 See `docs/security/evidence/phase21-batch-a-assisted-assessment.md`.
 The full rebuild and independent assessment remain open.
+
+## Action 21.4 assisted verifier checkpoint
+
+The Phase 17 synthetic pipeline verifier passed in an isolated export.
+A changed policy approval flag was rejected with exit 1. See
+`docs/security/evidence/phase21-action-21.4-verifier-transfer.txt`.
+Action 21.4 remains assisted and partial pending independent assessment.
