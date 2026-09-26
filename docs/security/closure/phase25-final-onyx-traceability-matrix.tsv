@@ -1,0 +1,15 @@
+evaluation_id	domain	final_state	evidence	portfolio_interpretation
+EV23-001	AUTHENTICATION_NEGATIVE_PATH	PASS	docs/security/evidence/phase24-batch-b-runtime-results.tsv	CURRENT_RUNTIME_AUTHENTICATION_NEGATIVE_PATH_VALIDATED
+EV23-002	OBJECT_OWNERSHIP_BOLA	PASS	docs/security/evidence/phase24-batch-b-bola-retest-results.tsv	CURRENT_RUNTIME_CROSS_USER_OBJECT_OWNERSHIP_VALIDATED
+EV23-003	TENANT_ISOLATION	BLOCKED	docs/security/risk/phase24-final-residual-risk-register.tsv	CROSS_TENANT_ASSURANCE_CLAIM_WITHHELD
+EV23-004	RAG_AUTHORIZATION_REVOCATION	BLOCKED	docs/security/risk/phase24-final-residual-risk-register.tsv	RAG_AUTHORIZATION_ASSURANCE_CLAIM_WITHHELD
+EV23-005	RETRIEVAL_POISONING	BLOCKED	docs/security/evidence/phase24-batch-c-security-control-regressions.md	RETRIEVAL_POISONING_RUNTIME_CLAIM_WITHHELD
+EV23-006	PROMPT_INJECTION	BLOCKED	docs/security/evidence/phase24-batch-c-security-control-regressions.md	PROMPT_INJECTION_RUNTIME_CLAIM_WITHHELD
+EV23-007	AGENT_TOOL_AUTHORIZATION	PASS	docs/security/evidence/phase24-batch-c-control-regression-output.txt	TOOL_AUTHORITY_CONTROL_REGRESSION_VALIDATED
+EV23-008	MCP_IDENTITY_AUTHORIZATION	PASS	docs/security/evidence/phase24-batch-c-control-regression-output.txt	MCP_SECURITY_BOUNDARY_REGRESSION_VALIDATED
+EV23-009	SENSITIVE_DATA_EXPOSURE	PASS	docs/security/evidence/phase24-batch-c-control-regression-output.txt	SENSITIVE_DATA_CONTROL_REGRESSION_VALIDATED
+EV23-010	MODEL_PROVIDER_BEHAVIOR	BLOCKED	docs/security/risk/phase24-final-residual-risk-register.tsv	MODEL_PROVIDER_ASSURANCE_CLAIM_WITHHELD
+EV23-011	ABUSE_AVAILABILITY_ECONOMIC	PASS	docs/security/evidence/phase24-batch-c-control-regression-output.txt	BOUNDED_ABUSE_AVAILABILITY_CONTROLS_VALIDATED
+EV23-012	SUPPLY_CHAIN_DEPLOYMENT	PASS	docs/security/evidence/phase24-batch-c-control-regression-output.txt	CURRENT_RUNTIME_DEPLOYMENT_INTEGRITY_VALIDATED
+EV23-013	DETECTION_AUDIT	PASS	docs/security/evidence/phase24-batch-c-control-regression-output.txt	SYNTHETIC_DETECTION_CONTROL_REGRESSION_VALIDATED
+EV23-014	INCIDENT_RESPONSE_TABLETOP	PASS	docs/security/evidence/phase24-batch-d-incident-response-tabletop.md	SYNTHETIC_INCIDENT_RESPONSE_PROCESS_EXERCISED
