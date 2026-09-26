@@ -1,0 +1,12 @@
+case_id	evaluation_id	expectation	http_status	result	detail
+AUTH-001	EV23-001	UNAUTHENTICATED_ME_DENIED	403	PASS	no_session_cookie
+AUTH-002	EV23-001	INVALID_SESSION_DENIED	403	PASS	synthetic_invalid_cookie
+AUTH-003	EV23-001	INVALID_CREDENTIALS_DENIED	400	PASS	synthetic_nonexistent_identity
+AUTH-004	EV23-001	VALID_LOGIN_POSITIVE_CONTROL	200	PASS	valid_synthetic_session
+BOLA-001	EV23-002	OWNER_CREATES_OBJECT	200	PASS	synthetic_chat_session
+BOLA-002	EV23-002	OWNER_CAN_READ_OBJECT	200	PASS	owner_positive_control
+BOLA-003	EV23-002	NON_OWNER_READ_DENIED	403	PASS	cross_user_read
+BOLA-004	EV23-002	NON_OWNER_DELETE_DENIED	400	INCONCLUSIVE	cross_user_delete
+BOLA-005	EV23-002	OBJECT_REMAINS_AFTER_INTRUDER_DELETE	200	PASS	post_attack_owner_control
+TENANT-001	EV23-003	CROSS_TENANT_RUNTIME_ISOLATION	NA	BLOCKED	second_tenant_fixture_not_established_in_current_control_plane_baseline
+RAG-001	EV23-004	RAG_AUTHORIZATION_AND_REVOCATION	NA	BLOCKED	model_dependent_security_validation_complete_no
