@@ -1,0 +1,13 @@
+surface_id	domain	evidence	static_observation	transfer_priority
+OH25-001	AGENT_EXECUTION_BOUNDARY	README.md;docs/SELF_HOSTING.md	Source documentation states agents may read/write filesystem execute commands and reach network	CRITICAL
+OH25-002	AUTH_SESSION_BOUNDARY	docs/SELF_HOSTING.md;src/api/main-app-auth.ts	Public/self-hosted mode uses API-key/session authentication surfaces	HIGH
+OH25-003	CLOUD_BACKEND_PROXY	src/api/cloud/proxy.ts	Proxy abstraction supports paths headers host override and multiple auth modes	HIGH
+OH25-004	RUNTIME_COMMAND_EXECUTION	src/api/runtime-service/agent-server-runtime-service.ts	Runtime service exposes command execution against conversation runtime	CRITICAL
+OH25-005	WORKSPACE_FILE_BOUNDARY	src/api/workspace-upload-path.ts;__tests__/api/workspace-upload-path.test.ts	Upload path code reduces supplied filename to safe leaf and has traversal-oriented tests	HIGH
+OH25-006	MCP_CREDENTIAL_HANDLING	src/api/mcp-service/mcp-redacted-credentials.ts	Redacted MCP credential placeholders can be substituted from stored encrypted settings	HIGH
+OH25-007	MCP_SECRET_REDACTION	src/utils/redact-mcp-secrets.ts;__tests__/utils/redact-mcp-secrets.test.ts	Source contains configured-secret and generic-token redaction logic	HIGH
+OH25-008	TOOL_CONFIRMATION_SURFACE	src/components/features/chat/confirmation-mode-enabled.tsx;__tests__/components/conversation-events/chat/messages-confirmation.test.tsx	Confirmation mode is surfaced but enforcement was not runtime-validated in this transfer	HIGH
+OH25-009	ELECTRON_URL_BOUNDARY	electron/lib/window-url-policy.mjs;electron/lib/window-url-policy.test.mjs	Electron URL handling uses parsed loopback and external-protocol allowlists	MEDIUM
+OH25-010	MULTI_BACKEND_TRUST	README.md;src/api/main-app-auth.ts	Canvas can connect to local remote and cloud agent backends	HIGH
+OH25-011	SAME_ORIGIN_SECRET_BOUNDARY	docs/SELF_HOSTING.md	Self-hosting documentation records same-origin editor/localStorage session-key exposure concern	HIGH
+OH25-012	EVENT_OBSERVABILITY	src/api/event-service/event-service.api.ts;src/api/event-service/event-service.api.test.ts	Event-service source exists but production detection effectiveness was not assessed	MEDIUM

@@ -1,51 +1,40 @@
-# Phase 25 — Transfer Assessment Gate
+# Phase 25 — Transfer Assessment Gate — Final State
 
-Timestamp UTC:
-
-`2026-09-26T17:16:13Z`
-
-## Target
+Timestamp UTC: 2026-09-26T17:27:43Z
 
 TRANSFER_TARGET=OpenHands
 
-TRANSFER_PURPOSE=SECOND_PRODUCT_METHOD_TRANSFER
+OPENHANDS_REPOSITORY=https://github.com/OpenHands/OpenHands.git
 
-## Current state
+OPENHANDS_SOURCE_SHA=47a10808d78561546a02555d0d2c7fa96fa96300
 
-OPENHANDS_SOURCE_PINNED=NO
+OPENHANDS_PACKAGE_VERSION=1.24.0
 
-OPENHANDS_SOURCE_PRESENT_IN_EVIDENCE_REPO=NO
+OPENHANDS_SOURCE_PINNED=YES
+
+OPENHANDS_SOURCE_SELECTED_FILES=26
+
+OPENHANDS_SECURITY_SURFACES=12
+
+OPENHANDS_AUTHORIZATION_SCOPE_ESTABLISHED=YES_STATIC_SOURCE_ONLY
+
+OPENHANDS_THREAT_MODEL_TRANSFER_EXECUTED=YES_STATIC
+
+OPENHANDS_SECURITY_ASSESSMENT_EXECUTED=STATIC_ONLY
+
+OPENHANDS_COMPARATIVE_CONTROL_GAP_ANALYSIS_EXECUTED=YES_STATIC
 
 OPENHANDS_RUNTIME_BASELINE_ESTABLISHED=NO
 
-OPENHANDS_AUTHORIZATION_SCOPE_ESTABLISHED=NO
+OPENHANDS_ACTIVE_SECURITY_TESTING_EXECUTED=NO
 
-OPENHANDS_THREAT_MODEL_TRANSFER_EXECUTED=NO
+OPENHANDS_RUNTIME_SECURITY_COMPLETE=NO
 
-OPENHANDS_SECURITY_ASSESSMENT_EXECUTED=NO
+DEPENDENCY_INSTALL_EXECUTED=NO
 
-OPENHANDS_COMPARATIVE_CONTROL_GAP_ANALYSIS_EXECUTED=NO
+OPENHANDS_CODE_EXECUTED=NO
 
-## Safety gate
-
-Before OpenHands transfer work begins, Phase 25 must establish:
-
-1. exact upstream repository;
-2. immutable commit SHA;
-3. edition/deployment mode;
-4. authorized local/synthetic scope;
-5. outbound-network policy;
-6. synthetic identities/data;
-7. bounded resource ceilings;
-8. stop conditions;
-9. evidence paths;
-10. rollback;
-11. comparison rubric against Onyx;
-12. no production or third-party active testing.
-
-AUTOMATIC_CLONE=NO
-
-AUTOMATIC_UPGRADE=NO
+MODEL_PROVIDER_API_USED=NO
 
 PUBLIC_TARGET_TESTING=NO
 
@@ -53,29 +42,18 @@ REAL_CREDENTIALS_ALLOWED=NO
 
 REAL_CUSTOMER_DATA_ALLOWED=NO
 
-## Transfer rubric
+COMPARISON_DOMAINS=18
 
-The future assessment must compare at least:
+DIRECT_METHOD_TRANSFER_DOMAINS=8
 
-- architecture/trust boundaries;
-- authentication/session model;
-- authorization/ownership model;
-- tenant/workspace isolation;
-- prompt/context boundaries;
-- retrieval/memory behavior where applicable;
-- agents/tools/actions;
-- MCP/integrations where applicable;
-- code execution/sandbox boundaries;
-- secret handling;
-- outbound network/SSRF;
-- supply-chain provenance;
-- abuse/resource controls;
-- observability/detection;
-- incident response;
-- release/rollback controls;
-- residual risk;
-- product-specific control gaps.
+ADAPTED_METHOD_TRANSFER_DOMAINS=9
 
-TRANSFER_GATE=READY_FOR_PINNED_SOURCE_SELECTION
+PRODUCT_SPECIFIC_DOMAINS=1
 
-TRANSFER_ASSESSMENT_COMPLETE=NO
+TRANSFER_METHOD_REUSABLE=YES_WITH_PRODUCT_SPECIFIC_ADAPTATION
+
+TRANSFER_ASSESSMENT_COMPLETE=YES_STATIC_WITH_LIMITATIONS
+
+TRANSFER_GATE=PASS_STATIC_WITH_LIMITATIONS
+
+ACTION_25.21=PASS_TRANSFER_GATE_WITH_LIMITATIONS
