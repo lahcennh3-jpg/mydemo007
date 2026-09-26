@@ -1,0 +1,17 @@
+control_id	domain	cadence	trigger	required_output	status
+M23-001	AI security standards	QUARTERLY	new/revised standard	standards delta review	ACTIVE
+M23-002	Onyx architecture	QUARTERLY	architecture/security-boundary change	architecture delta review	ACTIVE
+M23-003	Onyx release/version	QUARTERLY	new relevant release	release security review	ACTIVE
+M23-004	software dependencies	QUARTERLY	or critical dependency change	dependency delta review	ACTIVE
+M23-005	models	QUARTERLY	model/version/provider change	model security delta review	ACTIVE
+M23-006	datasets	QUARTERLY	dataset/source/schema change	data-risk delta review	ACTIVE
+M23-007	prompts	QUARTERLY	system/prompt-template change	prompt-security delta review	ACTIVE
+M23-008	policies	QUARTERLY	authz/tool/governance policy change	policy delta review	ACTIVE
+M23-009	threat model	QUARTERLY	new asset/trust-boundary/threat	threat-model refresh	ACTIVE
+M23-010	evaluation set	QUARTERLY	new threat/control	fresh evaluation cases	ACTIVE
+M23-011	detections	QUARTERLY	new attack signal/control	detection refresh	ACTIVE
+M23-012	incident tabletop	QUARTERLY	major architecture/threat change	tabletop evidence	ACTIVE
+M23-013	portfolio evidence	QUARTERLY	new verified engineering evidence	portfolio evidence refresh	ACTIVE
+M23-014	publication readiness	ON_GATE_CHANGE	capstone sanitization/review completion	publication gate rerun	ACTIVE
+M23-015	independent reproduction	ON_GATE_CHANGE	Phase21 independent gate satisfied	independence claim reassessment	ACTIVE
+M23-016	optional specialization	ON_GATE_CHANGE	core/capstone promotion gates complete	specialization reassessment	DEFERRED
