@@ -1,0 +1,7 @@
+id,x1,x2,x3,label
+holdout-001,1,0,0,1
+holdout-002,2,2,0,0
+holdout-003,0,0,0,0
+holdout-004,1,1,0,0
+holdout-005,3,2,0,1
+holdout-006,4,2,0,1

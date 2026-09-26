@@ -1,0 +1,37 @@
+{
+  "schema": "phase18-privacy-audit-v1",
+  "scope": "synthetic-local-small-model",
+  "audit_population": {
+    "members": 6,
+    "nonmembers": 6,
+    "total": 12
+  },
+  "attack": {
+    "type": "score-threshold-membership-inference",
+    "observable": "absolute linear-model score",
+    "threshold": "4",
+    "threshold_selection": "illustrative lab-calibrated threshold"
+  },
+  "confusion_matrix": {
+    "true_positive": 5,
+    "false_negative": 1,
+    "false_positive": 0,
+    "true_negative": 6
+  },
+  "metrics": {
+    "attack_accuracy": 0.916667,
+    "true_positive_rate": 0.833333,
+    "false_positive_rate": 0.000000,
+    "precision": 1.000000,
+    "attack_advantage": 0.833333
+  },
+  "interpretation": "The controlled synthetic fixture exposes a membership signal under this deliberately constructed score-threshold experiment.",
+  "limitations": [
+    "Only 12 synthetic records are audited.",
+    "The holdout set was manually constructed.",
+    "The membership threshold was selected for the laboratory demonstration.",
+    "The result is not an estimate of Onyx, LLM, or production-model privacy risk.",
+    "Confidence intervals and uncertainty are deferred to Action 18.13."
+  ],
+  "production_privacy_claim": false
+}

@@ -1,0 +1,17 @@
+e917f6c708d26b6704bffd614a3b4f15dcf640b1223c7eae06051a2be596747e  docs/security/evidence/phase18-batch-a-stable-manifest.sha256
+ba2fc4d8c16310ce13eefc3ef823245fc0233b7f1679c8580825dc78207021fb  docs/security/evidence/phase18-action-18.7-score-oracle-responses.csv
+6b1024a0ddfff8c3bac1299b2858727f63137302549699e8d7e349a8a1152f22  docs/security/evidence/phase18-action-18.7-model-extraction-results.txt
+60d0546814e0f5c9241279ba67604eee48d6f4360f164d01fd3b8d9c672ff0dc  docs/security/evidence/phase18-action-18.8-membership-results.csv
+fe5ecfbf3a06ed3bf82266af9dfa11d749e5ea356c5b7ffb354f5d5b45deab4a  docs/security/evidence/phase18-action-18.8-membership-metrics.txt
+e13a26007f78974b6ce71399c426eee68eece2b3b59f62f30bdb012abd772b67  docs/security/evidence/phase18-action-18.9-privacy-audit.json
+6b0a93b0a0899f1e2978aaee80ec8e239c17e4c5bfc296ee5564c34cf4c2d2df  docs/security/evidence/phase18-action-18.9-privacy-audit-conclusion.md
+7d53f2020db4ebc0a81d10af037aced775e351951bdbe63ee063e707eb31a8f5  docs/security/evidence/phase18-action-18.10-laplace-samples.csv
+8ce8e7c04a1bf29766f2477df4938dc8c2656d4428430d680554bbd8b5aa1bb4  docs/security/evidence/phase18-action-18.10-noise-summary.csv
+86b2602880d75b1781ef696a7596b8abd3904b4e37cca1cc13ac9fab6b01df41  docs/security/evidence/phase18-action-18.10-dp-parameter-audit.txt
+5c144eca6a4c755773c32e244093052e41d35f0c1e98456ba9476d9de0949c6f  docs/security/evidence/phase18-action-18.10-dp-conclusion.md
+97adc2e7c1655d4d96df6d766005e1ec1a8b771fd80c464bb1dd4eda0d7b00c6  docs/security/fixtures/phase18-adversarial-ml-lab/attacks/model-extraction-queries.csv
+14074ec8416451719407162183b6ed13bf696eab48f7cfd95e1653598700ab49  docs/security/fixtures/phase18-adversarial-ml-lab/models/model-extracted.env
+9e5c1e3f3d9e74f566bab68c1ee28083a53db92d40f9f96320544791b7bfdbc1  docs/security/fixtures/phase18-adversarial-ml-lab/evaluation/membership-nonmembers.csv
+736b4e4199340d78efec68c5d16e2e66eb7e5c97a82f0c781f5602c4c3156fa3  docs/security/fixtures/phase18-adversarial-ml-lab/privacy/dp-neighbor-a.csv
+8077dca3cf32dadbe9d1a54fa0a34cd3a993cb3281ae1a8a2ed3bf13f455db9b  docs/security/fixtures/phase18-adversarial-ml-lab/privacy/dp-neighbor-b.csv
+2b0c5c7f6ceae9682e5a60cdcfb5ce3e2e01040cc53bb351ed22cafa26b5c401  docs/security/fixtures/phase18-adversarial-ml-lab/tools/dp-laplace-demo.awk

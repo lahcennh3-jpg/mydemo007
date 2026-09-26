@@ -1,0 +1,16 @@
+mechanism=Laplace_count_query_demonstration
+neighbor_relation=one_synthetic_record_difference
+count_D=3
+count_D_neighbor=4
+global_sensitivity=1
+epsilon_0_5_scale=2
+epsilon_1_scale=1
+epsilon_2_scale=0.5
+delta=0_theoretical_for_ideal_Laplace_mechanism
+sample_outputs=300
+random_source=awk_rand
+cryptographic_randomness_claim=false
+dp_sgd_executed=false
+tensorflow_privacy_executed=false
+production_dp_claim=false
+scope=synthetic-local-educational-mechanism

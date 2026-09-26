@@ -136,3 +136,123 @@ Progress:
 6 / 16 = 37.5%
 
 PHASE_18_BATCH_A_COMPLETE
+
+---
+
+# Batch B — Model Extraction and Quantitative Privacy
+
+## Action 18.7 — Model extraction
+
+Result: PASS.
+
+A synthetic gray-box score interface was queried four times.
+
+For the tiny linear model, those four score observations were sufficient
+to recover:
+
+- w1 = 3
+- w2 = -4
+- w3 = 0
+- bias = -1
+
+The recovered parameters exactly matched the synthetic target.
+
+This is a controlled model-extraction demonstration and does not imply
+that label-only or production models are equally extractable.
+
+## Action 18.8 — Membership inference
+
+Result: PASS WITH EXPLICIT LIMITATIONS.
+
+A score-threshold membership-inference experiment was executed over:
+
+- 6 synthetic members
+- 6 synthetic nonmembers
+
+Observed:
+
+- TP = 5
+- FN = 1
+- FP = 0
+- TN = 6
+- attack accuracy = 0.916667
+- TPR = 0.833333
+- FPR = 0.000000
+- attack advantage = 0.833333
+
+The experiment demonstrates a privacy signal in this deliberately
+constructed tiny-model fixture.
+
+It is not a production privacy-risk estimate.
+
+## Action 18.9 — Privacy auditing
+
+Result: PASS WITH EXPLICIT LIMITATIONS.
+
+The membership-inference experiment was converted into a quantitative
+privacy audit recording:
+
+- audit population
+- attack observable
+- threshold
+- confusion matrix
+- attack accuracy
+- TPR
+- FPR
+- precision
+- attack advantage
+- methodological limitations
+
+The sample is intentionally tiny and synthetic.
+
+Confidence intervals and uncertainty remain for Action 18.13.
+
+## Action 18.10 — Differential privacy
+
+Result: PASS WITH IMPLEMENTATION LIMITATION.
+
+A synthetic neighboring-dataset experiment established a count-query
+global sensitivity of 1.
+
+A Laplace-mechanism demonstration evaluated epsilon values:
+
+- 0.5
+- 1
+- 2
+
+with corresponding theoretical noise scales:
+
+- 2
+- 1
+- 0.5
+
+The implementation uses AWK pseudo-randomness and is not a production
+differential-privacy library.
+
+No DP-SGD training or TensorFlow Privacy execution is claimed.
+
+## Phase-18 progress after Batch B
+
+Completed:
+
+18.1–18.10
+
+Remaining:
+
+18.11 robustness and privacy defenses
+
+18.12 utility, robustness, privacy, compute, and latency trade-offs
+
+18.13 confidence intervals and uncertainty
+
+18.14 transferability limits between small models, LLMs, and Onyx
+
+18.15 reference-tool integration status
+
+18.16 adversarial-ML robustness and privacy benchmark closeout
+
+Progress:
+
+10 / 16 = 62.5%
+
+PHASE_18_BATCH_B_COMPLETE

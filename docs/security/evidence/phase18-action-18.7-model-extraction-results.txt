@@ -1,0 +1,15 @@
+attack=model_extraction
+interface=gray_box_score_output
+queries=4
+target_w1=3
+extracted_w1=3
+target_w2=-4
+extracted_w2=-4
+target_w3=0
+extracted_w3=0
+target_bias=-1
+extracted_bias=-1
+exact_parameter_recovery=true
+production_target=false
+scope=synthetic-local-only
+limitation=local interface simulation is not a sandboxed remote service

@@ -1,0 +1,10 @@
+tp=5
+fn=1
+fp=0
+tn=6
+sample_count=12
+attack_accuracy=0.916667
+tpr=0.833333
+fpr=0.000000
+precision=1.000000
+attack_advantage=0.833333
