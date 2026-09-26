@@ -194,3 +194,155 @@ Batch A establishes:
 - explicit tooling limitations
 
 PHASE_17_BATCH_A_COMPLETE
+
+---
+
+# Batch B — Evaluation, Dataset, Prompt, and Retrieval-Configuration Integrity
+
+## Status update
+
+The earlier Batch-A remaining-work section is retained as historical
+checkpoint evidence.
+
+Actions 17.7–17.14 are now COMPLETE.
+
+## Action 17.7 — Model evaluation evidence
+
+Created a deterministic synthetic evaluation set and evaluated the
+Phase-17 synthetic linear model.
+
+The baseline contains six synthetic cases.
+
+All six matched the expected baseline labels.
+
+This is a deterministic laboratory regression result and is not a
+claim about production model quality, safety, or generalization.
+
+Result: PASS.
+
+## Action 17.8 — Model registry and lifecycle
+
+Created an explicit registry entry linking:
+
+- model identity
+- version
+- artifact SHA-256
+- evaluation evidence SHA-256
+- lifecycle history
+- current lifecycle state
+- permitted next states
+
+Current state:
+
+`evaluated-quarantined`
+
+Production approval remains false.
+
+Result: PASS.
+
+## Action 17.9 — Dataset provenance and lifecycle
+
+Recorded:
+
+- dataset identity
+- version
+- source
+- SHA-256
+- schema
+- schema SHA-256
+- lineage
+- synthetic license classification
+- lab-use approval
+- production-use denial
+
+Result: PASS.
+
+## Action 17.10 — Data-poisoning checks
+
+Implemented baseline integrity heuristics for:
+
+- duplicate identifiers
+- extreme feature values
+- invalid labels
+- conflicting labels for identical feature vectors
+
+The clean synthetic fixture passed.
+
+A deliberately poisoned fixture was rejected.
+
+These checks do not claim comprehensive detection of semantic
+poisoning, clean-label attacks, sophisticated backdoors, or arbitrary
+distribution manipulation.
+
+Result: PASS.
+
+## Action 17.11 — Prompt-template versioning and approval
+
+Established a versioned synthetic prompt template with:
+
+- prompt identity
+- version
+- SHA-256
+- lab approval
+- production denial
+- mandatory change review
+
+Result: PASS.
+
+## Action 17.12 — System-instruction integrity
+
+Established a hashed system-instruction baseline.
+
+The canonical instruction matched its expected SHA-256.
+
+A deliberately modified copy produced a different hash and was
+detected.
+
+Result: PASS.
+
+## Action 17.13 — Evaluation-dataset integrity
+
+Frozen the evaluation baseline by identity, version, and SHA-256.
+
+Canonical verification passed.
+
+A deliberately modified copy was detected by hash mismatch.
+
+Result: PASS.
+
+## Action 17.14 — Embedding and reranker versioning
+
+Established versioned configuration identity for synthetic embedding
+and reranker components.
+
+Evidence includes:
+
+- component identity
+- version
+- configuration SHA-256
+- production approval state
+
+No claim is made that real embedding or reranker binaries were
+exercised.
+
+Result: PASS with explicit limitation.
+
+## Phase-17 progress after Batch B
+
+Completed:
+
+- 17.1–17.14
+
+Remaining:
+
+- 17.15 Policy and MCP configuration integrity
+- 17.16 Change management
+- 17.17 Deployment, rollback, revocation, and retirement
+- 17.18 Tool and provenance integration
+- 17.19 Verified AI-artifact and lifecycle pipeline closeout
+
+Progress:
+
+`14 / 19 = 73.7%`
+
+PHASE_17_BATCH_B_COMPLETE

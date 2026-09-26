@@ -1,0 +1,5 @@
+FINDING duplicate_id id=train-001
+FINDING conflicting_label feature_vector=1,0,0
+FINDING feature_out_of_expected_range id=train-poison-range
+FINDING invalid_label id=train-poison-label label=9
+finding_count=4

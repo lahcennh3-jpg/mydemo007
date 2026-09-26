@@ -1,0 +1,8 @@
+{
+  "component": "reranker",
+  "component_id": "phase17-synthetic-reranker-config",
+  "version": "1.0.0",
+  "provider": "local-synthetic-placeholder",
+  "model_artifact_present": false,
+  "production_approved": false
+}

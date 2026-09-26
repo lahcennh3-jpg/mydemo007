@@ -1,0 +1,5 @@
+prompt_sha256=819e795229ef7315df29086ff7a7b7a64c6ef0b450d51c52bda489b0e8e7037b
+version=1.0.0
+lab_approved=true
+production_approved=false
+change_requires_review=true

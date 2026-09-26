@@ -1,0 +1,8 @@
+{
+  "schema": "phase17-system-instruction-integrity-v1",
+  "instruction_id": "phase17-system-instruction",
+  "version": "1.0.0",
+  "sha256": "f4c649bb2e7b3325deed475331ef5581b12c1fc2788126ca6d2149d26c3b2b0d",
+  "immutable_without_review": true,
+  "production_approved": false
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "phase17-retrieval-component-versioning-v1",
+  "embedding": {
+    "config": "embedding-config-v1.json",
+    "version": "1.0.0",
+    "sha256": "c6911d472ff93a148c600c2870d97be1c8db9d82cc61be9669c8efcebdbf6846"
+  },
+  "reranker": {
+    "config": "reranker-config-v1.json",
+    "version": "1.0.0",
+    "sha256": "8180d20791441dc8fb15fc8c255e03e7dca56901e0ea57eb0f70f35a8dfcca9a"
+  },
+  "actual_model_binaries_exercised": false,
+  "production_approved": false,
+  "limitation": "Versioning evidence covers synthetic component configuration identity, not execution of real embedding or reranker model binaries."
+}

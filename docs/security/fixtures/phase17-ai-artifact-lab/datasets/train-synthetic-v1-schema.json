@@ -1,0 +1,27 @@
+{
+  "schema": "phase17-tabular-training-schema-v1",
+  "columns": [
+    {
+      "name": "id",
+      "type": "string",
+      "unique": true
+    },
+    {
+      "name": "x1",
+      "type": "number"
+    },
+    {
+      "name": "x2",
+      "type": "number"
+    },
+    {
+      "name": "x3",
+      "type": "number"
+    },
+    {
+      "name": "label",
+      "type": "integer",
+      "allowed": [0, 1]
+    }
+  ]
+}

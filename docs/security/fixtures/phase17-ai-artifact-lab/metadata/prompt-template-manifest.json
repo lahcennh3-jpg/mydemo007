@@ -1,0 +1,12 @@
+{
+  "schema": "phase17-prompt-template-v1",
+  "prompt_id": "phase17-retrieval-answer-template",
+  "version": "1.0.0",
+  "sha256": "819e795229ef7315df29086ff7a7b7a64c6ef0b450d51c52bda489b0e8e7037b",
+  "intended_environment": "synthetic-security-lab",
+  "approval": {
+    "status": "lab-approved",
+    "production": false
+  },
+  "change_requires_review": true
+}

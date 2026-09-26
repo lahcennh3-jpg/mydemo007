@@ -1,0 +1,9 @@
+{
+  "schema": "phase17-evaluation-dataset-integrity-v1",
+  "dataset_id": "phase17-evaluation-dataset",
+  "version": "1.0.0",
+  "sha256": "d5f9115abdc52d4d947fe42435a273c6d3cb600c20dca6585dab459a45af1efa",
+  "source": "local-synthetic",
+  "frozen_for_baseline": true,
+  "change_requires_new_version": true
+}

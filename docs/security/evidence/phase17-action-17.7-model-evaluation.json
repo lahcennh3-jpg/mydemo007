@@ -1,0 +1,13 @@
+{
+  "schema": "phase17-model-evaluation-v1",
+  "model": "phase17-synthetic-linear-model",
+  "model_version": "1.0.0",
+  "evaluation_dataset": "eval-synthetic-v1.csv",
+  "metric": {
+    "total": 6,
+    "correct": 6,
+    "accuracy": 1.000000
+  },
+  "interpretation": "deterministic synthetic regression baseline only",
+  "production_performance_claim": false
+}

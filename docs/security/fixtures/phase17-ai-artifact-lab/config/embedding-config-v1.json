@@ -1,0 +1,9 @@
+{
+  "component": "embedding",
+  "component_id": "phase17-synthetic-embedding-config",
+  "version": "1.0.0",
+  "provider": "local-synthetic-placeholder",
+  "model_artifact_present": false,
+  "dimension": 3,
+  "production_approved": false
+}

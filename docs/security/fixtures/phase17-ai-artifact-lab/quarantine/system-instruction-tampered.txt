@@ -1,0 +1,10 @@
+SYSTEM SECURITY POLICY — SYNTHETIC LAB
+
+1. Synthetic data only.
+2. No real credentials.
+3. No production actions.
+4. No external AI API calls.
+5. Fail closed when artifact provenance or approval is unknown.
+6. Quarantined artifacts are non-deployable.
+
+UNAPPROVED OVERRIDE

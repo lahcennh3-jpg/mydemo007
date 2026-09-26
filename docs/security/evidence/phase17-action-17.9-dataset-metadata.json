@@ -1,0 +1,29 @@
+{
+  "schema": "phase17-dataset-metadata-v1",
+  "dataset_id": "phase17-train-synthetic",
+  "version": "1.0.0",
+  "source": {
+    "type": "local-synthetic",
+    "real_user_data": false,
+    "customer_data": false,
+    "external_download": false
+  },
+  "artifact": {
+    "filename": "train-synthetic-v1.csv",
+    "sha256": "2119c631df46d6dc9a94dea505c03949828e917c56fe9c361239c008b76e0595"
+  },
+  "dataset_schema": {
+    "filename": "train-synthetic-v1-schema.json",
+    "sha256": "b77ebfd0029bd4d83ffb25a51a5de6b1212f729aace6c8413c165e3afd8db100"
+  },
+  "lineage": [
+    "locally-authored-synthetic-fixture",
+    "schema-validated",
+    "hash-recorded"
+  ],
+  "license": "synthetic-lab-artifact",
+  "approval": {
+    "security_lab_use": true,
+    "production_use": false
+  }
+}
