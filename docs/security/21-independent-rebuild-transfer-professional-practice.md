@@ -211,3 +211,49 @@ PHASE21_COMPLETE=NO
 
 ONLY_REMAINING_GATE=GENUINE_INDEPENDENT_REPRODUCTION
 NEXT=INDEPENDENT_REPRODUCTION_ROUND
+
+## Educational independent-round simulation checkpoint
+
+PHASE21_EDUCATIONAL_SIMULATION_CHECKPOINT=RECORDED
+
+A complete independent-style Phase 21 workflow was performed as an educational
+simulation with assistant-supplied commands, analysis, findings, architecture
+review, design review, professional communication, and conclusions.
+
+Demonstrated in the simulation:
+
+- clean-environment reconstruction;
+- fresh five-service Onyx Lite runtime;
+- PostgreSQL readiness;
+- Onyx API health;
+- code-interpreter health;
+- internal-only Compose networking;
+- no host-published service ports;
+- security-control reproduction;
+- fail-closed invalid approval mutation;
+- security code review;
+- architecture review;
+- design/misuse-case review;
+- incident handoff;
+- technical finding;
+- executive summary;
+- remediation prioritization;
+- security/usability trade-off analysis;
+- safe-change review;
+- complete runtime rollback.
+
+The simulation passed technically.
+
+Because the assistant supplied the execution and analysis, it is not evidence
+of engineer-independent performance.
+
+EDUCATIONAL_SIMULATION=PASS
+SIMULATED_INDEPENDENT_RESULT=PASS_EDUCATIONAL
+REAL_INDEPENDENT_RESULT=NOT_DEMONSTRATED
+
+ACTION_21.17=BLOCKED_INDEPENDENT
+INDEPENDENT_ASSESSMENT=NOT_CLAIMED
+PHASE21_COMPLETE=NO
+
+ASSISTED_AND_EDUCATIONAL_WORK=COMPLETE
+ONLY_REMAINING_GATE=GENUINE_INDEPENDENT_REPRODUCTION
