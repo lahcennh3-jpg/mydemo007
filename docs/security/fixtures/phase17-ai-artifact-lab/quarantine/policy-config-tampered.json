@@ -1,0 +1,10 @@
+{
+  "schema": "phase17-policy-config-v1",
+  "policy_id": "phase17-ai-artifact-policy",
+  "version": "1.0.0",
+  "default_deny": false,
+  "external_network_allowed": false,
+  "unknown_artifact_action": "quarantine",
+  "production_approved": false,
+  "allowed_environment": "synthetic-security-lab"
+}

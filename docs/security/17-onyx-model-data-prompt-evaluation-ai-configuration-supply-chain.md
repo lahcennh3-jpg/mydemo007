@@ -346,3 +346,161 @@ Progress:
 `14 / 19 = 73.7%`
 
 PHASE_17_BATCH_B_COMPLETE
+
+---
+
+# Batch C — Policy, Change, Release, Provenance, and Closeout
+
+## Reproducibility correction
+
+Batch B exercised synthetic CSV evaluation and training fixtures.
+
+Those CSV artifacts were subject to repository ignore behavior and were
+not present in the Batch-B commit file list.
+
+Batch C explicitly preserves the known synthetic CSV fixtures so the
+evaluation and poisoning evidence can be reproduced from a fresh clone.
+
+No real data is introduced.
+
+## Action 17.15 — Policy and MCP configuration integrity
+
+Established versioned, hashed policy and MCP configuration.
+
+The MCP fixture is restricted to:
+
+`127.0.0.1`
+
+No MCP connection was performed.
+
+Controlled modifications to policy and MCP configuration produced hash
+changes and were detected.
+
+Result: PASS.
+
+## Action 17.16 — Change management
+
+Established a controlled prompt change request with:
+
+- change ID
+- source version
+- candidate version
+- current hash
+- candidate hash
+- reason
+- synthetic owner
+- risk classification
+- required evidence
+- rollback target
+- approval state
+
+The candidate remained pending review.
+
+The promotion gate rejected it.
+
+Result: PASS.
+
+## Action 17.17 — Deployment, rollback, revocation, and retirement
+
+Performed a synthetic lab-only lifecycle drill:
+
+`evaluated-quarantined`
+→ `lab-approved`
+→ `lab-deployed`
+→ `rolled-back`
+→ `lab-approved`
+→ `lab-deployed`
+→ `revoked`
+→ `retired`
+
+Production deployment was never authorized or performed.
+
+Artifact hashes were verified across the lab promotion and deployment
+steps.
+
+Result: PASS.
+
+## Action 17.18 — Tool and provenance integration
+
+Created and verified an end-to-end SHA-256 provenance bundle covering:
+
+- model
+- training dataset
+- evaluation dataset
+- prompt
+- system instruction
+- embedding configuration
+- reranker configuration
+- policy
+- MCP configuration
+- model metadata
+- dataset metadata
+- integrity manifests
+
+Reference-tool execution limitations remain for:
+
+- ModelScan
+- Fickling
+- Safetensors
+- MLflow
+
+They are not falsely reported as executed.
+
+No package was installed merely to make the phase appear complete.
+
+Result: PASS WITH DOCUMENTED TOOLING GAPS.
+
+## Action 17.19 — Verified AI artifact and lifecycle pipeline
+
+The final verification gate confirms:
+
+- artifact provenance
+- integrity verification
+- synthetic-data boundary
+- prompt integrity
+- system-instruction integrity
+- policy integrity
+- loopback-only MCP configuration
+- fail-closed change control
+- rollback
+- revocation
+- retirement
+- verified provenance bundle
+- absence of production authorization
+
+Result: PASS.
+
+## Final Phase-17 status
+
+Control actions executed:
+
+`19 / 19`
+
+Core lifecycle-control objectives:
+
+`VERIFIED`
+
+Production authorization:
+
+`FALSE`
+
+Full reference-tool execution coverage:
+
+`FALSE`
+
+Outstanding reference-tool execution gaps:
+
+1. ModelScan
+2. Fickling
+3. Safetensors
+4. MLflow
+
+Therefore the accurate status is:
+
+`COMPLETE_WITH_DOCUMENTED_TOOLING_GAPS`
+
+This means the Phase-17 synthetic/local control workflow is complete,
+but the portfolio must not claim full execution of the four unavailable
+reference tools.
+
+PHASE_17_COMPLETE_WITH_DOCUMENTED_TOOLING_GAPS

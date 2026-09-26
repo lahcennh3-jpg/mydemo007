@@ -1,0 +1,19 @@
+{
+  "schema": "phase17-model-lifecycle-v2",
+  "artifact_id": "phase17-synthetic-linear-model",
+  "version": "1.0.0",
+  "sha256": "3185d0814b6a2c8f4817044f2eab83a08cb70ee56f41e2d376d0d7222c7f7d1d",
+  "environment": "synthetic-security-lab",
+  "current_state": "retired",
+  "production_approval": false,
+  "history": [
+    "evaluated-quarantined",
+    "lab-approved",
+    "lab-deployed",
+    "rolled-back",
+    "lab-approved",
+    "lab-deployed",
+    "revoked",
+    "retired"
+  ]
+}

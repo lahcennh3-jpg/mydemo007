@@ -1,0 +1,8 @@
+change_id=PH17-CR-001
+current_version=1.0.0
+candidate_version=1.1.0
+approval_status=pending-review
+promotion_allowed=false
+unapproved_change_blocked=true
+rollback_target=1.0.0
+production_approval=false

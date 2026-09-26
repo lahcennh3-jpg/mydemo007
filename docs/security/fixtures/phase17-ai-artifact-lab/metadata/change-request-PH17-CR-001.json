@@ -1,0 +1,24 @@
+{
+  "schema": "phase17-change-request-v1",
+  "change_id": "PH17-CR-001",
+  "component": "retrieval-answer-prompt",
+  "from_version": "1.0.0",
+  "candidate_version": "1.1.0",
+  "current_sha256": "819e795229ef7315df29086ff7a7b7a64c6ef0b450d51c52bda489b0e8e7037b",
+  "candidate_sha256": "e0bb8f4a11bd3b1452ea1885b5455dcf75b7ef23225a3db80f8c9376d5a9682c",
+  "reason": "Add an explicit provenance and approval prerequisite.",
+  "owner": "phase17-synthetic-security-owner",
+  "risk_level": "low",
+  "required_evidence": [
+    "hash-verification",
+    "evaluation-regression",
+    "security-review",
+    "rollback-target"
+  ],
+  "rollback_version": "1.0.0",
+  "approval": {
+    "status": "pending-review",
+    "production_approval": false
+  },
+  "promotion_allowed": false
+}

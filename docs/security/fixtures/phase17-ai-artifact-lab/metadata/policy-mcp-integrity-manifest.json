@@ -1,0 +1,13 @@
+{
+  "schema": "phase17-policy-mcp-integrity-manifest-v1",
+  "policy": {
+    "version": "1.0.0",
+    "sha256": "f6911e1145f43299edc168be3c825e52ca1e95e0ca911abc46ef6e84153e57d7"
+  },
+  "mcp": {
+    "version": "1.0.0",
+    "sha256": "a3cc4bb645c0be0e10cc8c76c6b7955180af2a7fe4440fc112dbd6f155397198"
+  },
+  "external_network_authorized": false,
+  "production_approved": false
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "phase17-tool-integration-status-v1",
+  "ModelScan": {
+    "status": "NOT_INSTALLED",
+    "full_execution_claimed": false
+  },
+  "Fickling": {
+    "status": "NOT_INSTALLED",
+    "full_execution_claimed": false
+  },
+  "Safetensors": {
+    "status": "NOT_EXECUTED_HOST_NO_PYTHON",
+    "full_execution_claimed": false
+  },
+  "MLflow": {
+    "status": "NOT_INSTALLED",
+    "full_execution_claimed": false
+  },
+  "SLSA_reuse": {
+    "prior_evidence_file_count": 7,
+    "phase17_generator_execution_claimed": false
+  },
+  "reference_tool_execution_gaps": 4,
+  "provenance_bundle_verified": true,
+  "automatic_package_installation": false,
+  "external_dependency_download": false,
+  "limitation": "Phase 17 core artifact lifecycle controls were exercised, but ModelScan, Fickling, Safetensors, and MLflow were not fully executed in this host environment."
+}

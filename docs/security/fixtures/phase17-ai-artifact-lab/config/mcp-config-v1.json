@@ -1,0 +1,16 @@
+{
+  "schema": "phase17-mcp-config-v1",
+  "server_id": "phase17-local-mock-mcp",
+  "version": "1.0.0",
+  "transport": "http",
+  "endpoint": "http://127.0.0.1:9900/mcp",
+  "network_scope": "loopback-only",
+  "external_server": false,
+  "credentials_embedded": false,
+  "deny_by_default": true,
+  "allowed_tools": [
+    "synthetic.echo",
+    "synthetic.lookup"
+  ],
+  "production_approved": false
+}
