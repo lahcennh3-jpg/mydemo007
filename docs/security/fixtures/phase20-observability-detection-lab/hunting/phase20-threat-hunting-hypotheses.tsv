@@ -1,0 +1,13 @@
+HUNT_ID	HYPOTHESIS	REQUIRED_SIGNAL
+P20-HUNT-001	One actor repeatedly fails authentication before succeeding	auth outcome + actor + time
+P20-HUNT-002	One actor probes resources belonging to another user	authz denial + actor + resource
+P20-HUNT-003	One tenant identity probes another tenant's resources	tenant + actor + resource + denial
+P20-HUNT-004	A user repeatedly attempts unauthorized retrieval	retrieval decision + actor + resource
+P20-HUNT-005	An actor attempts memory belonging to another security context	memory decision + actor + resource
+P20-HUNT-006	An agent attempts a capability outside its policy	agent + action + policy decision
+P20-HUNT-007	An agent probes multiple unauthorized tools	agent + tool + decision
+P20-HUNT-008	An untrusted MCP endpoint is repeatedly invoked	MCP identity + decision + actor
+P20-HUNT-009	An actor repeatedly attempts sensitive export	data classification + action + denial
+P20-HUNT-010	Resource-limit violations cluster around one actor	actor + resource + limit decision
+P20-HUNT-011	A workload attempts privilege escalation	workload identity + policy denial
+P20-HUNT-012	Identity validation failures precede privileged actions	identity failure + correlation ID

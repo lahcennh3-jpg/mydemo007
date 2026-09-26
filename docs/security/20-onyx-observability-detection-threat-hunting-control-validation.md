@@ -39,14 +39,14 @@ Phase 20 evaluates whether security-relevant behavior can be:
 | 20.6 | Initial detection-control catalog | COMPLETE |
 | 20.7 | Static detection validation | COMPLETE |
 | 20.8 | Batch A release gate | COMPLETE |
-| 20.9 | Identity/authentication detection engineering | PENDING |
-| 20.10 | Authorization/tenant-isolation detections | PENDING |
-| 20.11 | RAG/memory detection engineering | PENDING |
-| 20.12 | Agent/tool/MCP detection engineering | PENDING |
-| 20.13 | Abuse/infrastructure detection engineering | PENDING |
-| 20.14 | Threat-hunting hypotheses | PENDING |
-| 20.15 | Alert quality and false-positive/negative analysis | PENDING |
-| 20.16 | Cross-domain control-validation gate | PENDING |
+| 20.9 | Identity/authentication detection engineering | COMPLETE |
+| 20.10 | Authorization/tenant-isolation detections | COMPLETE |
+| 20.11 | RAG/memory detection engineering | COMPLETE |
+| 20.12 | Agent/tool/MCP detection engineering | COMPLETE |
+| 20.13 | Abuse/infrastructure detection engineering | COMPLETE |
+| 20.14 | Threat-hunting hypotheses | COMPLETE |
+| 20.15 | Alert quality and false-positive/negative analysis | COMPLETE |
+| 20.16 | Cross-domain control-validation gate | COMPLETE |
 | 20.17 | Cross-layer adversarial detection tests | PENDING |
 | 20.18 | Bounded runtime telemetry validation | PENDING |
 | 20.19 | Incident correlation exercise | PENDING |
@@ -83,6 +83,27 @@ It does not yet claim:
 
 ## Current state
 
-**BATCH_A_COMPLETE**
+**BATCH_B_COMPLETE**
 
-NEXT=PHASE20_ACCELERATED_BATCH_B
+NEXT=PHASE20_ACCELERATED_BATCH_C
+
+## Batch B — Detection Engineering and Threat Hunting
+
+Batch B resumed after the environment reported that Python 3 was unavailable.
+
+No package was installed and no additional external dependency was introduced.
+
+The detector was implemented using the already available AWK runtime.
+
+The deterministic corpus contains **20** synthetic security events.
+
+The cross-domain validation gate requires **12** distinct detection conditions
+and all twelve were detected.
+
+Batch B also defines **12** threat-hunting hypotheses.
+
+Allowed operations remain explicit negative controls.
+
+The thresholds and event corpus are laboratory controls and do not establish
+production SIEM effectiveness, precision, recall, alert quality, analyst
+performance, false-positive rate, or false-negative rate.
